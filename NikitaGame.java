@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-
+//Nikita and the Game
 public class A {
 	public static void main(String[] args) {
 
@@ -79,8 +79,8 @@ public class A {
 	}
 
 	static int max(int a, int b) {
-		if (a > b)			return a;
-		else			return b;
+		if (a > b) return a;
+		else return b;
 	}
 
 }
