@@ -1,4 +1,4 @@
-'''java
+```java
 import java.util.Scanner;
 
 
@@ -85,4 +85,4 @@ public class A {
 	}
 
 }
-'''
+```
