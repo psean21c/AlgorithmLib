@@ -1,10 +1,10 @@
 
-# Question
+# Idea
 
-
-
-### 
+## Link
 https://www.hackerrank.com/challenges/array-splitting
+
+### TestCases '' for Test
 
 
 Sample input
@@ -35,6 +35,8 @@ Output
 ```
 4
 ```
+
+
 
 TestCase-2
 ```
