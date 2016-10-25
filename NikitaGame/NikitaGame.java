@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-
-public class D {
+// Author: Simon Park
+public class NikitaGame{
 	public static void main(String[] args) {
 
 		Scanner in = new Scanner(System.in);
@@ -79,10 +79,8 @@ public class D {
 	}
 
 	static int max(int a, int b) {
-		if (a > b)
-			return a;
-		else
-			return b;
+		if (a > b) return a;
+		else return b;
 	}
 
 }
