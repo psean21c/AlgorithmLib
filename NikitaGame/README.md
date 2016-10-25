@@ -1,11 +1,11 @@
 
-# Common mistakes
+# Question
 
-Closures are powerful feature in JavaScript. However, if you misuse or overuse it causes wrong results and memory leak. Here I am going to show some common mistakes in reality.
 
-### In `for` loop
 
-Let's supposed that you want to put 5 buttons and show button id when it is clicked.
+### 
+https://www.hackerrank.com/challenges/array-splitting
+
 
 Sample input
 ```
@@ -73,17 +73,6 @@ Output
 
 
 
-
-Someone can make the code using jQuery to add click event handler.
-
 ```
-var $buttons = $("button");
-var len = $buttons.length;
-
-for(var i = 0; i < len; i++) {
-  $($buttons[i]).click(function() {
-    // put your logic
-    alert('Script1: ' + i);
-  });
-}
+			return 1 + max(count(arr1), count(arr2));
 ```
