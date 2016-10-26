@@ -1,6 +1,18 @@
 
 # Idea
 
+Algorithm : count number of occurence which can split list of numbers when the sum of list on both sides are equal
+             (left & right can be equally divided into two parts)
+```
+4 1 0 1 1 0 1
+==============
+4 1 0 1 1 0 1
+  1 0 1 1 0 1 (1st)
+  1 0 1       (2nd)
+  1           (3rd)
+
+```
+
 ## Link
 https://www.hackerrank.com/challenges/array-splitting
 
@@ -9,7 +21,7 @@ https://www.hackerrank.com/challenges/array-splitting
 ### TestCases '' for Test
 
 
-Sample input
+Basic sample input
 ```
 3
 3
@@ -19,13 +31,13 @@ Sample input
 7
 4 1 0 1 1 0 1
 ```
-
-Sample output
+output
 ```
 0
 2
 3
 ```
+
 
 TestCase-1
 ```
