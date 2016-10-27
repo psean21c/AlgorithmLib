@@ -110,31 +110,31 @@ Output
 ```
 
 Scenario-4
+
 1. It is difficult to think about this scenario below
---- Intuitively the more elements the partion has, the more splits occurs. 
---- As TestCase-1, it will be more likely to have more splits when they have more elements
---- Take the list of TestCase-1 such as {2 1 1 2 1 1 4 4} for example ..
+⋅⋅⋅ Intuitively the more elements the partion has, the more splits occurs. 
+⋅⋅⋅ As TestCase-1, it will be more likely to have more splits when they have more elements
+⋅⋅⋅ Take the list of TestCase-1 such as {2 1 1 2 1 1 4 4} for example ..
 
-..* 2 + 1 + 1 + 2 + 1 + 1 = 8 and 4 + 4 = 8
+⋅⋅* 2 + 1 + 1 + 2 + 1 + 1 = 8 and 4 + 4 = 8
 
-..* And then left partition ends up with 4 splits
-  {2 1 1 2 1 1} => {2 1 1} {2 1 1} => {2} {1 1} => {1 1} => {1}
+⋅⋅⋅ And then left partition ends up with 4 splits
+⋅⋅* {2 1 1 2 1 1} => {2 1 1} {2 1 1} => {2} {1 1} => {1 1} => {1}
   
-..* While right partition has only one more split
-  {4 4} => {4}
---- So it would be easier to take the list which has more elements in the partition.
-* However the following list is different.
+⋅⋅⋅ While right partition has only one more split
+⋅⋅*  {4 4} => {4}
 
+⋅⋅⋅ So it would be easier to take the list which has more elements in the partition.
 
 2. However that's not always true
 
---- When you first partiton the list, you can have less number of elements in a list than the other between the left and right partition.  But sometimes you might end up with greater number of occurrence in the other side of partition.
+⋅⋅⋅ When you first partiton the list, you can have less number of elements in a list than the other between the left and right partition.  But sometimes you might end up with greater number of occurrence in the other side of partition.
 
-..* Take anoher list .. {8 1 1 1 1 4 2 2 2 2 2 2 2 2} for example ..
+⋅⋅* Take anoher list .. {8 1 1 1 1 4 2 2 2 2 2 2 2 2} for example ..
 
-..* 8 + 1 + 1 + 1 + 1 + 4 = 16 and 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 16
----  Initially right partition has more elements than the left.
----  However the other side(right) will return more splits than left.
+⋅⋅* 8 + 1 + 1 + 1 + 1 + 4 = 16 and 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 16
+⋅⋅⋅  Initially right partition has more elements than the left.
+⋅⋅⋅  However the other side(right) will return more splits than left.
 
 ![alt tag](https://cloud.githubusercontent.com/assets/5623445/19750048/076f9e32-9bbc-11e6-9aa0-0dab0eaf9ce5.GIF)
 
