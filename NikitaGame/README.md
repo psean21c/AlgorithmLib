@@ -112,13 +112,16 @@ Output
 Scenario-4
 
 1. It is difficult to think about this scenario below
-⋅⋅⋅ Intuitively the more elements the partion has, the more splits occurs. 
-⋅⋅⋅ As TestCase-1, it will be more likely to have more splits when they have more elements
-⋅⋅⋅ Take the list of TestCase-1 such as {2 1 1 2 1 1 4 4} for example ..
 
-⋅⋅* 2 + 1 + 1 + 2 + 1 + 1 = 8 and 4 + 4 = 8
+⋅⋅⋅Intuitively the more elements the partion has, the more splits occurs. 
 
-⋅⋅⋅ And then left partition ends up with 4 splits
+⋅⋅⋅As TestCase-1, it will be more likely to have more splits when they have more elements
+
+⋅⋅⋅Take the list of TestCase-1 such as {2 1 1 2 1 1 4 4} for example ..
+
+⋅⋅*2 + 1 + 1 + 2 + 1 + 1 = 8 and 4 + 4 = 8
+
+⋅⋅⋅And then left partition ends up with 4 splits
 ⋅⋅* {2 1 1 2 1 1} => {2 1 1} {2 1 1} => {2} {1 1} => {1 1} => {1}
   
 ⋅⋅⋅ While right partition has only one more split
