@@ -43,8 +43,8 @@ Output
 3
 ```
 
-
-TestCase-1
+***
+Scenario-1
 - You need to partition /discard either left or right depending on the situation
 
 Input
@@ -66,7 +66,7 @@ Explain
   1
 ```
 
-
+***
 
 Scenario-2
 - You need to handle odd numbers of list
@@ -93,6 +93,7 @@ Output
 ```
 2
 ```
+***
 
 Scenario-3
 - You need to handle all 0's 
@@ -109,34 +110,31 @@ Output
 ```
 
 Scenario-4
-- It is difficult to think about this scenario below
+1. It is difficult to think about this scenario below
+--- Intuitively the more elements the partion has, the more splits occurs. 
+--- As TestCase-1, it will be more likely to have more splits when they have more elements
+--- Take the list of TestCase-1 such as {2 1 1 2 1 1 4 4} for example ..
 
-* Intuitively the more elements the partion has, the more splits occurs. 
+..* 2 + 1 + 1 + 2 + 1 + 1 = 8 and 4 + 4 = 8
 
-* As TestCase-1, it will be more likely to have more splits when they have more elements
-* Take the list of TestCase-1 such as {2 1 1 2 1 1 4 4} for example ..
-
-* 2 + 1 + 1 + 2 + 1 + 1 = 8 and 4 + 4 = 8
-
-* And then left partition ends up with 4 splits
+..* And then left partition ends up with 4 splits
   {2 1 1 2 1 1} => {2 1 1} {2 1 1} => {2} {1 1} => {1 1} => {1}
   
-* While right partition has only one more split
+..* While right partition has only one more split
   {4 4} => {4}
-* So it would be easier to take the list which has more elements in the partition.
+--- So it would be easier to take the list which has more elements in the partition.
 * However the following list is different.
 
 
-* However that's not always true
+2. However that's not always true
 
-* When you first partiton the list, you can have less number of elements in a list than the other between the left and right partition.
-  But sometimes you might end up with greater number of occurrence in the other side of partition.
+--- When you first partiton the list, you can have less number of elements in a list than the other between the left and right partition.  But sometimes you might end up with greater number of occurrence in the other side of partition.
 
-* Take another list .. such as {8 1 1 1 1 4 2 2 2 2 2 2 2 2} for example ..
+..* Take anoher list .. {8 1 1 1 1 4 2 2 2 2 2 2 2 2} for example ..
 
-* 8 + 1 + 1 + 1 + 1 + 4 = 16 and 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 16
-* Initially right partition has more elements than the left.
-* However the other side(right) will return more splits than left.
+..* 8 + 1 + 1 + 1 + 1 + 4 = 16 and 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 16
+---  Initially right partition has more elements than the left.
+---  However the other side(right) will return more splits than left.
 
 ![alt tag](https://cloud.githubusercontent.com/assets/5623445/19750048/076f9e32-9bbc-11e6-9aa0-0dab0eaf9ce5.GIF)
 
@@ -150,6 +148,7 @@ Output
 ```
 4
 ```
+***
 
 Input (Very difficult to manually figure out)
 ```
@@ -167,6 +166,14 @@ Output
 
 
 ```java
-	return 1 + max(count(arr1), count(arr2));
+static int count(int[] arr) {
+	if (sum % 2 == 0 && len > 1) { // Continue when the sums of each side are equal and you can split the list into two
+		...
+		return 1 + max(count(arr1), count(arr2));
+	} else if (len == 1) return 0; // Stop when you have only one element
+	else return 0;
+
 ```
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+[GitHub Syntax Link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
