@@ -1,91 +1,17 @@
 
-It is very straightforward when you look at the picture.
+It is very straightforward to understand what to do .. when you look at the picture.
+Simply you have balance this scale.
 
 ![scale](https://cloud.githubusercontent.com/assets/5623445/19781633/1ed65b64-9c58-11e6-84de-a18dde85cea2.png)
 
+I am still trying to find out better solution using DP(Dynamic Programming)
+However the challenge here is you don't know which side you have to make it balanced it first.
+Because it depends on different situation.
 
-1) Test case-1
+For example, in Case 1 
+(1) you have to figure out that the left side is heavier than the right 
+(2) and then put additional weight on right side(D).
 
-input
-
-A,20,D
-
-D,2,4
-
-output
-
-A,0,0
-
-D,6,4
-
-    2     4
-    |_____|
-20 D |_____| A
-
-    2(6)  4(4)
-    |_____|
-20 D |_____| A
-
-Number inside () is the solution
-2) Test case-2
-
-input
-
-A,2,D
-
-D,2,4
-
-output
-
-A,10,0
-
-D,2,0
-
-    2     4
-    |_____|
-2     D
-|_____|
-   A
-
-    2(2)  4
-    |_____|
-2(10) D |_____| A
-
-3) Steps to explain the test-case 1
-
-step-1
-
-A[20,D,0,0]
-
-D[2, 4,0,0]
-
-step-2
-
-A[20,D,0,8*]
-
-D[2, 4,2,0]
-
-** Whenever there is any value(8) for the alphabetic node(D) - A[20,D,0,8]
-
-it has to be re-distributed to child nodes
-step-3
-
-8* => 4 : 4
-
-A[20,D,0,0]
-
-D[2, 4,2+4,0+4]
-
-step-4
-
-A[20,D,0,0]
-
-D[2, 4,6,4]
-
-step-5
-
-3rd,4th elements in the List are answers
-
-A[20,D,|0,0]
-
-D[2, 4,|6,4]
+However in Case 2 
+(1) you have to put 2 on the left side of D node 
+(2) and then you can put 10 on the left side of A node 
