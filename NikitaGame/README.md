@@ -101,6 +101,7 @@ Output
 
 TestCase-4
 - It is difficult to think about this scenario
+https://cloud.githubusercontent.com/assets/5623445/19750048/076f9e32-9bbc-11e6-9aa0-0dab0eaf9ce5.GIF
 
 * When you first partiton the list, you can have less number of list left partition than right partition.
   But eventually you might end up with greater number of occurrence in the right partition than left.
