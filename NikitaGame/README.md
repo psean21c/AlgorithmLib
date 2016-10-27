@@ -1,7 +1,7 @@
 
 # Idea
 
-Algorithm : count number of occurence which can split list of numbers when the sum of list on both sides are equal
+Algorithm : count the number of occurence which can split list of numbers when the sum of list on both sides are equal
              (Get 1 point when the left & right can be equally divided into two parts)
  - Need to partition the array into 2 non-empty parts such that the sum of the elements in the left partition is equal to the sum of the elements in the right partition. If you can make such a move, you will get 1 point; otherwise, the game ends.
 	     
@@ -21,11 +21,13 @@ Original question
 https://www.hackerrank.com/challenges/array-splitting
 
 
-### TestCases 
+### TestCases for different scenario
 
 
 Basic sample input
-- It is straightforward to understand
+- It is straightforward to understand examples below
+
+Input
 ```
 3
 3
@@ -35,7 +37,7 @@ Basic sample input
 7
 4 1 0 1 1 0 1
 ```
-output
+Output
 ```
 0
 2
@@ -45,6 +47,8 @@ output
 
 TestCase-1
 - You need to partition /discard either left or right depending on the situation
+
+Input
 ```
 1
 8
@@ -67,6 +71,7 @@ Explain
 
 Scenario-2
 - You need to handle odd number of list
+Input
 ```
 1
 3
@@ -78,7 +83,7 @@ Output
 ```
 
 
-Scenario-2
+Input
 ```
 1
 3
@@ -91,6 +96,8 @@ Output
 
 Scenario-3
 - You need to handle all 0's 
+
+Input
 ```
 1
 10
@@ -103,6 +110,22 @@ Output
 
 Scenario-4
 - It is difficult to think about this scenario below
+
+* When you first partiton the list, you can have less number of list left partition than right partition.
+  But eventually you might end up with greater number of occurrence in the right partition than left.
+* Because as TestCase-1 it will be more likely to have points when they have more elements
+{2 1 1 2 1 1 | 4 4}
+
+* 2 + 1 + 1 + 2 + 1 + 1 = 8, and 4 + 4 = 8
+
+* And then left partition ends up with 3 more splits
+  {2 1 1} {2 1 1}
+  {2} {1 1}
+  {1 1}
+* So it would be easier to take the list which has more elements in the partition.
+* However the following list is different.
+
+Input
 ```
 1
 14
@@ -115,8 +138,9 @@ Output
 
 ![alt tag](https://cloud.githubusercontent.com/assets/5623445/19750048/076f9e32-9bbc-11e6-9aa0-0dab0eaf9ce5.GIF)
 
-* When you first partiton the list, you can have less number of list left partition than right partition.
-  But eventually you might end up with greater number of occurrence in the right partition than left.
+
+
+Input  
 ```
 1
 103
