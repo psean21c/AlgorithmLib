@@ -114,14 +114,12 @@ Scenario-4
 * When you first partiton the list, you can have less number of list left partition than right partition.
   But eventually you might end up with greater number of occurrence in the right partition than left.
 * Because as TestCase-1 it will be more likely to have points when they have more elements
-{2 1 1 2 1 1 | 4 4}
+{2 1 1 2 1 1 4 4}
 
-* 2 + 1 + 1 + 2 + 1 + 1 = 8, and 4 + 4 = 8
+* 2 + 1 + 1 + 2 + 1 + 1 = 8 and 4 + 4 = 8
 
 * And then left partition ends up with 3 more splits
-  {2 1 1} {2 1 1}
-  {2} {1 1}
-  {1 1}
+  {2 1 1 2 1 1 4 4} => {2 1 1} {2 1 1} => {2} {1 1} => {1 1} => {1}
 * So it would be easier to take the list which has more elements in the partition.
 * However the following list is different.
 
@@ -135,6 +133,11 @@ Output
 ```
 4
 ```
+
+Intuitively the more elements the partion has, the more splits occurs.
+But it is not always true
+
+* 8 + 1 + 1 + 1 + 1 + 4 = 16 and 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 16
 
 ![alt tag](https://cloud.githubusercontent.com/assets/5623445/19750048/076f9e32-9bbc-11e6-9aa0-0dab0eaf9ce5.GIF)
 
