@@ -16,6 +16,8 @@ Algorithm : count number of occurence which can split list of numbers when the s
 ```
 
 ## Link
+Original question
+
 https://www.hackerrank.com/challenges/array-splitting
 
 
@@ -63,7 +65,7 @@ Explain
 
 
 
-TestCase-2
+Scenario-2
 - You need to handle odd number of list
 ```
 1
@@ -76,7 +78,7 @@ Output
 ```
 
 
-TestCase-2
+Scenario-2
 ```
 1
 3
@@ -87,7 +89,7 @@ Output
 2
 ```
 
-TestCase-3
+Scenario-3
 - You need to handle all 0's 
 ```
 1
@@ -99,8 +101,17 @@ Output
 9
 ```
 
-TestCase-4
-- It is difficult to think about this scenario
+Scenario-4
+- It is difficult to think about this scenario below
+```
+1
+14
+8 1 1 1 1 4 2 2 2 2 2 2 2 2
+```
+Output
+```
+4
+```
 
 ![alt tag](https://cloud.githubusercontent.com/assets/5623445/19750048/076f9e32-9bbc-11e6-9aa0-0dab0eaf9ce5.GIF)
 
