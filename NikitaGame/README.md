@@ -101,8 +101,7 @@ Output
 
 TestCase-4
 - It is difficult to think about this scenario
- 1 1 1 2 2 ... 1 1 ... 1 .. 1.. 1 .. 1.. 4 ..4
-       8             |       10 
+
 * When you first partiton the list, you can have less number of list left partition than right partition.
   But eventually you might end up with greater number of occurrence in the right partition than left.
 ```
