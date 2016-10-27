@@ -1,8 +1,7 @@
 
 # Idea
 
-Algorithm : count the number of occurence which can split list of numbers when the sum of list on both sides are equal
-             (Get 1 point when the left & right can be equally divided into two parts)
+Algorithm : count the number of occurence which you can split a list of numbers into two partitions when the sum of each list on both sides are equal (Get 1 point when the left & right can be equally divided into two parts)
  - Need to partition the array into 2 non-empty parts such that the sum of the elements in the left partition is equal to the sum of the elements in the right partition. If you can make such a move, you will get 1 point; otherwise, the game ends.
 	     
 ```
@@ -112,21 +111,34 @@ Output
 Scenario-4
 - It is difficult to think about this scenario below
 
-* When you first partiton the list, you can have less number of list left partition than right partition.
-  But eventually you might end up with greater number of occurrence in the right partition than left.
-* As TestCase-1 it will be more likely to have more splits when they have more elements
+* Intuitively the more elements the partion has, the more splits occurs. 
 
-{2 1 1 2 1 1 4 4}
+* As TestCase-1, it will be more likely to have more splits when they have more elements
+* Take the list of TestCase-1 such as {2 1 1 2 1 1 4 4} for example ..
 
 * 2 + 1 + 1 + 2 + 1 + 1 = 8 and 4 + 4 = 8
 
-* And then left partition ends up with 3 more splits
+* And then left partition ends up with 4 splits
   {2 1 1 2 1 1} => {2 1 1} {2 1 1} => {2} {1 1} => {1 1} => {1}
   
-* right partition only has one more split
+* While right partition has only one more split
   {4 4} => {4}
 * So it would be easier to take the list which has more elements in the partition.
 * However the following list is different.
+
+
+* However that's not always true
+
+* When you first partiton the list, you can have less number of elements in a list than the other between the left and right partition.
+  But sometimes you might end up with greater number of occurrence in the other side of partition.
+
+* Take another list .. such as {8 1 1 1 1 4 2 2 2 2 2 2 2 2} for example ..
+
+* 8 + 1 + 1 + 1 + 1 + 4 = 16 and 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 16
+* Initially right partition has more elements than the left.
+* However the other side(right) will return more splits than left.
+
+![alt tag](https://cloud.githubusercontent.com/assets/5623445/19750048/076f9e32-9bbc-11e6-9aa0-0dab0eaf9ce5.GIF)
 
 Input
 ```
@@ -139,16 +151,7 @@ Output
 4
 ```
 
-Intuitively the more elements the partion has, the more splits occurs.
-But it is not always true
-
-* 8 + 1 + 1 + 1 + 1 + 4 = 16 and 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 16
-
-![alt tag](https://cloud.githubusercontent.com/assets/5623445/19750048/076f9e32-9bbc-11e6-9aa0-0dab0eaf9ce5.GIF)
-
-
-
-Input  
+Input (Very difficult to manually figure out)
 ```
 1
 103
