@@ -1,4 +1,8 @@
-Author: Simon Park
+
+It is very straightforward when you look at the picture.
+
+![scale](https://cloud.githubusercontent.com/assets/5623445/19781633/1ed65b64-9c58-11e6-84de-a18dde85cea2.png)
+
 
 1) Test case-1
 
