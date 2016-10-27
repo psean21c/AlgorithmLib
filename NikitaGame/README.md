@@ -70,7 +70,8 @@ Explain
 
 
 Scenario-2
-- You need to handle odd number of list
+- You need to handle odd numbers of list
+
 Input
 ```
 1
@@ -113,13 +114,17 @@ Scenario-4
 
 * When you first partiton the list, you can have less number of list left partition than right partition.
   But eventually you might end up with greater number of occurrence in the right partition than left.
-* Because as TestCase-1 it will be more likely to have points when they have more elements
+* As TestCase-1 it will be more likely to have more splits when they have more elements
+
 {2 1 1 2 1 1 4 4}
 
 * 2 + 1 + 1 + 2 + 1 + 1 = 8 and 4 + 4 = 8
 
 * And then left partition ends up with 3 more splits
-  {2 1 1 2 1 1 4 4} => {2 1 1} {2 1 1} => {2} {1 1} => {1 1} => {1}
+  {2 1 1 2 1 1} => {2 1 1} {2 1 1} => {2} {1 1} => {1 1} => {1}
+  
+* right partition only has one more split
+  {4 4} => {4}
 * So it would be easier to take the list which has more elements in the partition.
 * However the following list is different.
 
