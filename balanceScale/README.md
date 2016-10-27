@@ -4,9 +4,11 @@ Simply you are supposed to balance this scale.
 
 ![scale](https://cloud.githubusercontent.com/assets/5623445/19781633/1ed65b64-9c58-11e6-84de-a18dde85cea2.png)
 
-I am still trying to find out better solution using DP(Dynamic Programming)
-However the challenge here is you don't know which side you have to make it balanced it first.
-Because it depends on different situation.
+I am still trying to find out a better solution using DP(Dynamic Programming).
+
+However the challenge here is that you don't know which side you have to balance it first until you read all of tree structure.
+
+
 
 * For example, in Case 1 
 
