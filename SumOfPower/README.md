@@ -37,5 +37,7 @@ Sample 2
  100 can be expressed as the sum of the cubes of 1,2,3,4.  (1 + 8 + 27 + 64 = 100). There is no other way to express  as the sum of cubes.
 
 Sample 3 
+
+
 ![power2](https://cloud.githubusercontent.com/assets/5623445/19808673/e46757de-9cf3-11e6-9f56-de38fd1d4e89.PNG)
 
