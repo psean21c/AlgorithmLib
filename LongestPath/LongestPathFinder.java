@@ -15,6 +15,7 @@ public class LongestPathFinder {
 	LongestPathFinder() {}
 
 	/**
+	 * Author : Simon Park, 2015
 	 * Method will recursively call this method itself until it finds end.
 	 * There are two conditions which this method will end.
 	 * (1) No route any more
