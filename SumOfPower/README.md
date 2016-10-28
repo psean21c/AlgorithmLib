@@ -30,9 +30,12 @@ If  X=10 and N=2, we need to find the number of ways that 10 can be represented 
 
 This is the only way in which  can be expressed as the sum of unique squares.
 
+![power1](https://cloud.githubusercontent.com/assets/5623445/19808668/de8417d0-9cf3-11e6-862b-4a6a95d22bf1.PNG)
+
 Sample 2
 
  100 can be expressed as the sum of the cubes of 1,2,3,4.  (1 + 8 + 27 + 64 = 100). There is no other way to express  as the sum of cubes.
 
 Sample 3 
+![power2](https://cloud.githubusercontent.com/assets/5623445/19808673/e46757de-9cf3-11e6-9f56-de38fd1d4e89.PNG)
 
