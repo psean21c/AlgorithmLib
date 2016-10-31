@@ -34,6 +34,15 @@ Q = Number of TestCases
 N = Number of Elements
 A1 .. An = List of Integers
 
+
+Expected output
+```
+X Y
+```
+X = maximum contiguous subarray
+Y = maximum non-contiguous subarray
+
+
 ### Normal Case - all positive integer
 Sample Input
 ```
@@ -47,7 +56,7 @@ Sample Output
 ```
 ---
 
-### Normal Case - all positive integer
+### Normal Case - all positive integer (Only 1)
 ```
 1
 1
@@ -104,7 +113,7 @@ Sample Output
 ```
 1 1
 ```
-### Case - having negative integers
+### Case - having negative integers (Only 1)
 Sample Input
 ```
 1
@@ -134,7 +143,7 @@ Sample Output
 ```
 ---
 
-### Case - having negative integers
+### Case - having negative integers (Mixed)
 
 Sample Input
 ```
