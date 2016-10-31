@@ -3,7 +3,6 @@ public class mergeSort {
 	public static void main(String[] args) {
 
 		int[] a = {3,7,4,2,1,5,6};
-		printSort(a);
 		int[] b = sort(a);
 		printSort(b);
 	}
