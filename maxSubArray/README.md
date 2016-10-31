@@ -3,10 +3,20 @@ Original question
 
 https://www.hackerrank.com/challenges/maxsubarray
 
+Need to count value of 
+
+(1) the maximum contiguous subarray 
+
+(2) the maximum non-contiguous subarray 
+
+Initially Not only that I didn't get the proper values but I also made very complicated imeplementation.
+After looking at the Kadane-algorithm I was embarrassed with my code and also impressed by its simplicity.
+I realized that I didn't fully understand the function of max()
 
 ## Idea
 
-Algorithm :  the maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array of numbers which has the largest sum. For example, for the sequence of values −2, 1, −3, 4, −1, 2, 1, −5, 4; the contiguous subarray with the largest sum is 4, −1, 2, 1, with sum 6.
+Algorithm :  the maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array of numbers which has the largest sum. For example, for the sequence of values −2, 1, −3, 4, −1, 2, 1, −5, 4; 
+the contiguous subarray with the largest sum is 4, −1, 2, 1, with sum 6.
 
 https://en.wikipedia.org/wiki/Maximum_subarray_problem
 
