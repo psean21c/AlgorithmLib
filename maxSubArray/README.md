@@ -24,116 +24,118 @@ def max_subarray(A):
 
 ## TestCase
 
+Format of Sample Input
+```
+Q 
+N 
+A1 A2 A3 .. An
+```
+Q = Number of TestCases
+N = Number of Elements
+A1 .. An = List of Integers
+
+### Normal Case - all positive integer
 Sample Input
 ```
-2 
+1 
 4 
 1 2 3 4
-6
-2 -1 2 3 4 -5
 ```
-
 Sample Output
 ```
 10 10
+```
+---
+
+### Normal Case - all positive integer
+```
+1
+1
+1
+```
+
+
+Sample Output
+```
+1 1
+```
+
+### Case - having negative integers
+
+Sample Input
+```
+1
+6
+2 -1 2 3 4 -5
+```
+
+Sample Output
+```
 10 11
 ```
 
----
+### Case - having all negative integers
 
 Sample Input
 ```
-6
-1
 1
 6
 -1 -2 -3 -4 -5 -6
+```
+
+
+Sample Output
+```
+-1 -1
+```
+
+---
+### Case - having negative integers
+
+Sample Input
+```
+1
 2
 1 -2
-3
-1 2 3
-1
--10
-6
-1 -1 -1 -1 -1 5
 ```
 
 
 Sample Output
 ```
 1 1
--1 -1
-1 1
-6 6
--10 -10
-5 6
 ```
----
-
+### Case - having negative integers
 Sample Input
 ```
-3
-6
--1 -2 -3 -4 -5 -6
+1
 1
 -10
-6
-1 -1 -1 -1 -1 5
 ```
+
 
 Sample Output
 ```
--1 -1
 -10 -10
-5 6
 ```
----
+
+### Case - having negative integers
 
 Sample Input
 ```
 1
 6
 1 -1 -1 -1 -1 5
+```
 
-```
-Sample Input
-```
-1
-4
-1 -1 -2 5
-```
+
 Sample Output
 ```
 5 6
 ```
 ---
-Sample Input
-```
-8
-4 
-1 2 3 4
-6
-2 -1 2 3 4 -5
-1
-1
-6
--1 -2 -3 -4 -5 -6
-2
-1 -2
-3
-1 2 3
-1
--10
-6
-1 -1 -1 -1 -1 5
-```
 
-Sample Output
-```
+### Case - having negative integers
 
-```
-
----
 Sample Input
 ```
 1
@@ -141,6 +143,7 @@ Sample Input
 7 -9 1 2 -5 9
 ```
 
+Sample Output
 ```
 9 19 
 ```
