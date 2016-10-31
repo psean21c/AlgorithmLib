@@ -31,7 +31,9 @@ N
 A1 A2 A3 .. An
 ```
 Q = Number of TestCases
+
 N = Number of Elements
+
 A1 .. An = List of Integers
 
 
@@ -40,6 +42,7 @@ Expected output
 X Y
 ```
 X = maximum contiguous subarray
+
 Y = maximum non-contiguous subarray
 
 
