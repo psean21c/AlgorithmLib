@@ -1,5 +1,10 @@
+## Link
+Original question
 
-# Idea
+https://www.hackerrank.com/challenges/array-splitting
+
+
+## Idea
 
 Algorithm : count the number of occurence which you can split a list of numbers into two partitions when the sum of each list on both sides are equal (Get 1 point when the left & right can be equally divided into two parts)
  - Need to partition the array into 2 non-empty parts such that the sum of the elements in the left partition is equal to the sum of the elements in the right partition. If you can make such a move, you will get 1 point; otherwise, the game ends.
@@ -13,11 +18,6 @@ Algorithm : count the number of occurence which you can split a list of numbers 
   1           (3rd)
 
 ```
-
-## Link
-Original question
-
-https://www.hackerrank.com/challenges/array-splitting
 
 
 ### TestCases for different scenario
@@ -176,8 +176,7 @@ Output
 15
 ```
 
-### SourceCode 'Java' 
-
+## Highlight in SourceCode
 
 
 ```java
