@@ -12,7 +12,7 @@ https://en.wikipedia.org/wiki/Maximum_subarray_problem
 
 
 ## Highlight in SourceCode
-```
+```python
 def max_subarray(A):
     max_ending_here = max_so_far = 0
     for x in A:
