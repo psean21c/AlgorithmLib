@@ -3,15 +3,15 @@ Original question
 
 https://www.hackerrank.com/challenges/maxsubarray
 
-Need to count value of 
+Need to count  
 
 (1) the maximum contiguous subarray 
 
 (2) the maximum non-contiguous subarray 
 
-Initially Not only that I didn't get the proper values but I also made very complicated imeplementation.
-After looking at the Kadane-algorithm I was embarrassed with my code and also impressed by its simplicity.
-I realized that I didn't fully understand the function of max()
+Initially Not only that I didn't get the proper answer but I also made very complicated imeplementation.
+After looking at the Kadane-algorithm I was embarrassed with my code and also impressed by the simplicity of the algorithm.
+I realized that I didn't fully understand the power of the max() function because I only know what the max() function does but don't know how /when to use this function.
 
 ## Idea
 
