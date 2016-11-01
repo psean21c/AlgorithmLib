@@ -21,7 +21,7 @@ the contiguous subarray with the largest sum is 4, −1, 2, 1, with sum 6.
 https://en.wikipedia.org/wiki/Maximum_subarray_problem
 
 
-## Highlight in SourceCode
+## Highlight in Kadane-algorithm
 ```python
 def max_subarray(A):
     max_ending_here = max_so_far = 0
