@@ -9,17 +9,9 @@ Need to count
 
 (2) the maximum non-contiguous subarray 
 
-Initially Not only did not I get the proper answer but also I made very complicated implementation.
+Initially Not only did not I get the proper answer but also I made very complicated implementation. After looking at the Kadane-algorithm(* See the link below)  I was embarrassed with my code and also impressed by the simplicity of the algorithm. I realized that I didn't fully understand the power of the max() function because I only know what the max() function does but don't know how /when to use this function.
 
-After looking at the Kadane-algorithm(* See the link below) 
-I was embarrassed with my code and also impressed by the simplicity of the algorithm.
-
-I realized that I didn't fully understand the power of the max() function 
-because I only know what the max() function does but don't know how /when to use this function.
-
-하나의 중요한 개념을 정확하게 이해한다는 것은.. 어떤 면에서 .. 자신이 철저하게 틀렸다는 것을 인정해야 받아들이는 부분들이 더욱 많다. 
-
-속되게 말해서..개망신을 당해봐야 자기가 잘나지 않았다는 것을 깨닫는 것과 동일한 이치이다.
+하나의 중요한 개념을 정확하게 이해한다는 것은.. 어떤 면에서 .. 자신이 철저하게 틀렸다는 것을 인정해야 받아들이는 부분들이 더욱 많다. 속되게 말해서..개망신을 당해봐야 자기가 잘나지 않았다는 것을 깨닫는 것과 동일한 이치이다.
 
 
 ## Idea
@@ -38,12 +30,16 @@ Korean for my dear friends
 일단 아래와 같은 정수들의 리스트가 있다고 가정을 하고..
 
 2 -1 2 3 4 -5
+
 그러면 2번째(-1)와 마지막 6번째(-5) 원소는 음의 정수라는 것을 한 눈에 볼 수 있습니다..
+
 그리고 그 음의 정수를 제외하고 양의 정수들의 합만 구해보면..괄호{  } 안의 숫자가 그 중간 합이 될 겁니다.
-
-
 {2} -1 {9} -5
+
 여기서.. 처음 리스트로 돌아가서...
+
+2 -1 2 3 4 -5
+
 두번째 요구사항..(* 이것은 어렵지 않겠지.. 음수의 수는 건너뛰고 양의 수만 더하면 되니까..)
 가운데 음수를 제외하고 양의 수만 더한 최종 값을 구하려고 하면 답은 {2} + {9}= 11
 
