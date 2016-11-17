@@ -9,15 +9,18 @@ Need to count
 
 (2) the maximum non-contiguous subarray 
 
-Initially Not only that I didn't get the proper answer but I also made very complicated implementation.
-
+Initially Not only did not I get the proper answer but also I made very complicated implementation.
 
 After looking at the Kadane-algorithm(* See the link below) 
 I was embarrassed with my code and also impressed by the simplicity of the algorithm.
 
-
 I realized that I didn't fully understand the power of the max() function 
 because I only know what the max() function does but don't know how /when to use this function.
+
+하나의 중요한 개념을 정확하게 이해한다는 것은.. 어떤 면에서 .. 자신이 철저하게 틀렸다는 것을 인정해야 받아들이는 부분들이 더욱 많다. 
+
+속되게 말해서..개망신을 당해봐야 자기가 잘나지 않았다는 것을 깨닫는 것과 동일한 이치이다.
+
 
 ## Idea
 
