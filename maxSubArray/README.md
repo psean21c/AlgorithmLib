@@ -9,34 +9,44 @@ Need to count
 
 (2) the maximum non-contiguous subarray 
 
-Initially Not only that I didn't get the proper answer but I also made very complicated imeplementation.
-After looking at the Kadane-algorithm I was embarrassed with my code and also impressed by the simplicity of the algorithm.
-I realized that I didn't fully understand the power of the max() function because I only know what the max() function does but don't know how /when to use this function.
+Initially Not only that I didn't get the proper answer but I also made very complicated implementation.
+
+
+After looking at the Kadane-algorithm(* See the link below) 
+I was embarrassed with my code and also impressed by the simplicity of the algorithm.
+
+
+I realized that I didn't fully understand the power of the max() function 
+because I only know what the max() function does but don't know how /when to use this function.
 
 ## Idea
 
-Algorithm :  the maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array of numbers which has the largest sum. For example, for the sequence of values −2, 1, −3, 4, −1, 2, 1, −5, 4; 
+### Algorithm : contiguous subarray
+
+```
+the maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array of numbers which has the largest sum. 
+For example, for the sequence of values −2, 1, −3, 4, −1, 2, 1, −5, 4; 
 the contiguous subarray with the largest sum is 4, −1, 2, 1, with sum 6.
+```
 
-https://en.wikipedia.org/wiki/Maximum_subarray_problem
-
+Korean for my dear friends
 ```
 일단 아래와 같은 정수들의 리스트가 있다고 가정을 하고..
 
-
 2 -1 2 3 4 -5
-그러면 2번째(-1)와 마지막 6번째(-5) 원소는 음의 정수라는 것을 한 눈에 볼 수 있지..
-그리고 그 음의 정수를 제외하고 양의 정수들의 합만 구해보면..괄호{  } 안의 숫자가 그 합이 될 거야..
+그러면 2번째(-1)와 마지막 6번째(-5) 원소는 음의 정수라는 것을 한 눈에 볼 수 있습니다..
+그리고 그 음의 정수를 제외하고 양의 정수들의 합만 구해보면..괄호{  } 안의 숫자가 그 중간 합이 될 겁니다.
 
 
 {2} -1 {9} -5
 여기서.. 처음 리스트로 돌아가서...
-첫번째 요구사항 가운데 음수를 제외하고 양의 수만 더한 최종 값을 구하려고 하면 답은 {2} + {9}= 11
-(* 이것은 어렵지 않겠지.. 음수의 수는 건너뛰고 양의 수만 더하면 되니까..)
+두번째 요구사항..(* 이것은 어렵지 않겠지.. 음수의 수는 건너뛰고 양의 수만 더하면 되니까..)
+가운데 음수를 제외하고 양의 수만 더한 최종 값을 구하려고 하면 답은 {2} + {9}= 11
 
+첫번째 요구사항은 ..
+가운데 음의 정수를 포함해서 가장 큰 합을 구하려고 하면 {2} + {-1} + {9} = 10 이 됩니다.
 
-두번째 요구사항은 ..
-가운데 음의 정수를 포함해서 가장 큰 합을 구하려고 하면 {2} + {-1} + {9} = 10 이 되겠지..
+BigTestCase.md 에 보면 극단적으로 많은 테스트 케이스가 있으니 그것까지 통과하면 만점..
 
 ```
 
@@ -180,6 +190,12 @@ Sample Output
 
 
 ## Highlight in Kadane-algorithm
+
+https://en.wikipedia.org/wiki/Maximum_subarray_problem
+
+It looks so simply, but - To be honest - I was very impressed by the power of max() function.
+It is always different when you see it and when you touch it.
+
 ```python
 def max_subarray(A):
     max_ending_here = max_so_far = 0
