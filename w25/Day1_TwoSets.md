@@ -45,6 +45,8 @@ Below are other Test cases.
 ```
 
 ```java
+
+// Java
 public static void main(String[] args) {
 	run();
 
@@ -146,6 +148,8 @@ static long[] primeFactors(long numbers) {
 ```
 
 ```python
+
+# Python
 N,M = input().strip().split(' ')
 N,M = [int(N),int(M)]
 A = map(int,input().strip().split(' '))
