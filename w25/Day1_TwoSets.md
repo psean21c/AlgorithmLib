@@ -5,8 +5,10 @@
 
 https://www.hackerrank.com/contests/w25/challenges/between-two-sets
 
-Consider two sets of positive integers, A = {a0,a1,...aN} B = {b0,b1,...bN}
+Consider two sets of positive integers, A = {a0 ,a1, .., aN} B = {b0, b1, .., bN}
+
 A positive integer - x - is between sets A and B if the following conditions are satified;
+
 
 1. All elements in A are factors of x.
 2. x is a factor of all elements in B.
@@ -29,6 +31,12 @@ A = {2,3}
 B = {16,32,96}
 
 The integers (x) that are between A = {2,4} and B = {16,32,96} are 4, 8, and 16.
+
+In conclusion, x has to be
+
+LCM(Least Common Multiple) for A
+
+GCD(Greatest Common Divisor) for B
 
 
 Below are other Test cases.
