@@ -38,7 +38,9 @@ public class A {
 ```
 
 When you find {1}, call findNext() 
+
 First, In order to update it with {2} 
+
 Second, continue doing it with its next element
 
 ```
