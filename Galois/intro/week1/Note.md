@@ -10,3 +10,9 @@ after replacing the first $ sign with \ and (and the second with \ and),
 we obtain 
 ```
 α=X^3+X.
+
+
+
+http://www.jmilne.org/math/CourseNotes/ft.html
+
+ Ian Stewart, "Galois theory
