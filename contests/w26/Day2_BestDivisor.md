@@ -5,10 +5,12 @@ then she thinks the smaller number is better. For example, Kristen thinks that  
 
 Given an integer, , can you find the divisor of  that Kristin will consider to be the best?
 
+Input
 ```
 12
 ```
 
+Output
 ```
 6
 ```
@@ -18,6 +20,7 @@ The divisor whose digits sum to the largest number is 6 (which, having only one 
 Thus, we print 6 as our answer.
 
 ```python
+
 def sum_digits(n):
     s = 0
     while n:
@@ -26,8 +29,6 @@ def sum_digits(n):
     return s
          
 N = int(input().strip())
-
-
 
 B = [i for i in range(1, N+1) if N%i ==0]
  
@@ -43,3 +44,4 @@ for i in B:
  
 print(best)
 ```
+
