@@ -18,7 +18,8 @@ For n % 7 in [0, 1], the first player loses, otherwise the first player wins.
 
 The anchor:
 Clearly, for 0 or 1 stones, the first player has no move, so he loses. 
-For any of 2, 3, 4, 5, or 6 stones, the first player can make a move that leaves 0 or 1 stones for the second player, 
+For any of 2, 3, 4, 5, or 6 stones, 
+the first player can make a move that leaves 0 or 1 stones for the second player, 
 so the first player wins.
 
 Induction step: 
@@ -32,7 +33,8 @@ or
 
 all of which mean – by induction – that the second player will be in a winning position. 
 Thus, for n % 7 in [0, 1], the first player loses.
-If n % 7 in [2, 3, 4, 5, 6], there's always a move to leave the second player with an m % 7 in [0, 1], 
+If n % 7 in [2, 3, 4, 5, 6], 
+there's always a move to leave the second player with an m % 7 in [0, 1], 
 thus – again by induction – forcing a loss on the second player, leaving the first player to win.
 
 That concludes the proof.
