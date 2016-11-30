@@ -77,9 +77,11 @@ TC-8
 
 ### Reference
 
-[Grundy Theory](https://brilliant.org/wiki/sprague-grundy-theorem/)
+[Wiki for Nim Theory](https://en.wikipedia.org/wiki/Nim)
 
-[NIM theory by MIT](http://web.mit.edu/sp.268/www/nim.pdf)
+[NIM Theory by MIT](http://web.mit.edu/sp.268/www/nim.pdf)
+
+[Grundy Theory](https://brilliant.org/wiki/sprague-grundy-theorem/)
 
 
 ### Others' solution
