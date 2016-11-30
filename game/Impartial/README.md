@@ -59,5 +59,6 @@ A can keep forcing that position, while B cannot force it on A.
 10   First
 
 ```
+[Question in HackerRank](https://www.hackerrank.com/challenges/game-of-stones-1/)
 
-https://www.hackerrank.com/challenges/game-of-stones-1/
+[PDF NIM Theory](https://www.cs.umd.edu/~gasarch/COURSES/250/S15/nimnotes.pdf)
