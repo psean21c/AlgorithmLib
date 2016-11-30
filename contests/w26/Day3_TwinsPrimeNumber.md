@@ -1,9 +1,11 @@
-# Twins ( 
+# Twins 
 
 Count pairs of prime numbers having the difference of 2
 
-https://www.hackerrank.com/contests/w26/challenges/twins
+[Original link in Hackerrank](https://www.hackerrank.com/contests/w26/challenges/twins)
 
+
+Constraints
 ```
 1 <= n <= m <= 1,000,000,000
 m - n <= 1,000,000
@@ -19,6 +21,7 @@ output
 3
 ```
 
+Explanation
 ```
 # 1) List of prime numbers in the range between 3 and 13
 [3,5,7,11,13]
@@ -31,9 +34,11 @@ output
 
 ```
 
-
+### Solution : Python version
 
 ```python
+#Author: Simon Park
+
 import sys
 
 def sum_digits(n):
@@ -67,8 +72,10 @@ for i in B:
 print(best)
 ```
 
+### Solution : C++ version
 
-```c
+```cpp
+// Author: Simon Park
 #include <iostream>
 #include <algorithm>
 using namespace std;
@@ -105,7 +112,7 @@ int main() {
 //	m = 1000000;
 	cin >> n >> m;
 	solve(n,m);
-  return 0;
+	return 0;
 }
 
 
