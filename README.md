@@ -9,3 +9,8 @@ Contents
 
 [HackerRank](https://www.hackerrank.com)
 
+
+---
+
+[GitHub Syntax Link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
