@@ -155,7 +155,8 @@ public class StoneDivision {
             }            
             // Now we are dealing with just odd numbers
             
-            // This improves performance since if First wins using s near to s_max we'll exit from the recursion sooner
+            // This improves performance since 
+	    // if First wins using s near to s_max we'll exit from the recursion sooner
             Collections.reverse(set);            
             System.out.println(isWinnable(n, set) ? "First" : "Second");                    
         }
