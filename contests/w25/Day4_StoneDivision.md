@@ -85,7 +85,89 @@ TC-8
 ### Others' solution
 
 ```java
-// uwi
+// Hjalmar Basile (Italy)
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+
+
+public class StoneDivision {    
+
+   public static boolean isWinnable(long n, ArrayList<Long> set) {
+       if(set.size() == 0)
+           return false;
+       
+       if(set.contains(n))
+           return true;
+   
+       for(int i = 0; i < set.size(); i++) {
+           long subN = n / set.get(i);
+           ArrayList<Long> subSet = new ArrayList<>();
+           for (int j = 0; j < set.size(); j++) {
+               long d = set.get(j);
+               if(subN % d == 0)
+                   subSet.add(d);
+           }
+           if(!isWinnable(subN, subSet))
+               return true;
+           // This holds because we are dealing with odd numbers
+           // and because of Grundy's theorem too : 
+           // nimsum(x,x,x,x,...,x) = x if we have an odd number of xs
+       }
+       
+       // If we don't win on any subgame then
+       return false;
+   }
+    
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        long n = scanner.nextLong();
+        int m = scanner.nextInt();        
+        ArrayList<Long> set = new ArrayList<>();
+        
+        boolean easyWin = false;
+        for(int i = 0; i < m; i++) {
+            long s = scanner.nextLong();
+            if (n % s == 0) {
+                set.add(s);
+                if (s % 2 == 0 || s == n) {
+                    easyWin = true;
+                }
+            }
+        }
+        scanner.close();
+        
+        if(easyWin) {
+            System.out.println("First");
+            // If s == n it's trivial, in case of s % 2 == 0
+            // just split in a even number of piles and copy the opponent strategy 
+        } else if (set.size() == 0) {
+            System.out.println("Second");
+            // First can't move
+        } else {
+            // Now we have a non empty set of divisors of n,
+            // also they are all odd
+            
+            // We can get rid of the 2^k component of n, since it's undividable
+            while(n % 2 == 0) {
+                n /= 2;
+            }            
+            // Now we are dealing with just odd numbers
+            
+            // This improves performance since if First wins using s near to s_max we'll exit from the recursion sooner
+            Collections.reverse(set);            
+            System.out.println(isWinnable(n, set) ? "First" : "Second");                    
+        }
+    }
+    
+}
+
+
+```
+
+```java
+// uwi (Japan)
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -283,4 +365,35 @@ if foo(n,a):
     print("First")
 else:
     print("Second")
+```
+
+
+```python
+x, m = map(int, input().split())
+ss = set(map(int, input().split()))
+
+# x,m = 883086389887727025,10
+# ss ={5, 15, 51, 57, 111, 465, 609, 12576855, 815897745, 1791252075}
+
+def mex(ns):
+    i = 0
+    while i in ns:
+        i += 1
+    return i
+
+memo = {}
+def g(n):
+    if n in memo:
+        return memo[n]
+    gs = set()
+    for s in ss:
+        if n % s == 0:
+            gs.add(g(n // s) if s % 2 == 1 else 0)
+            
+    ret = mex(gs)
+    memo[n] = ret
+    return ret
+
+print(x,m)
+print('First' if g(x) else 'Second')
 ```
