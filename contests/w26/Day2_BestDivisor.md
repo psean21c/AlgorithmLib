@@ -82,9 +82,7 @@ best = B[0]
 greatest_sum = 0
  
 for i in B:
-    next_digit = i
-    if i >= 10:
-        next_digit = sum_digits(i)
+    next_digit = sum_digits(i)
     
     if next_digit > greatest_sum:
         best = i
