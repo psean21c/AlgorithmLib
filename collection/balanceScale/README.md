@@ -28,6 +28,10 @@ However the challenge here is that you don't know which side you have to balance
 
 
 ### Requirement
+Below is the original question;
 
 ![balancetree1](https://cloud.githubusercontent.com/assets/5623445/20761471/1aa93756-b6f1-11e6-80c3-975a3e37b2e2.PNG)
 ![balancetree2](https://cloud.githubusercontent.com/assets/5623445/20761470/1aa73938-b6f1-11e6-9704-44d4921372e0.PNG)
+
+
+[Original Picture](https://docs.google.com/drawings/d/1jMC3wjQqX3_h9pdXYd1OWP2iPwcxg7k4ti07uZBgqg4/edit)
