@@ -45,3 +45,50 @@ for i in B:
 print(best)
 ```
 
+TestCase 1
+```
+n = 12
+B = [1, 2, 3, 4, 6, 12]
+=> 6
+```
+
+
+TestCase 2
+```
+n =100000
+[1, 2, 4, 5, 8, 10, 16, 20, 25, 32, 40, 50, 80, 100, 125, 160, 200, 250, 400, 500, 625, 800, 1000, 1250, 2000, 2500, 3125, 4000, 5000, 6250, 10000, 12500, 20000, 25000, 50000, 100000]
+=> 625
+```
+
+
+TestCase 3
+```
+# Below is the extreme test case
+B = [1,13,31,52]
+=> 52
+```
+
+
+```python
+
+def sum_digits(n):
+    # The same as above
+
+best = B[0]
+greatest_sum = 0
+ 
+for i in B:
+    next_digit = i
+    if i >= 10:
+        next_digit = sum_digits(i)
+    
+    if next_digit > greatest_sum:
+        best = i
+        greatest_sum = next_digit
+
+ 
+print(best)
+
+```
+
+
