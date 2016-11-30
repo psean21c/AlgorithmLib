@@ -11,6 +11,8 @@ Given the number of stones, find and print the name of the winner (i.e.,  or ) o
 
 
 ```
+# By ende76 @HackerRank
+
 It's proof by induction.
 
 The hypothesis: 
@@ -42,8 +44,20 @@ That concludes the proof.
 The invariant is, that once a player A can force [0, 1] on player B, 
 A can keep forcing that position, while B cannot force it on A.
 
-# By @ende76
+
 ```
 
+```
+1    Second
+2    First
+3    First
+4    First
+5    First
+6    First
+7    Second
+...
+10   First
+
+```
 
 https://www.hackerrank.com/challenges/game-of-stones-1/
