@@ -20,6 +20,7 @@ The divisor whose digits sum to the largest number is 6 (which, having only one 
 Thus, we print 6 as our answer.
 
 ```python
+# Version -1
 
 def sum_digits(n):
     s = 0
@@ -67,10 +68,13 @@ TestCase 3
 B = [1,13,31,52]
 => 52
 ```
-
+Because the version 1 didn't pass the case for TC-3, (even though the list was made up)
+It print 13 not 52.
+Version -2 was fixed to accomodate this case.
 
 ```python
 
+# Version -2
 def sum_digits(n):
     # The same as above
 
@@ -90,5 +94,3 @@ for i in B:
 print(best)
 
 ```
-
-
