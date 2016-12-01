@@ -107,6 +107,56 @@ int main() {
 
 
 ```
+### Solution : C++ version 2
+
+```cpp
+#include <iostream>
+using namespace std;
+
+long n,m;
+
+void solve(long n,long m) {
+
+    int cnt = 0;
+	int before = n;
+	int prime_cnt = 0;
+    
+    for (int i=n; i<m+1; i++){
+        bool prime=true;
+
+        if(i == 1) prime=false;
+        if((i%2==0) && (i!= 2)) prime=false;
+
+        if(prime){
+            for (int j=3; j*j<=i; j=j+2) {
+                if (i % j == 0) {
+                    prime=false;
+                    break;
+                }
+            }
+        }
+
+        if(prime) {
+        	if (prime_cnt ==0) {
+        		before = i;
+        		prime_cnt++;
+        	}
+        	if (i == (before+2)) cnt++;
+
+        	before = i;
+        }
+    }
+    printf("%d\n",cnt);
+
+}
+
+int main() {
+	cin >> n >> m;
+	solve(n,m);
+    return 0;
+
+}
+```
 
 Other Test Cases
 ```
@@ -124,7 +174,3 @@ Other Test Cases
 >> 190
 	
 ```
-
-	
-	
-
