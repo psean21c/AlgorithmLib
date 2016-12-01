@@ -22,19 +22,21 @@ Thus, we print 6 as our answer.
 ```python
 # Version -1
 
+# sum function
 def sum_digits(n):
     s = 0
     while n:
         s += n % 10
         n //= 10
     return s
-         
-N = int(input().strip())
 
+# input
+N = int(input().strip())
 B = [i for i in range(1, N+1) if N%i ==0]
  
+# logic 
 best = B[0]
- 
+
 for i in B:
     #print(i, end=" ")  
     compare = i
@@ -73,10 +75,14 @@ It print 13 not 52.
 Version -2 was fixed to accomodate this case.
 
 ```python
-
 # Version -2
+
+# sum function
 def sum_digits(n):
-    # The same as above
+..
+# input
+..
+   # The same as above
 
 best = B[0]
 greatest_sum = 0
