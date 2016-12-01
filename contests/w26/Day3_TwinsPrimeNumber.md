@@ -118,7 +118,7 @@ int main() {
 
 ```
 
-Test Cases
+Other Test Cases
 ```
 	n = 999000000;
 	m = 1000000000;
