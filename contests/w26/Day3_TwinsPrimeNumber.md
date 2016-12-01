@@ -38,38 +38,28 @@ Explanation
 
 ```python
 #Author: Simon Park
-
 import sys
+import math
 
-def sum_digits(n):
-    s = 0
-    while n:
-        s += n % 10
-        n //= 10
-    return s
+N,M = input().strip().split(' ')
+n,m = [int(N),int(M)]
 
-#n = int(input().strip())
-n = 100000
+#n,m = 2,100
+#n,m = 10,1000000
 
-B = [i for i in range(1, n+1) if n%i ==0]
-# B = [1, 2, 3, 4, 6, 12]
-# B = [1,13,31,52]
-print(B)
+#print(str(n) + " " + str(m))
+primes = list([x for x in range(n, m+1) if all(x % y != 0 for y in range(2,math.ceil(math.sqrt(x)) + 1))]) 
  
-best = B[0]
-greatest_sum = 0
- 
-for i in B:
-    next_digit = i
-    if i >= 10:
-        next_digit = sum_digits(i)
+# print(primes)
+before = primes[0]
+
+cnt = 0
+for i in primes:
+    if (i - before) == 2:
+       cnt += 1 
+    before = i
     
-    if next_digit > greatest_sum:
-        best = i
-        greatest_sum = next_digit
-
- 
-print(best)
+print(cnt)
 ```
 
 ### Solution : C++ version
