@@ -73,9 +73,9 @@ using namespace std;
 long n,m;
 
 void solve(long n,long m) {
-	int cnt = 0;
+    int cnt = 0;
 
-	int before = n;
+    int before = n;
     for (int i=n; i<m+1; i++){
         bool prime=true;
 
@@ -107,6 +107,9 @@ int main() {
 
 
 ```
+* The 1st version was timed out because it takes more time to validate prime numbers - It's not necessary to validate even numbers.
+* The `int before = n` means that I asumed that first number of range(n,m) was prime number - which is not always necessary.
+
 ### Solution : C++ version 2
 
 ```cpp
