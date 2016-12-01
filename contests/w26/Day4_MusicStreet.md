@@ -21,22 +21,23 @@ Explain
 ```
 m (margin) = h -(last - first) 
 h1 =1
-h2 =5
+h2 =4
 
-m 
+m (margin)
 0 : X
 1 : X
-2 : 
-3
-4
-5
-6
-7
-8
-9
-10
+2 :  
+3 :
+4 :
+5 :
+6 :
+7 :
+8 :
+9 : X
+
 
 ```
+![parade](https://cloud.githubusercontent.com/assets/5623445/20814898/99fd72f8-b7e9-11e6-969d-c14e26292f5c.PNG)
 
 ```cpp
 #include <iostream>
