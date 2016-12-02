@@ -58,6 +58,26 @@ int main() {
 
 ```
 
+```
+N = 5
+(a,b)=(1,2),(x,y)=(1,2)
+(a,b)=(1,2),(x,y)=(3,1)
+(a,b)=(1,3),(x,y)=(2,1)
+(a,b)=(1,4),(x,y)=(1,1)
+(a,b)=(2,3),(x,y)=(1,1)
+
+
+	if(a1==a && b1 ==b){
+
+	} else {
+		cnt++;
+	}
+	a1 = a;
+	b1 = b;
+
+
+```
+
 Test cases
 ```
 4 => 2
@@ -67,4 +87,10 @@ Test cases
 
 1000 => 12817
 
+For a given number N[4] # of counts = 2		[0]
+For a given number N[30] # of counts = 93	[0]
+For a given number N[11] # of counts = 18	[0]
+For a given number N[100] # of counts = 566	[0.072]
+For a given number N[150] # of counts = 1027	[0.291]
+For a given number N[1000] # of counts = 12817	[584.798]
 ```
