@@ -15,3 +15,14 @@ m = set([(a,b) for a in range(1,n+1) for b in range(1,n+1) for x in range(1,n) f
 #print(m)
 print(len(m)//2)
 ```
+
+Test cases
+```
+4 => 2
+11 => 18
+30 => 93
+100 => 566
+
+1000 => 12817
+
+```
