@@ -5,6 +5,9 @@
 
 https://www.hackerrank.com/contests/w25/challenges/stone-division
 
+[Nim](https://en.wikipedia.org/wiki/Nim)
+[GF](https://en.wikipedia.org/wiki/Finite_field)
+
 ### Test Cases
 
 TC-0
