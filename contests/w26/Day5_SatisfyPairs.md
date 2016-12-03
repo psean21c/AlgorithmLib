@@ -2,10 +2,13 @@
 
 https://www.hackerrank.com/contests/w26/challenges/pairs-again
 
-Given a positive integer n, find out the number of pairs of positive integers (a,b) where a < b,
+Given a positive integer n, 
+
+find out the number of pairs of positive integers (a,b) where a < b,
+
 that exist such that `x*a + y*b = n` (where x and y are positive integers)
 
-4 <= n <= 3*10^5
+4 <= n <= (300,000 = 3*10^5)
 
 ### Python Solution
 ```python
@@ -137,8 +140,7 @@ N => Count
 10000 =>  235,955
 100000 => 3,825,502
 
-
-
+==============================
 N = 5  => Count = 4
 (a,b)=(1,2),(x,y)=(1,2)
 (a,b)=(1,2),(x,y)=(3,1)
@@ -181,12 +183,6 @@ For a given number N[100000] # of counts = 3825502	[751.499]
 
 ================================================================
 # CPP Version-3
-	if(n%gcd(a,b) !=0) isContinue = false;
-	a*x + b*y = N
-	if N is not divisible by gcd(a,b), there is no answer (x,y) satisfying equation.
-	So skip. However it doesn't improve performance more than expected.
-	On the contrary, it reduced performance because it has to call gcd(a,b) everytime when it doesn't have to do it.
-	
 For a given number N[8] # of counts = 10	[0]
 For a given number N[11] # of counts = 18	[0]
 For a given number N[30] # of counts = 93	[0]
@@ -195,6 +191,25 @@ For a given number N[150] # of counts = 1027	[0.001]
 For a given number N[1000] # of counts = 12817	[0.059]
 For a given number N[10000] # of counts = 235955	[6.113]
 For a given number N[100000] # of counts = 3825502	[879.826]
+
+	if(n%gcd(a,b) !=0) isContinue = false;
+	a*x + b*y = N
+	if N is not divisible by gcd(a,b), there is no answer (x,y) satisfying equation.
+	
+	i.e. 3x + 6y = 10
+	There are no answer (x,y) which satisfy the above equation.
+	3(1) + 6(1) = 9 != 10
+	3(-1) + 6(2) = 9 != 10
+	
+	Take another example, 	2x + 4y = 5
+	Intuitively no matter what values you take for x and y, the value of left will be even number.
+	
+	According to the Theory, Let d be the greatest common divisor; d = gcd(a,b)
+	Also N is not divisible by d, there are no answer for (x,y)
+	
+	So it skipped. However it doesn't improve performance more than expected.
+	On the contrary, it reduced performance because it has to call gcd(a,b) everytime when it doesn't have to do it.
+	
 
 ```
 
