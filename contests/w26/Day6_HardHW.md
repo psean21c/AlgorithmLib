@@ -133,10 +133,11 @@ Test cases
 ```
 Let's say N = 10
 i = 1                2            8      9 10
-j= 1,2,3,.. 8
-k =8,7,6,.. 1
+-------------       ---------     ----   ------
+j= 1,2,3,.. 8        1,2,..7       1
+k =8,7,6,.. 1        7,6,..1       1
 
-At each statement, i + j + k = 10, So you need to run O(N*N)
+At each statement, "i + j + k = 10" needs to be satisfied, So you need to run O(N*N)
 
 	for(int i=1;i<=n-2;i++){
 		for(int j=1;i+j<=n-1;j++){
