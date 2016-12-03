@@ -123,39 +123,36 @@ void solve(int n){
 	cout << cnt << endl;
 
 }
-
-
-
 ```
 
+Test cases
 ```
-N = 5
+N => Count
+4 => 2
+11 => 18
+30 => 93
+100 => 566
+150 => 1,027
+1000 => 12,817
+10000 =>  235,955
+100000 => 3,825,502
+
+
+
+N = 5  => Count = 4
 (a,b)=(1,2),(x,y)=(1,2)
 (a,b)=(1,2),(x,y)=(3,1)
 (a,b)=(1,3),(x,y)=(2,1)
 (a,b)=(1,4),(x,y)=(1,1)
 (a,b)=(2,3),(x,y)=(1,1)
 
-
-	if(a1==a && b1 ==b){
-
-	} else {
-		cnt++;
-	}
-	a1 = a;
-	b1 = b;
-
+There are duplicate (1,2) for (a,b) 
 
 ```
 
-Test cases
+Different performace based on different implementation
 ```
-4 => 2
-11 => 18
-30 => 93
-100 => 566
-1000 => 12817
-
+# Python Version
 For a given number N[4] # of counts = 2		[0]
 For a given number N[11] # of counts = 18	[0]
 For a given number N[30] # of counts = 93	[0]
@@ -200,3 +197,6 @@ For a given number N[10000] # of counts = 235955	[6.113]
 For a given number N[100000] # of counts = 3825502	[879.826]
 
 ```
+
+---
+[Explain Diophantime Equation](http://math.stackexchange.com/questions/20717/how-to-find-solutions-of-linear-diophantine-ax-by-c)
