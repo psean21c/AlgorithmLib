@@ -104,4 +104,13 @@ For a given number N[11] # of counts = 18	[0]
 For a given number N[100] # of counts = 566	[0.072]
 For a given number N[150] # of counts = 1027	[0.291]
 For a given number N[1000] # of counts = 12817	[584.798]
+================================================================
+For a given number N[8] # of counts = 10	[0]
+For a given number N[30] # of counts = 93	[0]
+For a given number N[11] # of counts = 18	[0]
+For a given number N[100] # of counts = 566	[0]
+For a given number N[150] # of counts = 1027	[0.001]
+For a given number N[1000] # of counts = 12817	[0.062]
+For a given number N[10000] # of counts = 235955	[7.523]
+
 ```
