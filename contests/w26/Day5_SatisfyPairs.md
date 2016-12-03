@@ -24,9 +24,12 @@ m = set([(a,b) for a in range(1,n+1) for b in range(a+1,n+1) for x in range(1,n)
 #print(m)
 print(len(m))
 
-
 ```
+
+### C++ Solution
+
 ```cpp
+// 1) Version-1
 #include <iostream>
 using namespace std;
 
@@ -67,6 +70,30 @@ int main() {
 	return 0;
 }
 
+// 2) Version-2
+void solve(int n){
+	time_t t= clock();
+	int mid = n / 2;
+
+	int cnt = 0;
+	for(int a=1;a<=mid;a++){
+		for(int b=a+1;a+b<=n;b++){
+			bool isContinue = true;
+			for(int x=1;x<n and a*x <n and isContinue;x++){
+				for(int y=1;y<n and a*x + b*y <=n and isContinue;y++){
+					if((a*x+b*y) == n) {
+						cnt++;
+						isContinue = false;
+					}
+				}
+			}
+		}
+	}
+	cout << cnt << endl;
+	//cout << "For a given number N[" << n << "] # of counts = " << cnt <<"\t[" << (double)(clock()-t)/CLOCKS_PER_SEC  <<"]"<<  endl;
+
+}
+
 ```
 
 ```
@@ -95,22 +122,29 @@ Test cases
 11 => 18
 30 => 93
 100 => 566
-
 1000 => 12817
 
 For a given number N[4] # of counts = 2		[0]
-For a given number N[30] # of counts = 93	[0]
 For a given number N[11] # of counts = 18	[0]
+For a given number N[30] # of counts = 93	[0]
 For a given number N[100] # of counts = 566	[0.072]
 For a given number N[150] # of counts = 1027	[0.291]
 For a given number N[1000] # of counts = 12817	[584.798]
 ================================================================
 For a given number N[8] # of counts = 10	[0]
-For a given number N[30] # of counts = 93	[0]
 For a given number N[11] # of counts = 18	[0]
+For a given number N[30] # of counts = 93	[0]
 For a given number N[100] # of counts = 566	[0]
 For a given number N[150] # of counts = 1027	[0.001]
 For a given number N[1000] # of counts = 12817	[0.062]
 For a given number N[10000] # of counts = 235955	[7.523]
-
+================================================================
+For a given number N[8] # of counts = 10	[0]
+For a given number N[11] # of counts = 18	[0]
+For a given number N[30] # of counts = 93	[0]
+For a given number N[100] # of counts = 566	[0.001]
+For a given number N[150] # of counts = 1027	[0]
+For a given number N[1000] # of counts = 12817	[0.039]
+For a given number N[10000] # of counts = 235955	[4.456]
+For a given number N[100000] # of counts = 3825502	[751.499]
 ```
