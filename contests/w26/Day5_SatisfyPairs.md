@@ -126,6 +126,40 @@ void solve(int n){
 	cout << cnt << endl;
 
 }
+
+// Version-4
+#include <iostream>
+using namespace std;
+
+void solve(int n){
+    int mid = n / 2;
+    int cnt = 0;
+
+    for(int a=1;a<=mid;a++){
+        for(int b=a+1; a+b<=n ; b++){
+            bool isContinue = true;
+            for(int x=1; x<n and a*x <n and isContinue; x++){
+            	int y = n-a*x;
+            	if(y%b==0 and y/b >0) {
+            		cnt++;
+            		isContinue = false;
+            	}
+            }
+        }
+    }
+    cout << cnt << endl;
+
+}
+
+int main() {
+
+	int n = 0;
+	cin >> n;
+	solve(n);
+
+	return 0;
+}
+
 ```
 
 Test cases
@@ -211,6 +245,16 @@ For a given number N[100000] # of counts = 3825502	[879.826]
 	On the contrary, it reduced performance because it has to call gcd(a,b) everytime when it doesn't have to do it.
 	
 
+================================================================
+# CPP Version-4
+For a given number N[8] # of counts = 10	[0]
+For a given number N[11] # of counts = 18	[0]
+For a given number N[30] # of counts = 93	[0]
+For a given number N[100] # of counts = 566	[0]
+For a given number N[150] # of counts = 1027	[0.001]
+For a given number N[1000] # of counts = 12817	[0.035]
+For a given number N[10000] # of counts = 235955	[2.841]
+For a given number N[100000] # of counts = 3825502	[????]
 ```
 
 ---
