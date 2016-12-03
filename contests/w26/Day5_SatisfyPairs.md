@@ -254,7 +254,29 @@ For a given number N[100] # of counts = 566	[0]
 For a given number N[150] # of counts = 1027	[0.001]
 For a given number N[1000] # of counts = 12817	[0.035]
 For a given number N[10000] # of counts = 235955	[2.841]
-For a given number N[100000] # of counts = 3825502	[????]
+For a given number N[100000] # of counts = 3825502	[366.63]
+
+    for(int a=1 ...){
+        for(int b=a+1  ...){
+            for(int x=1 ...){
+            	int y = n-a*x;
+            	if(y%b==0 and y/b >0) {
+            		cnt++;
+            		isContinue = false;
+            	}
+            	// In order to have valid answer of y (based on x), ax + by = n (a,b,x,y are all positive integer)
+		// (n-a*x)%b == 0 and (n-a*x)/b > 0 Need to be satisfied.. 
+		// 1*x + 2*y = 5, 
+		// 2*y = 5 - 1*x
+		// y = (5 - 1*x) / 2
+		// y = (5 - 1*1) / 2 = 4/2 = 2, when x = 1
+		//
+            }
+        }
+    }
+    
+    
+    
 ```
 
 ---
