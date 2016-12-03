@@ -71,8 +71,10 @@ int main() {
 }
 
 // 2) Version-2
+//#include <time.h>
+
 void solve(int n){
-	time_t t= clock();
+	//time_t t= clock();
 	int mid = n / 2;
 
 	int cnt = 0;
@@ -93,6 +95,36 @@ void solve(int n){
 	//cout << "For a given number N[" << n << "] # of counts = " << cnt <<"\t[" << (double)(clock()-t)/CLOCKS_PER_SEC  <<"]"<<  endl;
 
 }
+
+// 3) Version-3
+int gcd(int a, int b) {
+    return b == 0 ? a : gcd(b, a % b);
+}
+
+void solve(int n){
+	int mid = n / 2;
+
+	int cnt = 0;
+	for(int a=1;a<=mid;a++){
+		for(int b=a+1;a+b<=n;b++){
+			bool isContinue = true;
+			if(n%gcd(a,b) !=0) isContinue = false;
+
+			for(int x=1;x<n and a*x <n and isContinue;x++){
+				for(int y=1;y<n and a*x + b*y <=n and isContinue;y++){
+					if((a*x+b*y) == n) {
+						cnt++;
+						isContinue = false;
+					}
+				}
+			}
+		}
+	}
+	cout << cnt << endl;
+
+}
+
+
 
 ```
 
@@ -131,6 +163,7 @@ For a given number N[100] # of counts = 566	[0.072]
 For a given number N[150] # of counts = 1027	[0.291]
 For a given number N[1000] # of counts = 12817	[584.798]
 ================================================================
+# CPP Version-1
 For a given number N[8] # of counts = 10	[0]
 For a given number N[11] # of counts = 18	[0]
 For a given number N[30] # of counts = 93	[0]
@@ -139,6 +172,7 @@ For a given number N[150] # of counts = 1027	[0.001]
 For a given number N[1000] # of counts = 12817	[0.062]
 For a given number N[10000] # of counts = 235955	[7.523]
 ================================================================
+# CPP Version-2
 For a given number N[8] # of counts = 10	[0]
 For a given number N[11] # of counts = 18	[0]
 For a given number N[30] # of counts = 93	[0]
@@ -147,4 +181,22 @@ For a given number N[150] # of counts = 1027	[0]
 For a given number N[1000] # of counts = 12817	[0.039]
 For a given number N[10000] # of counts = 235955	[4.456]
 For a given number N[100000] # of counts = 3825502	[751.499]
+
+================================================================
+# CPP Version-3
+	if(n%gcd(a,b) !=0) isContinue = false;
+	a*x + b*y = N
+	if N is not divisible by gcd(a,b), there is no answer (x,y) satisfying equation.
+	So skip. However it doesn't improve performance more than expected.
+	On the contrary, it reduced performance because it has to call gcd(a,b) everytime when it doesn't have to do it.
+	
+For a given number N[8] # of counts = 10	[0]
+For a given number N[11] # of counts = 18	[0]
+For a given number N[30] # of counts = 93	[0]
+For a given number N[100] # of counts = 566	[0]
+For a given number N[150] # of counts = 1027	[0.001]
+For a given number N[1000] # of counts = 12817	[0.059]
+For a given number N[10000] # of counts = 235955	[6.113]
+For a given number N[100000] # of counts = 3825502	[879.826]
+
 ```
