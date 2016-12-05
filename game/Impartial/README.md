@@ -61,4 +61,8 @@ A can keep forcing that position, while B cannot force it on A.
 ```
 [Question in HackerRank](https://www.hackerrank.com/challenges/game-of-stones-1/)
 
-[PDF NIM Theory](https://www.cs.umd.edu/~gasarch/COURSES/250/S15/nimnotes.pdf)
+[NIM Theory @ University of MaryLand](https://www.cs.umd.edu/~gasarch/COURSES/250/S15/nimnotes.pdf)
+
+[NIM Theory @ MIT](http://web.mit.edu/sp.268/www/nim.pdf)
+
+
