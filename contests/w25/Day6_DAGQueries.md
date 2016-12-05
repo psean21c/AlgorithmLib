@@ -1,8 +1,8 @@
 
 ###
 
-[](http://www.voidcn.com/blog/ta201314/)
-[](http://softgoorm.tistory.com/78)
+[Original](http://www.voidcn.com/blog/ta201314/)
+[Chinese guy](http://softgoorm.tistory.com/78)
 
 
 ```cpp
