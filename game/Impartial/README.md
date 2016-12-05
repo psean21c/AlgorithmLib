@@ -59,7 +59,30 @@ A can keep forcing that position, while B cannot force it on A.
 10   First
 
 ```
-[Question in HackerRank](https://www.hackerrank.com/challenges/game-of-stones-1/)
+
+### Program Challenges for Nim Game in Hackerrank
+
+[Basic, game of Stone ](https://www.hackerrank.com/challenges/game-of-stones-1/)
+
+[Basic, Introduction of Nim game](https://www.hackerrank.com/challenges/nim-game-1)
+
+[Basic, Misere-Nim](https://www.hackerrank.com/challenges/misere-nim-1)
+
+[Basic, Nimble Game](https://www.hackerrank.com/challenges/nimble-game-1)
+
+[Basic, Poker Nim](https://www.hackerrank.com/challenges/poker-nim-1)
+
+[Advanced, A stones game -Half](https://www.hackerrank.com/challenges/half)
+
+[Advanced, Stone Division](https://www.hackerrank.com/contests/w25/challenges/stone-division)
+
+[Advanced, Taste of Winning ](https://www.hackerrank.com/contests/w26/challenges/taste-of-win)
+
+
+
+### Reference
+
+Below are very good documents regarding the mathematical theory behind the Nim Game
 
 [NIM Theory @ University of MaryLand](https://www.cs.umd.edu/~gasarch/COURSES/250/S15/nimnotes.pdf)
 
