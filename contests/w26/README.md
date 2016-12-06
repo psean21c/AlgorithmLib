@@ -80,12 +80,14 @@ http://www.yes24.com/searchcorner/Search?keywordAd=&keyword=&domain=BOOK&qdomain
 http://www.geeksforgeeks.org/
 
 ### Something to read
-
-https://iamprogrammer.io/2015/11/09/episode-16-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%8A%B9%EC%A7%91-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EC%A0%84%EB%9E%B5%EC%9D%98-%EA%B5%AC%EC%A2%85%EB%A7%8C/
+[coding ..](https://iamprogrammer.io/2015/11/09/episode-16-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%8A%B9%EC%A7%91-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EC%A0%84%EB%9E%B5%EC%9D%98-%EA%B5%AC%EC%A2%85%EB%A7%8C/)
 
 http://www.venturesquare.net/531197
 
 http://www.slideshare.net/skoopmedia/10-39955766
+
+[Introduction to Algorithm](http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algorithms.2nd.Edition.eBook-TLFeBOOK.pdf)
+
 
 ### Interesting comparision
 
