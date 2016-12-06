@@ -3,15 +3,13 @@
 
 * 613/ 6951 participants : in 9% (= 8.8 %)
 
-```
-4% will get the gold medal
-
-12% will get the silver medal
-
-25% will get the broze medal
-
 This time I was little bit improved ..but far way to go..
 
+
+```
+4% will get the gold medal
+12% will get the silver medal
+25% will get the broze medal
 ```
 
 ### 26주차 경연대회를 마치고 동욱이에게 보낸 메일
@@ -82,6 +80,8 @@ http://www.yes24.com/searchcorner/Search?keywordAd=&keyword=&domain=BOOK&qdomain
 http://www.geeksforgeeks.org/
 
 ### Interesting comparision
+
+어느 누구도 .. 아래의 두 개의 프로그램을 처음 훝어보고나서.. 이 두 개의 논리가 동일한 목적을 완벽하게 수행하는 프로그램이라고 믿을 수는 없다..
 
 Below are the different solutions on the same question of the Day7.. both get 100% score
 
