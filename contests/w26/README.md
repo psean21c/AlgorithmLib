@@ -79,6 +79,12 @@ http://www.yes24.com/searchcorner/Search?keywordAd=&keyword=&domain=BOOK&qdomain
 
 http://www.geeksforgeeks.org/
 
+### etc
+
+https://iamprogrammer.io/2015/11/09/episode-16-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%8A%B9%EC%A7%91-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EC%A0%84%EB%9E%B5%EC%9D%98-%EA%B5%AC%EC%A2%85%EB%A7%8C/
+
+http://www.venturesquare.net/531197
+
 ### Interesting comparision
 
 어느 누구도 .. 아래의 두 개의 프로그램을 처음 훝어보고나서.. 이 두 개의 논리가 동일한 목적을 완벽하게 수행하는 프로그램이라고 믿을 수는 없다..
