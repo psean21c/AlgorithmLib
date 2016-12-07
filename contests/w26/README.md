@@ -6,14 +6,15 @@
 
 This time I was little bit improved ..but far way to go..
 
-
 ```
 4% will get the gold medal
 12% will get the silver medal
 25% will get the broze medal
 ```
 
-## 26주차 경연대회를 마치고 동욱이에게 보낸 메일
+## 대회 이후 친구와의 대화
+
+### 26주차 경연대회를 마치고 동욱이에게 보낸 메일
 
 구종만씨가 쓴 책을 캘거리 있는 직장 후배가 추천한 적이 있었는데... 우리나라도 좋은 책들을 쓰는 사람들이 있군.. 다행이라는 생각이 들어..^^
 
@@ -33,10 +34,15 @@ This time I was little bit improved ..but far way to go..
 
 아뭏든 이 일을 계속할 것인가 라는 생각과 함께..계속 할 것이면 조금 씩.. 노력을 하자..하는 결론을 도달했지..
 
+## 알고리즘 문제 해결 전략 서문 
+
+### 구종만 저
 ![bible1](https://cloud.githubusercontent.com/assets/5623445/20942877/53135da4-bbcb-11e6-9979-45d36c4c9342.PNG)
 ![bible2](https://cloud.githubusercontent.com/assets/5623445/20942878/531c4d6a-bbcb-11e6-8dc4-dee914bef0d8.PNG)
 
-## Mail from @bluedawnstar
+## 한국의 LG 개발자와 대화
+
+### Mail from @bluedawnstar
 
 이 사이트에서 활동하고 있는 몇 몇 분들은 대부분 회사 동료였거나 건너건너 알게된 사람들인데,
 최근에 한국에서도 알고리즘 공부를 위한 많은 모임들이 생겨나고 있어요.
@@ -80,7 +86,7 @@ http://www.yes24.com/searchcorner/Search?keywordAd=&keyword=&domain=BOOK&qdomain
 
 http://www.geeksforgeeks.org/
 
-### Something to read
+## Something to read
 [I am a programmer ..](https://iamprogrammer.io/2015/11/09/episode-16-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%8A%B9%EC%A7%91-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EC%A0%84%EB%9E%B5%EC%9D%98-%EA%B5%AC%EC%A2%85%EB%A7%8C/)
 
 http://www.venturesquare.net/531197
