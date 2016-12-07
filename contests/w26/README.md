@@ -20,7 +20,7 @@
 
 나이가 이제 쉰도 얼마 남지도 않은 요즘 느끼는 것이.. 항상 좋은 사람들은 있다는 것과 조금은 상처 받으며 살아가도.. 그런 사람들을 만나는 과정에서 스스로를 닫아놓지 말자 라는 생각이다.
 
-
+---
 ## Result
 
 * 613/ 6951 participants : in 9% (= 8.8 %)
@@ -32,7 +32,7 @@ This time I was little bit improved ..but far way to go..
 12% will get the silver medal
 25% will get the broze medal
 ```
-
+---
 ## 대회 이후 친구와의 대화
 
 ### 26주차 경연대회를 마치고 동욱이에게 보낸 메일
@@ -55,11 +55,14 @@ This time I was little bit improved ..but far way to go..
 
 아뭏든 이 일을 계속할 것인가 라는 생각과 함께..계속 할 것이면 조금 씩.. 노력을 하자..하는 결론을 도달했지..
 
+---
 ## [알고리즘 문제 해결 전략] 서문 
 
 ### 구종만 저
 ![bible1](https://cloud.githubusercontent.com/assets/5623445/20942877/53135da4-bbcb-11e6-9979-45d36c4c9342.PNG)
 ![bible2](https://cloud.githubusercontent.com/assets/5623445/20942878/531c4d6a-bbcb-11e6-8dc4-dee914bef0d8.PNG)
+
+---
 
 ## 한국의 LG 개발자와 대화
 
@@ -67,39 +70,41 @@ This time I was little bit improved ..but far way to go..
 
 이 사이트에서 활동하고 있는 몇 몇 분들은 대부분 회사 동료였거나 건너건너 알게된 사람들인데,
 최근에 한국에서도 알고리즘 공부를 위한 많은 모임들이 생겨나고 있어요.
-젠 오랫동알 개발을 해왔지만 coding contest가 운영되고 있다는 사실을 3년전에야 할 정도로 이런 문화와는 담쌓고 살았던 사람입니다.
+전 오랫동안 개발을 해왔지만 coding contest가 운영되고 있다는 사실을 3년전에야 할 정도로 이런 문화와는 담쌓고 살았던 사람입니다.
 뒤늦게 알게된 후 쭉 공부를 해오고 있지만 아직 갈길이 멀게만 느껴집니다.
 HackerRank는 올해 알게되어 활동을 시작했는데, Week of Code 같은 경우는 다른 contest와는 문제는 어렵지만 시간을 충분히 주기때문에
 저와 잘 맞다는 느낌이 들고 그래서 그런지 다른 대회보다는 성적이 잘 나오는 것 같네요.
-
 알고리즘관련 coding contest는 많이 있지만 체계적으로 공부할 수 있는 방법이 마땅치않은 것도 사실입니다.
-한국에 계신다면 많은 컴뮤니티를 통해서 좋은 활동 많이 하시면서 실력을 키우실 수 있곘지만 그렇시지 못하니 혼자 할 수 있는 방법들을 말씀드릴게요.
+한국에 계신다면 많은 커뮤니티를 통해서 좋은 활동 많이 하시면서 실력을 키우실 수 있겠지만 그러지 못하니 혼자 할 수 있는 방법들을 말씀드릴게요.
+
 
 1) https://leetcode.com/
-이미 아시고 계시지는 않을까 생각합니다만, 이 사이트는 문제를 푸는 사이트이기는 하지만 문제들이 기술 인터뷰에
-나왔거나 나올만한 문제들을 다루고 있습니다.
-체계적으로 공부할 수 있게 해주고 실제 인터뷰 준비도 겸할 수 있기 때문에 Google 등 기술 면접을 준비하는 사람들에게 굉장히 인기있는 사이트입니다.
-Coding contest에만 참가하다보면 체계적으로 공부하는게 아니라는 생각이 들게되는데 이 사이트는 체계가 잡혀있어서 매우 좋습니다. 강추합니다.
+
+이미 아시고 계시지는 않을까 생각합니다만, 이 사이트는 문제를 푸는 사이트이기는 하지만 문제들이 기술 인터뷰에 나왔거나 나올만한 문제들을 다루고 있습니다. 체계적으로 공부할 수 있게 해주고 실제 인터뷰 준비도 겸할 수 있기 때문에 Google 등 기술 면접을 준비하는 사람들에게 굉장히 인기있는 사이트입니다. Coding contest에만 참가하다보면 체계적으로 공부하는게 아니라는 생각이 들게되는데 이 사이트는 체계가 잡혀있어서 매우 좋습니다. 강추합니다.
 
 2) https://algospot.com
+
 구종만님이라는 한국인 중에서는 알아주는 분이 만든 사이트입니다.
 이 사이트는 정말 한국인 초고수들도 많이 포진되어있는 community이자 문제풀이 사이트입니다.
 캐나다에서도 구하실 수 있을지 모르겠지만 아래 사이트에 있는 책과 같이 보시면 아주 좋습니다.
 
 3) 책 "알고리즘 문제 해결 전략"
+
 이 책은 위에서 말씀드린 구종만 님이 집필하신 책인데, 이 두번은 한국에서 coding contest에 참가하시는 분들에게는 bible입니다.
 이 책 내용만 제대로 이해해도 굉장한 실력자가 되실 수 있습니다.
 다른 책 필요 없습니다. 이 책이면 끝입니다.
 
-http://www.yes24.com/24/goods/8006522?scode=032
+[알고리즘 문제 해결 전략 @Yes24](http://www.yes24.com/24/goods/8006522?scode=032)
 
 4) 책 "Introduction to Algorithms"
+
 이 책에도 주옥같은 내용들이 많이 있어요. 이 책도 algorithm 공부하시는 분들에게는 bible 중 하나입니다.
 Coding contest를 대비하고자 쓰여진 책은 아니니 필요할 때 참고하시면 좋겠습니다.
 
-http://www.yes24.com/searchcorner/Search?keywordAd=&keyword=&domain=BOOK&qdomain=%B1%B9%B3%BB%B5%B5%BC%AD&query=Introduction+to+algorithms
+[Introduction to Algorithms @Yes24](http://www.yes24.com/searchcorner/Search?keywordAd=&keyword=&domain=BOOK&qdomain=%B1%B9%B3%BB%B5%B5%BC%AD&query=Introduction+to+algorithms)
 
 5) 그외
+
 기본적인 algorithm 공부도 하시면서 문제도 많이 필어보는 것이 가장 중요하구요.
 무엇보다도 공부한 내용을 자신에 맞게 어딘가에다 정리해 놓으시고,
 또 코드들을 잘 정리해서 자신만의 library를 구축하고 코딩 대회에서 언제든지 꺼내 쓸 수 있도록 평소에 준비를 해두셔야 합니다.
@@ -107,6 +112,7 @@ http://www.yes24.com/searchcorner/Search?keywordAd=&keyword=&domain=BOOK&qdomain
 
 http://www.geeksforgeeks.org/
 
+---
 ## Something to read
 [I am a programmer ..](https://iamprogrammer.io/2015/11/09/episode-16-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%8A%B9%EC%A7%91-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EC%A0%84%EB%9E%B5%EC%9D%98-%EA%B5%AC%EC%A2%85%EB%A7%8C/)
 
@@ -116,7 +122,7 @@ http://www.slideshare.net/skoopmedia/10-39955766
 
 [Introduction to Algorithm](http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algorithms.2nd.Edition.eBook-TLFeBOOK.pdf)
 
-
+---
 ## Interesting comparision
 
 어느 누구도 .. README4Day7.md 파일 안에 있는 두 개의 프로그램을 처음 훝어보고나서.. 이 두 개의 논리가 동일한 목적을 완벽하게 수행하는 프로그램이라고 믿기는 매우 힘들다.
