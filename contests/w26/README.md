@@ -1,5 +1,6 @@
+# 26주차 경연대회 후기
 
-### 26주차 경연대회 Result
+## Result
 
 * 613/ 6951 participants : in 9% (= 8.8 %)
 
@@ -12,7 +13,7 @@ This time I was little bit improved ..but far way to go..
 25% will get the broze medal
 ```
 
-### 26주차 경연대회를 마치고 동욱이에게 보낸 메일
+## 26주차 경연대회를 마치고 동욱이에게 보낸 메일
 
 구종만씨가 쓴 책을 캘거리 있는 직장 후배가 추천한 적이 있었는데... 우리나라도 좋은 책들을 쓰는 사람들이 있군.. 다행이라는 생각이 들어..^^
 
@@ -35,7 +36,7 @@ This time I was little bit improved ..but far way to go..
 ![bible1](https://cloud.githubusercontent.com/assets/5623445/20942877/53135da4-bbcb-11e6-9979-45d36c4c9342.PNG)
 ![bible2](https://cloud.githubusercontent.com/assets/5623445/20942878/531c4d6a-bbcb-11e6-8dc4-dee914bef0d8.PNG)
 
-### Mail from @bluedawnstar
+## Mail from @bluedawnstar
 
 이 사이트에서 활동하고 있는 몇 몇 분들은 대부분 회사 동료였거나 건너건너 알게된 사람들인데,
 최근에 한국에서도 알고리즘 공부를 위한 많은 모임들이 생겨나고 있어요.
@@ -80,7 +81,7 @@ http://www.yes24.com/searchcorner/Search?keywordAd=&keyword=&domain=BOOK&qdomain
 http://www.geeksforgeeks.org/
 
 ### Something to read
-[coding ..](https://iamprogrammer.io/2015/11/09/episode-16-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%8A%B9%EC%A7%91-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EC%A0%84%EB%9E%B5%EC%9D%98-%EA%B5%AC%EC%A2%85%EB%A7%8C/)
+[I am a programmer ..](https://iamprogrammer.io/2015/11/09/episode-16-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%8A%B9%EC%A7%91-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EC%A0%84%EB%9E%B5%EC%9D%98-%EA%B5%AC%EC%A2%85%EB%A7%8C/)
 
 http://www.venturesquare.net/531197
 
@@ -89,13 +90,15 @@ http://www.slideshare.net/skoopmedia/10-39955766
 [Introduction to Algorithm](http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algorithms.2nd.Edition.eBook-TLFeBOOK.pdf)
 
 
-### Interesting comparision
+## Interesting comparision
 
 어느 누구도 .. 아래의 두 개의 프로그램을 처음 훝어보고나서.. 이 두 개의 논리가 동일한 목적을 완벽하게 수행하는 프로그램이라고 믿을 수는 없다..
 
 Below are the different solutions on the same question of the Day7.. both get 100% score
 
+### Solution by one Russian
 ```cpp
+// Written by a Russian
 #pragma GCC diagnostic ignored "-Wunused-result"
 
 #include <cstdio>
@@ -954,9 +957,13 @@ int main() {
 }
 
 ```
+바로 위의 코드는 러시아인 ,아래는 독일인이 짠 프로그램이다. 얼핏 보기에는 위에 짠 프로그램머가 개념이 없는 것 같지만 그 사람 역시 7-8000 명 개발자들 대회에서 항상 상위 10위 안에 들어가고 종종 1위도 하는 사람이다. 단지 이 문제를 해결하기 위해서 결사적으로 문제를 푼 느낌을 받는다..
 
+### Solution by one German
 
 ```python
+#Written by a German
+
 import sys
 n,m = map(int,sys.stdin.readline().split())
 
