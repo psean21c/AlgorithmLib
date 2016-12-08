@@ -59,8 +59,8 @@ This time I was little bit improved ..but far way to go..
 ## [알고리즘 문제 해결 전략] 서문 
 
 ### 구종만 저
-![bible1](https://cloud.githubusercontent.com/assets/5623445/20942877/53135da4-bbcb-11e6-9979-45d36c4c9342.PNG)
-![bible2](https://cloud.githubusercontent.com/assets/5623445/20942878/531c4d6a-bbcb-11e6-8dc4-dee914bef0d8.PNG)
+![bible1](https://cloud.githubusercontent.com/assets/5623445/21027349/7311abf8-bd5e-11e6-8dfb-01f7af12e819.PNG)
+---
 
 ---
 
