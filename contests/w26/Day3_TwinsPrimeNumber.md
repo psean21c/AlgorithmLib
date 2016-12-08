@@ -221,8 +221,7 @@ int main() {
 
     for (int i = n; i <= m; i++) {
         bool ok = true;
-        for (int j = 0; j < primes.size() && primes[j]*primes[j] <= i; 
-             j++) {
+        for (int j = 0; j < primes.size() && primes[j]*primes[j] <= i; j++) {
             if (i % primes[j] == 0) {
                 ok = false;
                 break;
