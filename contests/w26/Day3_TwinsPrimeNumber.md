@@ -177,3 +177,106 @@ Other Test Cases
 >> 190
 	
 ```
+
+## Solution by author in Editorial
+
+The simplest (but too slow) approach will be the following: iterate through integers from `N` to `M` and do the prime test for each of them. The prime test for `X` will be just iterating through integers from 1 to `X` and check whether X is divisible by any of them.
+
+The first speed-up: it's not hard to see that it's enough to iterate only from 1 to sqrt(X) because if X is not a prime there is at least one prime divisor less than square root of X. But it's still too slow.
+
+The second speed-up: now we can notice that there is sense to iterate only through prime integers from 1 to sqrt(N). So we can precompute with the previous test all the prime numbers less than sqrt(10^9) and then use only them when we check numbers from `N` to `M`. This should be fast enough to get AC. See the code for details.
+
+
+### Solution :  by shef_2318
+
+```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <cassert>
+using namespace std;
+
+
+int main() {
+    int n, m;
+    cin >> n >> m;
+    assert(m - n > 0 && m - n < 1E6);
+    int lst = -1;
+    int ans = 0;
+    vector<int> primes;
+    for (int i = 2; i*i <= 1E9; i++) {
+        bool ok = true;
+        for (int j = 2; j*j <= i; j++) {
+            if (i % j == 0) {
+                ok = false;
+                break;
+            }
+        }
+        if (ok && i > 1) {
+            primes.push_back(i);
+        }
+    }
+
+    for (int i = n; i <= m; i++) {
+        bool ok = true;
+        for (int j = 0; j < primes.size() && primes[j]*primes[j] <= i; 
+             j++) {
+            if (i % primes[j] == 0) {
+                ok = false;
+                break;
+            }
+        }
+
+        if (ok && i > 1) {
+            ans += (lst == i - 2);
+            lst = i;
+        }
+    }
+    cout << ans << endl;
+    return 0;
+}
+```
+
+### Solution :  by zxqfd555
+
+```
+#include <iostream>
+#include <algorithm>
+#include <cassert>
+
+using namespace std;
+
+const int MAXN = 1000000 + 100;
+
+int l, r;
+bool isPrime[MAXN];
+
+int main(int argc, const char * argv[]) {
+    cin >> l >> r;
+    assert(1 <= l && l <= r && r <= 1000000000);
+    assert(r - l <= 1000000);
+
+    for(int i = 0; i <= r - l; i++)
+        isPrime[i] = true;
+    for(int i = 2; i * i <= r; i++) {
+        int startPos = l / i * i;
+        if (startPos < l)
+            startPos += i;
+        if (startPos == i)
+            startPos += i;
+        for(int j = startPos; j <= r; j += i)
+            isPrime[j - l] = false;
+    }
+
+    int ret = 0;
+
+    for(int i = 0 + (l == 1); i <= r - l - 2; i++)
+        ret += isPrime[i] & isPrime[i + 2];
+
+    cout << ret << endl;
+
+    return 0;
+}
+```
