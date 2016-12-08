@@ -189,7 +189,7 @@ The second speed-up: now we can notice that there is sense to iterate only throu
 
 ### Solution :  by shef_2318
 
-```
+```cpp
 #include <cmath>
 #include <cstdio>
 #include <vector>
@@ -241,7 +241,7 @@ int main() {
 
 ### Solution :  by zxqfd555
 
-```
+```cpp
 #include <iostream>
 #include <algorithm>
 #include <cassert>
