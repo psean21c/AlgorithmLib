@@ -4,7 +4,7 @@ It will be updated on a regular basis.
 
 ### To do
 
-[Max Min Difference in 101 hack43](https://www.hackerrank.com/contests/101hack43/challenges/max-min-difference)
+Review the previous questions..
 
 [Minimize Summation](https://www.hackerrank.com/contests/101hack43/challenges/minimizing-the-summation)
 
