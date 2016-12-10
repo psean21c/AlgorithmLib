@@ -2,12 +2,6 @@
 This is the repository which I practice my programming skills/sources or submit them in the Hackerrank web site.
 It will be updated on a regular basis.
 
-### To do
-
-Review the previous questions..
-
-[Minimize Summation](https://www.hackerrank.com/contests/101hack43/challenges/minimizing-the-summation)
-
 
 ---
 
@@ -19,6 +13,10 @@ Review the previous questions..
 [HackerRank](https://www.hackerrank.com)
 
 [Coska Korean IT in Toronto](http://coska.com/)
+
+[Korean Study thread-1](https://www.facebook.com/groups/426512737533637/?fref=nf)
+
+[Korean Study thread-2](https://www.facebook.com/profile.php?id=100001180713677&fref=nf)
 
 ---
 
