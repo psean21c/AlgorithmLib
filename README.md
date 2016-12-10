@@ -12,6 +12,8 @@ It will be updated on a regular basis.
 
 [HackerRank](https://www.hackerrank.com)
 
+[Google CodeJam](https://code.google.com/codejam/schedule.html)
+
 [Coska Korean IT in Toronto](http://coska.com/)
 
 [Korean Study thread-1](https://www.facebook.com/groups/426512737533637/?fref=nf)
