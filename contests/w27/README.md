@@ -41,6 +41,7 @@
 [Minimize Summation](https://www.hackerrank.com/contests/101hack43/challenges/minimizing-the-summation)
 
 Review the previous questions..
+
 [Review week24](https://www.hackerrank.com/contests/w24/challenges/xor-matrix)
 
 
