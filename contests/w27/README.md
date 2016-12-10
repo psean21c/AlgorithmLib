@@ -44,5 +44,13 @@ Review the previous questions..
 
 [Review week24](https://www.hackerrank.com/contests/w24/challenges/xor-matrix)
 
+Next Topological Sorting (DAQ)
+https://www.hackerrank.com/contests/101hack40/challenges/next-topological-sorting
+http://codeforces.com/contest/707/problem/C
 
+
+구글코드잼 라운드1C B 문제
+https://raw.githubusercontent.com/…/2016/round1_c/b/main.cpp
+
+https://en.wikipedia.org/wiki/Hamming_weight
 
