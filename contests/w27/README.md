@@ -32,3 +32,6 @@
 ```
 
 [알라딘](http://www.aladin.co.kr/) 에서 책도 주문했다..
+
+
+[Study thread](https://www.facebook.com/groups/426512737533637/?fref=nf)
