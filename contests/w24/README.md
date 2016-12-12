@@ -3,21 +3,7 @@
 
 [24 weeks XOR Matrix questions: ](https://www.hackerrank.com/contests/w24/challenges/xor-matrix)
 
-Testcase1
-
-input
-```
-1 1000000000000000000
-229861738
-```
-output
-```
-0
-```
-
-Testcase2
-
-input
+Testcase2 input
 ```
 5 4
 1 7 14 8 2
@@ -28,9 +14,26 @@ output
 0 3 5 12 10
 ```
 
-Testcase3
+```
+1 7 14 8 2
+6 9 6 10 3 
+15 15 12 9 5 
+0 3 5 12 10 
+```
 
-input
+
+Testcase-2 input
+```
+1 1000000000000000000
+229861738
+```
+output
+```
+0
+```
+
+
+Testcase-3 input
 ```
 10 1000000000
 325 483 252 71 592 866 473 991 570 985
