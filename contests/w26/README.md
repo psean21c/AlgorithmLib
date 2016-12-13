@@ -66,7 +66,7 @@ This time I was little bit improved ..but far way to go..
 
 ## TIP (@bluedawnstar LG)
 
-### Web Site
+### 1) Web Site
 
 이 사이트에서 활동하고 있는 몇 몇 분들은 대부분 회사 동료였거나 건너건너 알게된 사람들인데,
 최근에 한국에서도 알고리즘 공부를 위한 많은 모임들이 생겨나고 있어요.
@@ -114,7 +114,7 @@ http://www.geeksforgeeks.org/
 
 ---
 
-### How to approach
+### 2) How to approach to tough questions
 
 * 그냥 한번 읽고 버리기에는 너무 아까운 조언이라..
 
