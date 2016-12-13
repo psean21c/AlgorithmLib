@@ -20,6 +20,8 @@ It will be updated on a regular basis.
 
 [Korean Study thread-2](https://www.facebook.com/profile.php?id=100001180713677&fref=nf)
 
+[Japanese blog](http://pekempey.hatenablog.com/)
+
 ---
 
 [GitHub Syntax Link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
