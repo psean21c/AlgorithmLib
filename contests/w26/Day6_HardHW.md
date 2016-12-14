@@ -201,4 +201,82 @@ N[10000]2.739180081	(x,y,z)=(2860,3570,3570)		7.602 sec
 
 ```
 
+해답을 보고 나니..  
+
+삼각함수에서 sin(x+y) = sin(x)cos(y) + cos(x)sin(y) 와 같은 성격이 있다는 것을 이용할 시도조차 해보지 못했다는 것을 알았다.
+
 ---
+
+
+```cpp
+
+// by Author
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+int s;
+cin >> s;
+double ans = -1E9;
+double mxeven = -1E9, mxodd = -1E9;
+for (double i = 2; i < s; i += 2) {
+    mxeven = max(mxeven, cos( (i - 2) / 2 ));
+    ans = max(ans, 
+        2. * sin(i/2) * mxeven + sin(s - i));
+}
+for (double i = 3; i < s; i += 2) {
+    mxodd = max(mxodd, cos( (i - 2) / 2 ));
+    ans = max(ans, 
+        2. * sin(i/2) * mxodd + sin(s - i));
+}
+cout << fixed << setprecision(9) << ans << endl;
+return 0;
+}
+
+
+// by zxqfd555
+
+#include <iostream>
+#include <cstdio>
+#include <algorithm>
+#include <cassert>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+const int MAXN = 3000000 + 10;
+
+double f[MAXN], hMin[MAXN], hMax[MAXN];
+int n;
+
+int main(int argc, const char * argv[]) {
+
+    cin >> n;
+    assert(3 <= n && n <= 3000000);
+
+    hMin[0] = hMax[0] = cos(0);
+    hMin[1] = hMax[1] = cos(1);
+    for(int i = 2; i <= n; i++) {
+        hMin[i] = min(hMin[i - 2], cos(i / 2.0));
+        hMax[i] = max(hMax[i - 2], cos(i / 2.0));
+    }
+
+    f[2] = sin(1) + sin(1);
+    for(int i = 3; i <= n; i++)
+        f[i] = max(2.0 * sin(i / 2.0) * hMin[i - 2], 2.0 * sin(i / 2.0) * hMax[i - 2]);
+
+    double ret = -10.0;
+
+    for(int i = 1; i <= n - 2; i++)
+        ret = max(ret, sin(i) + f[n - i]);
+
+    cout << fixed << setprecision(9);
+    cout << ret << endl;
+
+    return 0;
+}
+```
