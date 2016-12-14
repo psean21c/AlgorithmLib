@@ -32,6 +32,12 @@ This time I was little bit improved ..but far way to go..
 12% will get the silver medal
 25% will get the broze medal
 ```
+
+오늘 문제들을 다시 한번 보니까.. 나름대로 가장 열심히 풀고 아쉬웠던 문제는 5일차 문제였다.
+이산수학 지식이 필요하고 `x*a + y*b = n` 속성을 거의 대부분 이해한다고 생각을 했는데도.. 시간 초과를 넘어서지 못했다. 해답을 보니..내가 풀지 않은 것이어서.. 여전히 낯설다. (힘들겠지만.. 나중에 다시 자세히 보고 싶은 생각에.... )
+
+
+
 ---
 ## 대회 이후 친구와의 대화
 
