@@ -1,8 +1,66 @@
 #
 
+101 Hacker43
 [Minimize MaxMin](https://www.hackerrank.com/contests/101hack43/challenges/max-min-difference)
 
+input
+```
+5
+7 4 3 1 3
+```
+output
+```
+3
+```
+
+Expalin
+```
+1) sort
+1 3 3 4 7
+
+2) Case-1 : Delete 1
+3 3 4 7
+ * 7-3=4
+ 
+3)  Case-2 : Delete 7
+1 3 3 4
+ * 4-1=3
+
+4) Answer = 3 
+```
+
+input
+```
+10
+5 4 0 8 3 8 4 1 1 8
+```
+output
+```
+7
+```
+
+Expalin
+```
+1) sort
+0 1 1 3 4 4 5 8 8 8
+
+2) Case-1 : Delete 0
+1 1 3 4 4 5 8 8 8
+ * 8-1=7
+ 
+3)  Case-2 : Delete 8
+0 1 1 3 4 4 5 8 8
+ * 8-0=8
+
+4) Answer = 7
+
+```
+
+* My Solution
+It's not good solution
+
 ```python
+
 N=int(input())
 lst = [int(x) for x in input().strip().split()]
 
