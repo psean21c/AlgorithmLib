@@ -8,9 +8,6 @@ such that the absolute difference between any two of the chosen integers is <=1.
 
 The answer will be >=2
 
-흘러가는 연속 가운데에서.. 지금 일어나는 변화의 차이를 기준으로....
-바로 앞의 것들의 상태를 정확하게 수정을 해주는 것은 매우 어렵다..
-
 
 
 TestCase1
@@ -35,6 +32,17 @@ Explain
 {5,6}
 {6}      X
 ```
+
+흘러가는 연속 가운데에서.. 지금 일어나는 변화의 차이를 기준으로....
+바로 앞의 것들의 상태를 정확하게 수정을 해주는 것은 매우 어렵다..
+```
+array: 1 3 3 4 5 6
+count:   1 2 3
+count:       1 2
+count:         1 2
+
+```
+
 
 TestCase2
 ```
@@ -71,5 +79,7 @@ Explain
 2) list
 
 ```
+
+
 
 
