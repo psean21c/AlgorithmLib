@@ -66,7 +66,7 @@ Expalin
 ```
 
 * My Solution
-It's not good solution
+It's not good solution . 내가 푼 방식은 쓸데 없이 돌아간 것 같다..
 
 ```python
 
@@ -122,4 +122,4 @@ int main(){
 
 ---
 
-[Ghost](https://www.hackerrank.com/contests/w18/challenges/ghosts)
+* [Ghost](https://www.hackerrank.com/contests/w18/challenges/ghosts)
