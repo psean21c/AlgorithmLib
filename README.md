@@ -16,6 +16,10 @@ It will be updated on a regular basis.
 
 [Google CodeJam](https://code.google.com/codejam/schedule.html)
 
+[Geeks 4 Geeks](http://www.geeksforgeeks.org/)
+
+### IT Communities or personal blog
+
 [Coska Korean IT in Toronto](http://coska.com/)
 
 [Korean Study thread-1](https://www.facebook.com/groups/426512737533637/?fref=nf)
