@@ -18,6 +18,10 @@ It will be updated on a regular basis.
 
 [Geeks 4 Geeks](http://www.geeksforgeeks.org/)
 
+[Top10 questions](http://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/)
+
+[Amazon](http://www.geeksforgeeks.org/tag/amazon/)
+
 ### IT Communities or personal blog
 
 [Coska Korean IT in Toronto](http://coska.com/)
