@@ -1,7 +1,16 @@
 #
 
-101 Hacker43
-[Minimize MaxMin](https://www.hackerrank.com/contests/101hack43/challenges/max-min-difference)
+```
+101 Hacker43 : 1st Question - Minimize MaxMin
+
+WoC 18: 1st - Ghost
+
+
+```
+---
+
+
+* [Minimize MaxMin](https://www.hackerrank.com/contests/101hack43/challenges/max-min-difference)
 
 input
 ```
@@ -110,3 +119,7 @@ int main(){
 }
 
 ```
+
+---
+
+[Ghost](https://www.hackerrank.com/contests/w18/challenges/ghosts)
