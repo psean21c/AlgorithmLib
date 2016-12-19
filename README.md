@@ -5,8 +5,10 @@ It will be updated on a regular basis.
 
 ---
 
-### Contents
+### Algorithm
+[Ternary Search](https://www.youtube.com/watch?v=LelV-kkYMIg)
 
+### Contents
 
 [Korean Algorithm Contest](https://www.acmicpc.net/)
 
