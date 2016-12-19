@@ -63,4 +63,9 @@ https://en.wikipedia.org/wiki/Hamming_weight
 
 
 [test](korea.. karljang / bluedawnstar / noeffserv/ singleheart/ kcm1700 /shinsy11/ 
-      japan .. piczaw / pekempey)
+      japan .. piczaw / pekempey
+      usa .. tina_heiligers
+)
+
+[Big Data Scientist](https://www.linkedin.com/in/christianeheiligers)
+
