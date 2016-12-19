@@ -11,6 +11,8 @@ It will be updated on a regular basis.
 
 [Ternary Search](https://www.youtube.com/watch?v=LelV-kkYMIg)
 
+[Java7 API](http://docs.oracle.com/javase/7/docs/api/)
+
 ### Contents
 
 [Korean Algorithm Contest](https://www.acmicpc.net/)
