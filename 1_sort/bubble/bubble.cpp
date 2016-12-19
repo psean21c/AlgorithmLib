@@ -1,6 +1,16 @@
 #include <iostream>
 #include <vector>
 
+/***
+input/output
+3
+3 2 1
+--------------
+Array is sorted in 3 swaps.
+First Element: 1
+Last Element: 3
+***/
+
 using namespace std;
 
 class MySort {
