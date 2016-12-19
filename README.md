@@ -6,6 +6,9 @@ It will be updated on a regular basis.
 ---
 
 ### Algorithm
+
+[Tries](https://www.youtube.com/watch?v=00YaFPcC65g&list=PLe-ggMe31CTe9IyG9MB8vt5xUJeYgOYRQ)
+
 [Ternary Search](https://www.youtube.com/watch?v=LelV-kkYMIg)
 
 ### Contents
