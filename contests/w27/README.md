@@ -36,25 +36,21 @@
 
 ### To do
 
-
-```
 # 1
+
 [Minimize Summation](https://www.hackerrank.com/contests/101hack43/challenges/minimizing-the-summation)
 
-
-# 2) Review the previous questions..
+# 2) Review the previous questions..(go to w24 folder)
 
 [Review week24](https://www.hackerrank.com/contests/w24/challenges/xor-matrix)
 
-# 3) 
-Next Topological Sorting (DAQ)
-https://www.hackerrank.com/contests/101hack40/challenges/next-topological-sorting
-http://codeforces.com/contest/707/problem/C
+
+# 3) Next Topological Sorting (DAQ)
+[Next Topological Sorting](https://www.hackerrank.com/contests/101hack40/challenges/next-topological-sorting)
+[CodeForce](http://codeforces.com/contest/707/problem/C)
 
 
 # 4) 구글코드잼 라운드1C B 문제
 https://code.google.com/codejam/contest/4314486/dashboard#s=p1
 https://raw.githubusercontent.com/…/2016/round1_c/b/main.cpp
 https://en.wikipedia.org/wiki/Hamming_weight
-
-```
