@@ -60,3 +60,6 @@ https://code.google.com/codejam/contest/4314486/dashboard#s=p1
 https://raw.githubusercontent.com/…/2016/round1_c/b/main.cpp
 
 https://en.wikipedia.org/wiki/Hamming_weight
+
+
+[](karljang / bluedawnstar / noeffserv/ singleheart/ piczaw / )
