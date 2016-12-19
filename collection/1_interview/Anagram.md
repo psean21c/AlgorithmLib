@@ -80,3 +80,24 @@ int number_needed(string a, string b) {
 
 }
 ```
+
+Solution by cezheng
+
+```cpp
+// Beautiful..
+int number_needed(string a, string b) {
+    int count[26] = {0};
+    for (auto c : a) {
+        count[c - 'a']++;
+    }
+    for (auto c : b) {
+        count[c - 'a']--;
+    }
+    int needed = 0;
+    for (int i = 0; i < 26; ++i) {
+        needed += std::abs(count[i]);
+    }
+    return needed;
+}
+```
+
