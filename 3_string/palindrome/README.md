@@ -71,3 +71,28 @@ int main() {
 }
 
 ```
+My Solution
+```cpp
+class Solution {
+	//Write your code here
+public:
+	stack<char> mystack;
+	queue<int> myqueue;
+	void pushCharacter(char ch) {
+		mystack.push(ch);
+	}
+	void enqueueCharacter(char ch) {
+		myqueue.push(ch);
+	}
+	char popCharacter() {
+		char c = mystack.top();
+		mystack.pop();
+		return c;
+	}
+	char dequeueCharacter() {
+		char c = myqueue.front();
+		myqueue.pop();
+		return c;
+	}
+};
+```
