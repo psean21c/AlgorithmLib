@@ -62,4 +62,5 @@ https://raw.githubusercontent.com/…/2016/round1_c/b/main.cpp
 https://en.wikipedia.org/wiki/Hamming_weight
 
 
-[test](karljang / bluedawnstar / noeffserv/ singleheart/ piczaw / )
+[test](korea.. karljang / bluedawnstar / noeffserv/ singleheart/ kcm1700 /shinsy11/ 
+      japan .. piczaw / pekempey)
