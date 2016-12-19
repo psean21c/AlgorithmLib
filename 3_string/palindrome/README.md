@@ -1,9 +1,8 @@
 #
 
 
-###
+### palindrome
 
-```
 A palindrome is a word, phrase, number, or other sequence of characters which reads the same backwards and forwards. 
 Can you determine if a given string, s, is a palindrome?
 
@@ -15,7 +14,7 @@ we continue dequeueing, popping, and comparing each character until our containe
 (a non-match means s isn't a palindrome).
 
 Write the following declarations and implementations:
-
+```
 Two instance variables: one for your stack, and one for your queue.
 A void pushCharacter(char ch) method that pushes a character onto a stack.
 A void enqueueCharacter(char ch) method that enqueues a character in the queue instance variable.
