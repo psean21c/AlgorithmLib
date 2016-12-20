@@ -31,12 +31,6 @@
   (앞의 저자의 이야기와 중복되는 부분도 있지만) 생활과 업무 간에 필요한 
   수많은 사건들 사이에서 업무에서 필요한..전체적인 집중력을 잃지 않는다..
 
-
-
-
-[알라딘](http://www.aladin.co.kr/) 에서 책도 주문했다..
-
-
 # To do
 
 ### 1
@@ -68,4 +62,81 @@ https://en.wikipedia.org/wiki/Hamming_weight
 )
 
 [Big Data Scientist](https://www.linkedin.com/in/christianeheiligers)
+
+
+
+---
+### Day1
+```cpp
+
+#include <cmath>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+
+int main(){
+    int n;
+    cin >> n;
+    int p;
+    cin >> p;
+    // your code goes here
+    int front = (p-1)/2;
+    if((p-1)%2!=0) front++;
+
+    int back = (n-p)/2;
+    if(p%2!=0 and (n-p)%2!=0){
+        back++;
+    }
+
+    int page = min(front,back);
+    cout << page << endl;
+    return 0;
+}
+
+```
+
+### Day2
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+	int n, p;
+	cin >> n >> p ;
+	vector<int> arr(n);
+
+	for (int i = 0; i < n; i++) {
+		int a,b;
+		cin >> a;
+		b = a / p;
+		if(a%p!=0) b+=1;
+		arr[i] = b;
+	}
+
+
+	sort(arr.begin(), arr.end());
+	long sum = arr[0];
+	int c = arr[0];
+	for (int i = 1; i < n; i++) {
+		//cout << arr[i] << " " << endl;
+		int d = arr[i];
+		if(c>=d) sum += (++c);
+		else {
+			sum += d;
+			c = d;
+		}
+	}
+	cout << sum << endl;
+	return 0;
+}
+
+
+```
 
