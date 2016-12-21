@@ -153,7 +153,7 @@ int main() {
 ---
 ### Day3
 
-[](
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -209,4 +209,4 @@ int main() {
 }
 
 ```
-)
+
