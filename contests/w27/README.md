@@ -153,8 +153,35 @@ int main() {
 ---
 ### Day3
 
+TestCase
+```
+>> input
+2000 3
+90
+180
+270
+
+>> output
+1960244 
+2449304 
+1960244
+
+>> input
+4 3
+90
+180
+270
+
+>> output
+10
+6
+10
+
+
+```
 
 ```cpp
+# Version-1
 #include <iostream>
 #include <vector>
 #include <algorithm>
