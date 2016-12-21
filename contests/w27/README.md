@@ -153,7 +153,60 @@ int main() {
 ---
 ### Day3
 
+[](
 ```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+using namespace std;
+
+#define FOR(i,n) for(int i = 0; i < (n); ++i)
+#define FOR1(i,n) for(int i = 1; i < (n); ++i)
+
+int main() {
+	int n;
+	int q;
+	cin >> n >> q;
+
+	// 1) Initialize
+	int m = n + 1;
+	int ar[m][m] = { };
+	FOR1(i,m){
+		FOR1(j,m){
+			int x = (i * j) % 7;
+			if (x == 6 or x == 1 or x == 0) {
+				ar[i][j] = 1;
+			}
+		}
+	}
+
+	// 2) Count for 90/180/270 degrees
+	int cnt90, cnt180, cnt270;
+	FOR1(i,m){
+		FOR1(j,m){
+			if (ar[i][j] != ar[m - j][i]) cnt90++;
+			if (ar[i][j] != ar[m - i][m - j]) cnt180++;
+			if (ar[i][j] != ar[m - i][j]) cnt270++;
+		}
+	}
+
+	// 3) Handle the problems
+	for (int i = 0; i < q; i++) {
+		int angle;
+		cin >> angle;
+		int rotator = (angle / 90) % 4;
+		int cnt = 0;
+		if (rotator == 1) cnt = cnt90;
+		else if (rotator == 2)	cnt = cnt180;
+		else if (rotator == 3)	cnt = cnt270;
+		else cnt = 0;
+
+		cout << cnt << endl;
+	}
+
+	return 0;
+}
 
 ```
-
+)
