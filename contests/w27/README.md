@@ -311,3 +311,84 @@ int main() {
 }
 
 ```
+
+2D array[n][n]는 2000 X 2000 인 경우 (대략 n=1450 일 경우) 메모리 한계를 넘어간다.
+
+```
+int arr[2000][2000] = {}
+```
+vector 사용이 그 한계를 극복했다.
+```
+vector<vector<int>> array2D;
+```
+
+
+```cpp
+#Version-3
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <time.h>
+using namespace std;
+
+#define FOR(i,n) for(int i = 0; i < (n); ++i)
+#define FOR1(i,n) for(int i = 1; i < (n); ++i)
+
+
+int cnt90, cnt180;
+
+int rotateCnt(int angle){
+
+	int cnt;
+	int rotator = (angle / 90) % 4;
+
+	if (rotator == 1 or rotator == 3) cnt = cnt90;
+	else if (rotator == 2)	cnt = cnt180;
+	else cnt = 0;
+
+	return cnt;
+}
+
+int main() {
+
+	int n;
+	int q;
+	cin >> n >> q;
+
+	// 1) Initialize
+	vector<vector<int>> array2D;
+	array2D.resize(n);
+	for (int i = 0; i < n; ++i){
+		array2D[i].resize(n);
+	}
+
+	FOR(i,n){
+		FOR(j,n) {
+			long x = ((i+1) * (j+1)) % 7;
+			if (x == 6 or x == 1 or x == 0) {
+				array2D[i][j] = 1;
+			}
+		}
+	}
+
+	// 2) Count for 90/180/270 degrees
+	FOR(i,n){
+		FOR(j,n) {
+			if (array2D[i][j] != array2D[n - j - 1][i]) cnt90++;
+			if (array2D[i][j] != array2D[n - i - 1][n - j - 1]) cnt180++;
+		}
+	}
+
+	// 3) Handle the problems
+	for (int i = 0; i < q; i++) {
+		int angle;
+		cin >> angle;
+		cout <<rotateCnt(angle) << endl;
+	}
+
+	return 0;
+}
+
+```
+
