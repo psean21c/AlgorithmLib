@@ -123,9 +123,12 @@ int main() {
 		cin >> data;
 		root = myTree.insert(root, data);
 	}
+	// 1)
 	int height = myTree.getHeight(root);
 	cout << height;
-
+	// 2)
+	myTree.levelOrder(root);
+	
 	return 0;
 }
 
