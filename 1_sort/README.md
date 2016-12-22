@@ -117,12 +117,11 @@ public:
 			return root;
 		}
 	}
+	/***
 	int getHeight(Node* root) {
 		//Write your code here
-
-
-		return 0;
 	}
+	***/
 };
 
 
@@ -147,5 +146,17 @@ int main() {
 ```
 
 My Solution
+
+```cpp
+	int getHeight(Node* root) {
+		//Write your code here
+		if(root == NULL) return -1;
+
+		int leftHeight = getHeight(root->left);
+		int rightHeight = getHeight(root->right);
+
+		return 1+ max(leftHeight,rightHeight);
+	}
+```
 
 
