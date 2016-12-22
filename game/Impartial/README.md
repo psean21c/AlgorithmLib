@@ -1,4 +1,4 @@
-# Impartial Game
+# Nim Game - Impartial Game
 
 ### Theory
 
@@ -77,6 +77,8 @@ A can keep forcing that position, while B cannot force it on A.
 [Advanced, Stone Division](https://www.hackerrank.com/contests/w25/challenges/stone-division)
 
 [Advanced, Taste of Winning ](https://www.hackerrank.com/contests/w26/challenges/taste-of-win)
+
+[Zero Move Nim](https://www.hackerrank.com/contests/w27/challenges/zero-move-nim)
 
 
 
