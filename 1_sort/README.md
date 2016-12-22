@@ -56,30 +56,10 @@ public class Bubble {
 
 ---
 
-# Sorting
+# BST (Binary Search Tree)
 
-### BST (Binary Search Tree)
-
-[Original Question](https://www.hackerrank.com/challenges/30-binary-search-trees)
-
-input / output
-```
-7
-3
-5
-2
-1
-4
-6
-7
-
->> 3
-```
-
-![Depiction](https://cloud.githubusercontent.com/assets/5623445/21410971/da4a4c5e-c7b2-11e6-8a43-3a834aac4b4b.png)
-
- * Requirement
- To implement the method : getHeight()
+* Requirement
+ To implement the method : getHeight() / levelOrder()
 
 ```cpp
 #include <iostream>
@@ -117,11 +97,17 @@ public:
 			return root;
 		}
 	}
+	
 	/***
+
 	int getHeight(Node* root) {
-		//Write your code here
+	 ... //Write your code here
+	}
+	void levelOrder(Node * root){
+	 ... //Write your code here
 	}
 	***/
+	
 };
 
 
@@ -145,6 +131,29 @@ int main() {
 
 ```
 
+
+### getHeight : get depth of the BST(binary search tree)
+
+[Original Question](https://www.hackerrank.com/challenges/30-binary-search-trees)
+
+input / output
+```
+7
+3
+5
+2
+1
+4
+6
+7
+
+>> 
+3
+```
+
+![Depiction](https://cloud.githubusercontent.com/assets/5623445/21410971/da4a4c5e-c7b2-11e6-8a43-3a834aac4b4b.png)
+
+ 
 My Solution
 
 ```cpp
@@ -159,4 +168,28 @@ My Solution
 	}
 ```
 
+### BST level Order Traversal : 
 
+[Original Question](https://www.hackerrank.com/challenges/30-binary-trees)
+
+input / output
+```
+6
+3
+5
+4
+7
+2
+1
+
+>> 
+3 2 5 1 4 7 
+```
+
+![Depiction](https://cloud.githubusercontent.com/assets/5623445/21410971/da4a4c5e-c7b2-11e6-8a43-3a834aac4b4b.png)
+
+My Solution
+
+```cpp
+
+```
