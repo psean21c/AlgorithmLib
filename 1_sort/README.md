@@ -186,7 +186,7 @@ input / output
 3 2 5 1 4 7 
 ```
 
-![Depiction](https://cloud.githubusercontent.com/assets/5623445/21410971/da4a4c5e-c7b2-11e6-8a43-3a834aac4b4b.png)
+![Depiction](https://cloud.githubusercontent.com/assets/5623445/21412021/e45b52bc-c7ba-11e6-93b3-1723940be1ba.png)
 
 My Solution
 
