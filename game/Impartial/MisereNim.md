@@ -41,3 +41,40 @@ First
 First
 Second
 ```
+
+```cpp
+//https://www.hackerrank.com/challenges/misere-nim-1
+//#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+#define FOR(i,n) for(long i = 0; i < (n); ++i)
+
+typedef long long ll;
+typedef unsigned long long ull;
+
+
+int main()
+{
+	long T,n;
+	cin >> T;
+	while (T-->0)
+	{
+		long res=0,cnt=0,x;
+		cin >> n;
+
+		FOR(i,n){
+			cin >> x;
+			if (x==1) ++cnt;
+			//cout << res << " " << x << "=";
+			res^=x;
+			//cout << res << endl;
+		}
+
+		if (cnt==n) puts((cnt&1)?"Second":"First");
+		else puts((res>0)?"First":"Second");
+
+	}
+}
+
+```
