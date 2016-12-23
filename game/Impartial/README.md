@@ -92,3 +92,5 @@ Below are very good documents regarding the mathematical theory behind the Nim G
 
 [Nim UCLA](http://www.math.ucla.edu/~tom/Game_Theory/comb.pdf)
 
+[Berkeley](http://www.stat.berkeley.edu/~peres/gtlect.pdf)
+
