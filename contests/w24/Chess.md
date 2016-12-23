@@ -5,7 +5,7 @@
 [Original Question](https://www.hackerrank.com/contests/w24/challenges/simplified-chess-engine)
 
 ```cpp
-
+// Created by pekempey (Japanese Lady)
 #include <bits/stdc++.h>
 using namespace std;
 
