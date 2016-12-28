@@ -2,6 +2,35 @@
 This is the repository which I practice my programming skills/sources or submit them in the Hackerrank web site.
 It will be updated on a regular basis.
 
+## TO DO
+
+### 30 Days of Code
+[Cracking the Coding Interview Challenges](https://www.hackerrank.com/challenges/ctci-linked-list-cycle)
+
+[Python String](https://github.com/psean21c/Python/tree/gh-pages/hackerrank/String)
+
+### Review the previous questions..(go to w24 folder)
+
+[Review week24](https://www.hackerrank.com/contests/w24/challenges/xor-matrix)
+
+[Minimize Summation](https://www.hackerrank.com/contests/101hack43/challenges/minimizing-the-summation)
+
+
+### Next Topological Sorting (DAQ)
+[CodeForce](http://codeforces.com/contest/707/problem/C)
+
+
+
+		  
+### Google Code Jam Round 1C B 
+[Next Topological Sorting](https://www.hackerrank.com/contests/101hack40/challenges/next-topological-sorting)
+
+https://code.google.com/codejam/contest/4314486/dashboard#s=p1
+
+https://raw.githubusercontent.com/…/2016/round1_c/b/main.cpp
+
+
+
 
 ---
 
@@ -38,6 +67,9 @@ It will be updated on a regular basis.
 [Korean Study thread-2](https://www.facebook.com/profile.php?id=100001180713677&fref=nf)
 
 [Japanese blog](http://pekempey.hatenablog.com/)
+
+[Big Data Scientist](https://www.linkedin.com/in/christianeheiligers)
+
 
 ---
 
