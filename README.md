@@ -1,8 +1,17 @@
-#Introduction
+# Introduction
 This is the repository which I practice my programming skills/sources or submit them in the Hackerrank web site.
 It will be updated on a regular basis.
 
-## TO DO
+# List to review
+
+## Jan-3
+
+```
+1) Java / Python
+2)
+```
+
+## Questions to review
 
 ### 30 Days of Code
 [Cracking the Coding Interview Challenges](https://www.hackerrank.com/challenges/ctci-linked-list-cycle)
@@ -34,7 +43,7 @@ https://raw.githubusercontent.com/…/2016/round1_c/b/main.cpp
 
 ---
 
-### Algorithm
+## Algorithm to review
 
 [Tries](https://www.youtube.com/watch?v=00YaFPcC65g&list=PLe-ggMe31CTe9IyG9MB8vt5xUJeYgOYRQ)
 
