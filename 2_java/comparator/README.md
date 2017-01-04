@@ -139,11 +139,28 @@ public class B {
 Solution
 ```java
 
+// 1st
 class Sorter implements Comparator<Student> {
 	@Override
 	public int compare(Student s1, Student s2) {
 //		System.out.println(s1.fname + ":" + s1.cgpa + " vs " + s2.fname + ":" + s2.cgpa);
 		if(s1.cgpa == s2.cgpa) return (s1.id > s2.id? 1:-1);
+		else return (s1.cgpa > s2.cgpa? -1 : 1);
+	}
+
+}
+
+// 2nd
+
+
+class Sorter implements Comparator<Student> {
+	@Override
+	public int compare(Student s1, Student s2) {
+
+		if(s1.cgpa == s2.cgpa){
+			if(s1.fname == s2.fname) return (s1.id > s2.id? -1: 1);
+			else return s1.fname.compareTo(s2.fname) ;
+		}
 		else return (s1.cgpa > s2.cgpa? -1 : 1);
 	}
 
