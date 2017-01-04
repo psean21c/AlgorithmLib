@@ -53,3 +53,19 @@ public class C {
 	}
 }
 ```
+
+CoPrime
+```java
+// GCD(X,Y) and CoPrime
+public static int gcd(int x, int y) {
+    if (y == 0) return x;
+    else if (x >= y && y > 0) return gcd(y, (x % y));
+    else return gcd(y, x);
+}
+	
+	
+private static boolean isCoPrime(int a, int b) {
+	return gcd(a, b) == 1;
+}
+
+```
