@@ -167,3 +167,70 @@ class Sorter implements Comparator<Student> {
 }
 
 ```
+
+### Research
+
+```
+5
+33 Rumpa 3.68
+85 Ashis 3.85
+56 Samiha 3.75
+19 Samara 3.75
+22 Fahim 3.76
+```
+
+For the same input above, the numbers of println() are different between 1) and 2)
+```java
+class Sorter implements Comparator<Student> {
+	@Override
+	public int compare(Student s1, Student s2) {
+		System.out.println(s1.fname + ":" + s1.cgpa + " vs " + s2.fname + ":" + s2.cgpa);
+		if(s1.cgpa == s2.cgpa){
+			if(s1.fname == s2.fname) return (s1.id > s2.id? -1: 1);
+			else return s1.fname.compareTo(s2.fname) ;
+		}
+		else return (s1.cgpa > s2.cgpa? 1 : -1); // 1)
+		else return (s1.cgpa > s2.cgpa? -1 : 1); // 2)
+	}
+
+}
+```
+
+```
+>> output
+Ashis:3.85 vs Rumpa:3.68
+Samiha:3.75 vs Ashis:3.85
+Samiha:3.75 vs Ashis:3.85
+Samiha:3.75 vs Rumpa:3.68
+Samara:3.75 vs Samiha:3.75
+Samara:3.75 vs Rumpa:3.68
+Fahim:3.76 vs Samiha:3.75
+Fahim:3.76 vs Ashis:3.85
+Rumpa
+Samara
+Samiha
+Fahim
+Ashis
+```
+
+
+```
+>> output
+Ashis:3.85 vs Rumpa:3.68
+Samiha:3.75 vs Ashis:3.85
+Samiha:3.75 vs Rumpa:3.68
+Samiha:3.75 vs Ashis:3.85
+Samara:3.75 vs Samiha:3.75
+Samara:3.75 vs Ashis:3.85
+Fahim:3.76 vs Samiha:3.75
+Fahim:3.76 vs Samara:3.75
+Fahim:3.76 vs Ashis:3.85
+Ashis
+Fahim
+Samara
+Samiha
+Rumpa
+```
+
+
+
