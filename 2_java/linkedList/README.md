@@ -61,8 +61,16 @@ class A {
 ### Add function : insert()
 
 ```java
-// Important to understand what current is trying to do for the head.
-// 
+/***
+Important to understand what current is trying to do for the head.
+ head -> [A] -> [B] -> [C] -> NULL
+ while:
+ current -> [A]
+ current -> [B]  after current = current.next;
+ current -> [C]  after current = current.next;
+ current -> [D]  after current.next = tmp;
+***/
+
 public static Node insert(Node head, int data) {
 
 	Node tmp = new Node(data);
