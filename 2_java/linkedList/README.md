@@ -57,3 +57,25 @@ class A {
 }
 
 ```
+
+### Add function : insert()
+
+```java
+// Important to understand what current is doing.
+// 
+public static Node insert(Node head, int data) {
+
+	Node tmp = new Node(data);
+	if (head == null) {
+		return tmp;
+	} else {
+		Node current = head;
+		while (current.next != null) {
+			current = current.next;
+		}
+		current.next = tmp;
+		return head;
+	}
+}
+
+```
