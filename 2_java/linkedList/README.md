@@ -85,11 +85,21 @@ public static Node insert(Node head, int data) {
 ### show function : display()
 
 ```java
-// Important to understand what current is doing.
-// 
 public static void display(Node head){
-
-
+	Node current = head;
+	System.out.print(current.data + " ");
+	while (current.next != null) {
+		current = current.next;
+		System.out.print(current.data + " ");
+	}
 }
 
+```
+
+### reverse LinkedList function : reverse()
+
+```java
+public static  Node reverse(Node head) {
+
+}
 ```
