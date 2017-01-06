@@ -79,3 +79,17 @@ public static Node insert(Node head, int data) {
 }
 
 ```
+
+![append](https://cloud.githubusercontent.com/assets/5623445/21731477/88b9e40e-d422-11e6-80f6-bbbf5edec41b.PNG)
+
+### show function : display()
+
+```java
+// Important to understand what current is doing.
+// 
+public static void display(Node head){
+
+
+}
+
+```
