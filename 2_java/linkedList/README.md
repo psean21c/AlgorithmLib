@@ -61,7 +61,7 @@ class A {
 ### Add function : insert()
 
 ```java
-// Important to understand what current is doing.
+// Important to understand what current is trying to do for the head.
 // 
 public static Node insert(Node head, int data) {
 
