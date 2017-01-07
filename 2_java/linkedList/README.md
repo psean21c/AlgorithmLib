@@ -40,6 +40,11 @@ class A {
 		return null;
 	}
 	
+	// 6) detect cycle
+	public boolean hasCycle(Node head) {
+		return true;
+	}
+	
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
