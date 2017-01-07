@@ -107,8 +107,26 @@ public static void display(Node head){
 ### reverse LinkedList function : reverse()
 
 ```java
+/***
+Important to understand that 
+1) current /next variables works as temporary containers 
+ to hold current/next values for each step
+2) When finished while(), "head" need to get last node from the "current" &
+   the "next of head" points to "previous"
+***/
 public static  Node reverse(Node head) {
-
+	Node current = head;
+	Node previous = null;
+	Node next = null;
+	while(current.next !=null){
+		next = current.next;
+		current.next = previous; 
+		previous = current;
+		current = next;
+	}
+	head = current;
+	head.next = previous;
+	return head;
 }
 ```
 ![linked-list-reversal](https://cloud.githubusercontent.com/assets/5623445/21732597/3b1f80ae-d428-11e6-871b-b9c09ad27245.png)
