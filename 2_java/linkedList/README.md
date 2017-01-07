@@ -40,19 +40,27 @@ class A {
 		return null;
 	}
 	
-    public static void main(String[] args) {
- 	   
-        Scanner sc = new Scanner(System.in);
-        Node head = null;
-        int N = sc.nextInt();
+	public static void main(String[] args) {
 
-        while(N-- > 0) {
-            int ele = sc.nextInt();
-            head = insert(head,ele);
-        }
-        display(head);
-        sc.close();
-    }
+		Scanner sc = new Scanner(System.in);
+		Node head = null;
+		int T = sc.nextInt();
+
+		while (T-->0) {
+			int ele = sc.nextInt();
+			head = insert(head, ele);
+		}
+		display(head);
+
+		head = reverse(head);
+		display(head);
+
+		head = removeDup(head);
+		display(head);
+		
+		sc.close();
+
+	}
     
 }
 
@@ -130,3 +138,36 @@ public static  Node reverse(Node head) {
 }
 ```
 ![linked-list-reversal](https://cloud.githubusercontent.com/assets/5623445/21732597/3b1f80ae-d428-11e6-871b-b9c09ad27245.png)
+
+
+### removde duplicate: removeDup()
+```java
+
+public static Node removeDup(Node head) {
+	Node head2 = new Node(head.data);
+	while(head.next !=null){
+		head = head.next;
+		if(noDup(head2, head.data)) {
+			// 1)
+			head2 = insert(head2,head.data);
+			
+			// 2)
+			Node current = head2;
+			while(current.next!=null){
+				current = current.next;
+			}
+			Node tmp = new Node(head.data);
+			current.next = tmp;
+		}
+	}
+	return head2;
+}
+	
+static boolean noDup(Node current,int data){
+	while (current!=null){
+		if(current.data==data) return false;
+		current = current.next;
+	}
+	return true;
+}
+```
