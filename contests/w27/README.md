@@ -88,6 +88,40 @@ WoC는 시간도 넉넉하기 때문에 여러가지 방법을 동원해서 풀�
         Fenwick tree / segment tree >> heavy light decomposition > suffix automation >> suffix tree (너무 어려워요)
 	
 
+2nd comments:
+
+배열 형태(tree로 배열로 펴서 많이 사용합니다)로 되어있는 데이터가 입력될 때,
+특정 값에 대한 update와 특정 범위에 대한 query가 반복적으로 매우 많을 때
+아주 유용한 자료궂조가 Segment Tree, Fenwick Tree라는 것은 지난 시간에 말씀드렸는데요.
+Sparse Table이라는 것도 있네요.
+이들간의 특성을 아래에 간단히 정리했으니 찾아서 함께 공부하시면 좋겠습니다.
+
+    1. Segment Tree (구종만님 책 p. 737 ~ p. 743)
+        - 가장 일반적인 형태의 자료구조 입니다.
+        - update와 range query를 각각 O(logN) 시간에 할 수 있습니다.
+        - update와 query가 매우 빈번하게 발생할 때 매우 유용합니다.
+        - 구간 최소값, 구간 최대값, 구간 합, 구간 GCD, 구간 LCM 등 굉장히 다양한 영역에 사용할 수 있습니다.
+    2. Fenwick Tree (구종만님 책 p. 754 ~ p. 757)
+        - 정말 흥미로운 자료 구조입니다.
+        - N 개의 데이터가 있을 때, 0 부터 임의의 위치 x까지의 합을 O(logN) 시간에 구하는 트리입니다.
+          (x, y) 사의의 구간 합은 fenwickTree.sum(y) - fenwickTree.sum(x - 1)를 통해서 합니다.
+        - Segment Tree보다 약 4 ~ 5배 빠릅니다.
+        - 구간 합에만 사용할 수 있습니다.
+    3. Sparse Table
+        - Segment Tree와 같은 기능을 하지만, immutable 데이터에 대해서만 사용할 수 있습니다.
+          즉, update는 못하고 초기에 만들어놓은 table에서 query만 반복적으로 할 수 있습니다.
+        - 구간 최소값, 구간 최대값, 구간 합 등 Segment Tree가 하는 거의 대부분의 경우에 사용할 수 있습니다.
+          (물론 update는 못합니다.)
+        - 성능은 실험을 해보니 Segment Tree보다 무려 20배 빠릅니다!!!!!!!!
+        - 아래 사이트에 설명이 잘 되어있네요.
+           https://www.hackerearth.com/practice/notes/sparse-table/
+
+WoC 27의 7일차 문제에서 100점 맞은 사람들의 코드를 분석해보니, 일부 인원이 Sparse Table을 사용하고 있었다는 것을 발견했습니다.
+처음에는 뭔지 이해를 못했는데, 공부를 해보니 Sparse Table이라는 것을 알게되었습니다.
+잘 사용하면 아주 강력할 툴이 될 수 있을 것 같아서 공유드립니다.
+
+라이브러리로 만들어서 다음에 사용하시면 될 것 같아요.
+제가 github에 구현해 놓은 것도 있으니 참고하셔도 됩니다.
 
 ---
 
