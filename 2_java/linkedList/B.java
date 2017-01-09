@@ -1,6 +1,3 @@
-package nov;
-
-
 class ListNode {
     int val;
     ListNode next;
