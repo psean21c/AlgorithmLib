@@ -1,5 +1,3 @@
-package nov;
-
 import java.util.Scanner;
 
 class Node {
