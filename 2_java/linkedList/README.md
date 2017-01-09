@@ -176,3 +176,49 @@ static boolean noDup(Node current,int data){
 	return true;
 }
 ```
+
+### hasCycled()
+```java
+// My approach..
+// 1 -> 2 -> 3 -> 4
+static boolean hasCycle(Node head) {
+	
+	if(head.next==null) return false;
+	
+	boolean isCycled = false;
+	Node current = head;
+	int cnt = 0;
+	while(current.next!=null){
+		
+		cnt++;
+		current = current.next;
+		Node ptr = head;
+		for(int i=0;i<cnt;i++){
+			
+			if(current.next ==ptr) {
+				isCycled = true;
+				break;
+			}
+			ptr = ptr.next;
+		}
+		if(isCycled) break;
+	}
+	return isCycled;
+}
+	
+// slow/fast algorithm ..
+boolean hasCycle(Node head) {
+    if (head == null) return false;
+    
+    Node slow = head;
+    Node fast = head.next;
+    while (slow != fast) {
+        if (fast == null || fast.next == null) return false;
+        
+        slow = slow.next;
+        fast = fast.next.next;
+    }
+    
+    return true;
+}
+```
