@@ -127,6 +127,8 @@ Important to understand that
 2) When finished while(), "head" need to get last node from the "current" &
    the "next of head" points to "previous"
 ***/
+
+// 1) Version-1
 public static  Node reverse(Node head) {
 	Node current = head;
 	Node previous = null;
@@ -141,6 +143,22 @@ public static  Node reverse(Node head) {
 	head.next = previous;
 	return head;
 }
+
+// 2) Version-2
+static ListNode reverseList(ListNode head) {
+	ListNode current = head;
+	ListNode previous = null;
+
+	while (current !=null) {
+		ListNode next = current.next;
+		current.next = previous;
+		previous = current;
+		current = next;
+	}
+	return previous;
+}
+
+
 ```
 ![linked-list-reversal](https://cloud.githubusercontent.com/assets/5623445/21732597/3b1f80ae-d428-11e6-871b-b9c09ad27245.png)
 
