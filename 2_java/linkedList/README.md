@@ -179,6 +179,23 @@ static boolean noDup(Node current,int data){
 
 ### hasCycled()
 ```java
+
+static Node makeCycleNode(){
+	Node head = new Node(1);
+	Node current = head;
+	
+	current.next = new Node(2);
+	current = current.next;
+		
+	current.next = new Node(3);
+	current = current.next;
+		
+	current.next = head;
+	
+	return head;
+}
+
+
 // My approach..
 // 1 -> 2 -> 3 -> 4
 static boolean hasCycle(Node head) {
