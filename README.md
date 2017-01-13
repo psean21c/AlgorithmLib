@@ -51,6 +51,8 @@ https://raw.githubusercontent.com/…/2016/round1_c/b/main.cpp
 
 [Java7 API](http://docs.oracle.com/javase/7/docs/api/)
 
+[Source](http://algs4.cs.princeton.edu/code/)
+
 ### Contents
 
 [Korean Algorithm Contest](https://www.acmicpc.net/)
