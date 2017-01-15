@@ -542,7 +542,7 @@ public class I {
 
 ### version -3
 
-``1`cpp
+```cpp
 #include <iostream>
 #include <cstddef>
 #include <cmath>
