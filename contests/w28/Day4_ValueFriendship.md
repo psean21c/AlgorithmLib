@@ -1,8 +1,53 @@
 
+### 
+[]()
+
+TestCase
+```
+1
+5 3
+1 2
+3 4
+4 5
+>> 16		
+		
+1
+5 3
+1 5
+3 5
+2 5
+>> 20
+
+>>
+1
+5 2
+1 5
+3 5
+>> 8
+
+
+1
+14 14
+7 8
+1 2
+2 3
+1 3
+4 5
+4 6
+5 6
+10 11
+13 12
+12 11
+13 11
+13 10
+12 10
+12 9
+>> 352
+```
+
+### version -1
 
 ```java
-package nov;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -334,6 +379,310 @@ public class G {
 		printA();
 		calculate();
 **/
+
+
+```
+
+### version -2
+
+```java
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class I {
+
+	static int N = 0;
+	static int total = 0;
+	static int[][] a = null;
+	static int[] visited = null;
+	
+	static boolean isValid (int x, int y) {
+		if(x >=N || y >=N || a[x][y] ==0 || a[x][y] !=1) return false;
+		else return true;
+	}
+	
+	// dfs() get the total number of all members in the group()
+	static long dfs2(int x,int y){
+        if (!isValid(x, y)) return 0;
+        
+		long cnt = 0;
+		if(a[x][y]==1){
+			cnt += 1;
+			a[x][y] = 2;
+			for(int i=0;i<N;i++){
+					cnt += dfs2(y,i);
+					cnt += dfs2(x,i);
+			}
+		}
+		
+		return cnt;
+	}
+	
+	
+	static long dfs(int x,int y, int token){
+//		System.out.println(" dfs >> a[" + x + "][" + y + "]=" + a[x][y]);
+       if (!isValid(x, y)) return 0;
+       if(token==0 && visited[x]==1) return 0;
+       long cnt = 0;
+		
+		if(a[x][y]==1){
+			if(visited[x]!=1){
+				visited[x]=1;
+				cnt++;
+			}
+			a[x][y] = 2;
+			//printAr();
+			for(int i=0;i<N;i++){
+					cnt += dfs(y,i,0); // y-axis move
+					cnt += dfs(x,i,1); // x-axis move
+			}
+		}
+		return cnt;
+	}
+	
+	
+	static void printAr(){
+		for(int i=0;i<N;i++){
+			for(int j=0;j<N;j++){
+				System.out.print(a[i][j] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("------------------");
+	}
+	
+	static void printA(List<Integer> lst){
+		for(Integer l:lst){
+				System.out.print(l + " ");
+		}
+		System.out.println();
+	}
+	
+	public static void main2(String[] args) {
+		BigInteger acc = BigInteger.valueOf(0);
+		System.out.println(acc);		
+		BigInteger med = BigInteger.valueOf(2);
+		System.out.println(med);		
+		acc = acc.add(med);
+		System.out.println(acc);		
+	}
+	
+	
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int t = in.nextInt();
+		for (int a0 = 0; a0 < t; a0++) {
+			N = in.nextInt(); 
+			long m = in.nextLong();
+			a = new int[N][N];
+			visited = new int[N];
+			
+			for (int a1 = 0; a1 < m; a1++) {
+				int x = in.nextInt();
+				int y = in.nextInt();
+				a[x-1][y-1] = 1;
+				a[y-1][x-1] = 1;
+
+			}
+			
+			//printAr();
+			List<Long> lst = new ArrayList<Long>();
+			int idx=0;
+			for(int i=0;i<N;i++){
+				for(int j=i+1;j<N;j++){
+					if(a[i][j]==1) {
+						long val = dfs(i,j,0);
+						lst.add(val);
+						//System.out.println("value= " + val + " \n");
+						break;
+					}
+				}
+			}
+			Collections.sort(lst, Collections.reverseOrder());
+			//printA(lst);
+			doResult(lst,m);
+		
+		}
+	}
+	
+	static void doResult(List<Long> lst, long t) {
+		BigInteger acc = BigInteger.valueOf(0);
+		for (Long ls : lst) {
+			long med = sumGroup(ls);
+			long full = f(ls);
+			long remain = t - (ls - 1);
+			
+			BigInteger med2 = BigInteger.valueOf(full * remain);
+			t -= (ls - 1);
+			acc = acc.add(BigInteger.valueOf(med));
+			acc = acc.add(med2);
+		}
+		System.out.println(acc);
+	}
+	
+	static long f(long n){
+		return n * (n-1);
+	}
+	
+	static long sumGroup(long n){
+		if(n==1) return f(n);
+		return sumGroup(n-1) + f(n);
+	}
+
+
+
+}
+
+
+```
+
+### version -3
+
+``1`cpp
+#include <iostream>
+#include <cstddef>
+#include <cmath>
+#include <vector>
+#include <algorithm>
+#include <time.h>
+
+
+using namespace std;
+
+#define FOR(i,n) for(unsigned int i = 0; i < (n); ++i)
+#define FOR1(i,n) for(int i = 1; i < (n); ++i)
+
+void printA(vector<vector<int>> g){
+	cout << "printing .." << endl;
+	FOR(i, g.size()){
+		FOR(j,g[i].size()){
+			cout << g[i][j] << " ";
+		}
+		cout << endl;
+	}
+	cout << "---------------" << endl;
+
+}
+
+void printG(int **g,int SIZE){
+//	cout << "printing .." << endl;
+    for(int i=0;i<SIZE;i++){
+    	for(int j=0;j<SIZE;j++){
+			cout << g[i][j] << " ";
+    	}
+    	cout << endl;
+    }
+	cout << "---------------" << endl;
+
+}
+
+bool isValid (int **g, int x, int y,int SIZE) {
+	if(x >=SIZE || y >=SIZE || g[x][y] ==0 || g[x][y] !=1) return false;
+	else return true;
+}
+
+long dfs(int **g,int *v,int SIZE, int x,int y, int token){
+
+	if (!isValid(g, x, y, SIZE))	return 0;
+	if (token == 0 && v[x] == 1) return 0;
+	long cnt = 0;
+
+	if (g[x][y] == 1) {
+		if (v[x] != 1) {
+			v[x] = 1;
+			cnt++;
+		}
+		g[x][y] = 2;
+		for (int i = 0; i < SIZE; i++) {
+			cnt += dfs(g, v, SIZE, y, i, 0); // y-axis move
+			cnt += dfs(g, v, SIZE, x, i, 1); // x-axis move
+		}
+	}
+	return cnt;
+}
+
+long f(int n){
+	return n * (n-1);
+}
+
+long sumGroup(int n){
+	if(n==1) return f(n);
+	return sumGroup(n-1) + f(n);
+}
+
+
+int main(){
+
+	int t;
+	cin >> t;
+
+	time_t timer= clock();
+
+	for (int a0 = 0; a0 < t; a0++) {
+		int n;
+		int m;
+		cin >> n >> m;
+
+		int SIZE = n;
+		int **graph;
+		graph = (int **) malloc(SIZE * sizeof(int*));
+		for (int i = 0; i < SIZE; i++) {
+			graph[i] = (int *) malloc(SIZE * sizeof(int*));
+			for (int j = 0; j < SIZE; j++) graph[i][j] = 0;
+		}
+
+		//printG(graph, SIZE);
+		for (int a1 = 0; a1 < m; a1++) {
+			int x;
+			int y;
+			cin >> x >> y;
+			//cout << "(x,y)" << x << " " << y << endl;
+			int x1 = x-1;
+			int y1 = y-1;
+			graph[x1][y1] = 1;
+			graph[y1][x1] = 1;
+		}
+
+		//printG(graph, SIZE);
+		int *visited = (int *) malloc(SIZE * sizeof(int*));
+		//vector<int> groupSize(100);
+		vector<int> groupSize;
+
+		for(int i=0;i<SIZE;i++){
+			for(int j=i+1;j<SIZE;j++){
+				if(graph[i][j]==1) {
+					long val = dfs(graph,visited,SIZE,i,j,0);
+					//cout << " " << val << endl;
+					groupSize.push_back(val);
+					//System.out.println("value= " + val + " \n");
+					break;
+				}
+			}
+		}
+
+//		cout << " start ..." << endl;
+		long long acc = 0L;
+		sort(groupSize.begin(),groupSize.end(),greater<int>());
+		for(unsigned int i=0;i < groupSize.size();i++){
+			int s = groupSize[i];
+			long med = sumGroup(s);
+			long full = f(s);
+			long remain = m - (s - 1);
+
+			long long med2 = full * remain;
+			m -= (s - 1);
+			acc += med + med2;
+		}
+		cout << acc;
+
+	}
+	cout<< "timed out: " << (double)(clock()-timer)/CLOCKS_PER_SEC<<endl;
+	return 0;
+}
 
 
 ```
