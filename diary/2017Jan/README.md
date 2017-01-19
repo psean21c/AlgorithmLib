@@ -9,3 +9,13 @@ Picture was taken on Sep-19(Friday)
 
 irina.souiki@gmail.com
 416 302 2803.
+
+```
+Irina Souiki,
+Neil Wu,
+Sergiu Filip, 
+Arezoo Hoveyda, 
+Moe San, 
+Beth Fisher, 
+Youngki Hong
+```
