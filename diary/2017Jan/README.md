@@ -7,11 +7,11 @@ Irina (My previous boss)
 
 Picture was taken on Sep-19(Friday)
 
-irina.souiki@gmail.com
-416 302 2803.
+
+
 
 ```
-Irina Souiki,
+Irina Souiki (irina.souiki@gmail.com/ 416-302-2803)
 Neil Wu,
 Sergiu Filip, 
 Arezoo Hoveyda, 
