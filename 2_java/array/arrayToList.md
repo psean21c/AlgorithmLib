@@ -41,6 +41,11 @@ set.add(4);
 for(Integer value: set){
 	System.out.println("" + value);
 }
+
+
+#
+static int[][] grid = { { 1, 1, 0, 0 }, { 0, 1, 1, 0 }, { 0, 0, 1, 0 }, { 1, 0, 0, 0 } };
+
 ```
 ```
 // assign the character variable ch to the lowercase version of itself, without having to write any additional methods
