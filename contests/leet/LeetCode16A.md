@@ -27,6 +27,9 @@ Both are fine because it follows the instruction : DIDD
 ```
 One coder used Fenwick algorithm to solve this problem..
 
+[AlgoSpot question](https://algospot.com/forum/read/1955/#c9436)
+
+
 
 ```cpp
 // Author: rrrl8523690
