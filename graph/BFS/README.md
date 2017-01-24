@@ -41,7 +41,7 @@
 
 
 ```java
-// Other's
+// Maybe it's the best solution..
     static List<List<Integer>> levelOrder(TreeNode root) {
     	List<List<Integer>> lstList = new ArrayList<List<Integer>>();
 		Queue<TreeNode> queue = new LinkedList<TreeNode>();
