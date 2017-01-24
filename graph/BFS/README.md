@@ -1,6 +1,6 @@
 
 ```java
-// My solution.. Poor... complicated.. uncessary
+// My 1st solution.. Poor...un neccessary complicated.. 
     static List<List<Integer>> levelOrder(TreeNode root) {
     	List<List<Integer>> lstList = new ArrayList<List<Integer>>();
 		
@@ -43,25 +43,27 @@
 ```java
 // Other's
     static List<List<Integer>> levelOrder(TreeNode root) {
-        Queue<TreeNode> queue = new LinkedList<TreeNode>();
-        List<List<Integer>> wrapList = new LinkedList<List<Integer>>();
-        
-        if(root == null) return wrapList;
-        
-        queue.offer(root);
-        while(!queue.isEmpty()){
-            int levelNum = queue.size();
-            List<Integer> subList = new LinkedList<Integer>();
-            for(int i=0; i<levelNum; i++) {
-                if(queue.peek().left != null) queue.offer(queue.peek().left);
-                if(queue.peek().right != null) queue.offer(queue.peek().right);
-                subList.add(queue.poll().val);
-            }
-            wrapList.add(subList);
-        }
-        return wrapList;
+    	List<List<Integer>> lstList = new ArrayList<List<Integer>>();
+		Queue<TreeNode> queue = new LinkedList<TreeNode>();
+
+		if(root==null) return lstList;
+
+		queue.add(root);
+		
+		while(!queue.isEmpty()){ 
+			int size = queue.size();
+			List<Integer> lst = new ArrayList<Integer>();
+			
+			for(int i=0;i<size;i++){
+				if(queue.peek().left!=null) queue.add(queue.peek().left);
+				if(queue.peek().right!=null) queue.add(queue.peek().right);
+				lst.add(queue.poll().val);
+			}
+			lstList.add(lst);
+
+		}
+		return lstList;
     }
-    
 
 ```
 
