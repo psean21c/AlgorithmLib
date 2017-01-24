@@ -1,5 +1,6 @@
 
 ```java
+// My solution.. Poor... complicated.. uncessary
     static List<List<Integer>> levelOrder(TreeNode root) {
     	List<List<Integer>> lstList = new ArrayList<List<Integer>>();
 		
@@ -14,6 +15,8 @@
 		while(!queue.isEmpty()){ 
 			vertex = queue.poll();
 			lst.add(vertex.val);
+			// Didn't know how to use size() ..
+			
 			if(vertex.left!=null) {
 				tmp.add(vertex.left);
 			}
@@ -22,7 +25,7 @@
 			}
 			if(queue.isEmpty()){
 				lstList.add(lst);
-				lst = new ArrayList<Integer>();
+				lst = new ArrayList<Integer>(); // new object needs to be initialzed in line 17 before using
 				if(!tmp.isEmpty()){
 					queue.addAll(tmp);
 					tmp.clear();
