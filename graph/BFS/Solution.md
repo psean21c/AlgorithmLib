@@ -131,7 +131,7 @@ Depicted diagram
 /      \
 3       4
          \
-	  5
+          5
 ```
 
 
@@ -305,6 +305,58 @@ public class B {
 	
 }
 
+```
+### Symmetric Tree
+```
+// 1st solution.. performance is very bad...
+public class Solution {
+	static boolean symetricList(List<Integer> lst){
+		boolean isSymmetric = true;
+		int size = lst.size();
+		for(int i=0;i<size/2;i++){
+			
+			if(!lst.get(i).equals(lst.get(size-i-1))) {
+				//isSymmetric = false;
+				return false;
+			}
+		}
+		
+		return isSymmetric;
+	}    
+    public boolean isSymmetric(TreeNode root) {
+    	Queue<TreeNode> queue = new LinkedList<TreeNode>();
+    	TreeNode tmp = new TreeNode(-1);
+		if(root==null) return true;
+
+		boolean isSymmetric = true;
+		queue.add(root);
+		
+		while(!queue.isEmpty()){ 
+			int size = queue.size();
+			List<Integer> lst = new ArrayList<Integer>();
+			int cnt = 0;
+			for(int i=0;i<size;i++){
+				if(queue.peek().left!=null)	{
+					queue.add(queue.peek().left);
+				} else {
+					queue.add(tmp);
+				}
+				if(queue.peek().right!=null) {
+					queue.add(queue.peek().right);
+				} else{
+					queue.add(tmp);
+				}
+				if(queue.peek().left==null && queue.peek().right==null) cnt++;
+				lst.add(queue.poll().val);
+			}
+			//printList(lst);
+			if(!symetricList(lst)) return false;
+			if(cnt==size) break;
+		}
+		
+		return isSymmetric;        
+    }
+}
 ```
 
 ### Queue Sample
