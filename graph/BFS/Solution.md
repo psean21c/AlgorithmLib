@@ -64,6 +64,7 @@ static TreeNode makeTree1(){
 
 ```
 
+Depicted diagram
 ```
 
    1
@@ -90,6 +91,7 @@ static TreeNode makeTree2(){
 }
 ```
 
+Depicted diagram
 ```
    1
    / \
@@ -113,6 +115,7 @@ static TreeNode makeTree3(){
 
 ```
 
+Depicted diagram
 ```
    1
   / \
@@ -137,6 +140,7 @@ static TreeNode makeTree4(){
 }
 ```
 
+Depicted diagram
 ```
    1
    / \
@@ -230,6 +234,7 @@ static List<List<Integer>> levelOrder(TreeNode root) {
 
 ```
 
+Depicted diagram
 ```
 
  3
