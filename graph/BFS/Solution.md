@@ -45,6 +45,17 @@
 
 ```
 
+Depicted diagram
+```
+
+   1
+  / \
+ 2    2
+/ \  / \
+3 4  4  3
+```
+
+
 ```java
 static TreeNode makeTree1(){
 	TreeNode ch1 = new TreeNode(2);
@@ -66,14 +77,12 @@ static TreeNode makeTree1(){
 
 Depicted diagram
 ```
-
    1
-  / \
+   / \
  2    2
 / \  / \
-3 4  4  3
+  3     3
 ```
-
 
 ```java
 static TreeNode makeTree2(){
@@ -94,12 +103,10 @@ static TreeNode makeTree2(){
 Depicted diagram
 ```
    1
-   / \
- 2    2
-/ \  / \
-  3     3
-```
+  / \
+     2
 
+```
   
 ```java
 static TreeNode makeTree3(){
@@ -115,12 +122,16 @@ static TreeNode makeTree3(){
 
 ```
 
+
 Depicted diagram
 ```
    1
-  / \
-     2
-
+   / \
+ 2    2
+/      \
+3       4
+         \
+	  5
 ```
 
 
@@ -140,16 +151,6 @@ static TreeNode makeTree4(){
 }
 ```
 
-Depicted diagram
-```
-   1
-   / \
- 2    2
-/      \
-3       4
-         \
-	  5
-```
 
 
 ```java
@@ -169,6 +170,17 @@ public static void main(String[] args) {
 ```
 
 ### Level Order
+
+Depicted diagram
+```
+
+ 3
+/ \
+9  20
+  /  \
+ 15   7
+
+```
 
 ```java
 //1st solution.. Poor...un neccessary complicated.. 
@@ -234,16 +246,7 @@ static List<List<Integer>> levelOrder(TreeNode root) {
 
 ```
 
-Depicted diagram
-```
 
- 3
-/ \
-9  20
-  /  \
- 15   7
-
-```
 
 Template for levelOrder()
 ```java
