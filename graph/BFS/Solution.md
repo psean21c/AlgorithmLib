@@ -1,16 +1,4 @@
 
-```
-
- 3
-/ \
-9  20
-  /  \
- 15   7
-
-
-
-
-```
 
 ### minimum depth
 ```java
@@ -58,145 +46,201 @@
 ```
 
 ```java
-	static TreeNode makeTree1(){
-		TreeNode ch1 = new TreeNode(2);
-		ch1.left = new TreeNode(3);
-		ch1.right = new TreeNode(4);
-		
-		TreeNode ch2 = new TreeNode(2);
-		ch2.left = new TreeNode(4);
-		ch2.right = new TreeNode(3);
-		
-		TreeNode n = new TreeNode(1);
-		n.left = ch1;
-		n.right = ch2;
-		
-		return n;
-	}
+static TreeNode makeTree1(){
+	TreeNode ch1 = new TreeNode(2);
+	ch1.left = new TreeNode(3);
+	ch1.right = new TreeNode(4);
 	
-	static TreeNode makeTree2(){
-		TreeNode ch1 = new TreeNode(2);
-		ch1.right = new TreeNode(3);
-		
-		TreeNode ch2 = new TreeNode(2);
-		ch2.right = new TreeNode(3);
-		
-		TreeNode n = new TreeNode(1);
-		n.left = ch1;
-		n.right = ch2;
-		
-		return n;
-	}
+	TreeNode ch2 = new TreeNode(2);
+	ch2.left = new TreeNode(4);
+	ch2.right = new TreeNode(3);
+	
+	TreeNode n = new TreeNode(1);
+	n.left = ch1;
+	n.right = ch2;
+	
+	return n;
+}
 
-	static TreeNode makeTree3(){
+```
 
-		
-		TreeNode ch2 = new TreeNode(2);
-		
-		TreeNode n = new TreeNode(1);
-		n.right = ch2;
-		
-		return n;
-	}
+```
 
-	static TreeNode makeTree4(){		
-		TreeNode ch3 = new TreeNode(4);
-		ch3.right = new TreeNode(5);
-		
-		TreeNode ch2 = new TreeNode(2);
-		ch2.left = new TreeNode(3);
-		ch2.right = ch3;
-		
-		TreeNode n = new TreeNode(1);
-		n.right = ch2;
-		
-		return n;
-	}
-	public static void main(String[] args) {
-		TreeNode n1 = makeTree1();
-		System.out.println(minDepth(n1));
-		TreeNode n2 = makeTree2();
-		System.out.println(minDepth(n2));
-		TreeNode n3 = makeTree3();
-		System.out.println(minDepth(n3));
-		TreeNode n4 = makeTree4();
-		System.out.println(minDepth(n4));
-		TreeNode n5 = new TreeNode(4);
-		System.out.println(minDepth(n5));
+   1
+  / \
+ 2    2
+/ \  / \
+3 4  4  3
+```
 
 
-	}
+```java
+static TreeNode makeTree2(){
+	TreeNode ch1 = new TreeNode(2);
+	ch1.right = new TreeNode(3);
+	
+	TreeNode ch2 = new TreeNode(2);
+	ch2.right = new TreeNode(3);
+	
+	TreeNode n = new TreeNode(1);
+	n.left = ch1;
+	n.right = ch2;
+	
+	return n;
+}
+```
 
+```
+   1
+   / \
+ 2    2
+/ \  / \
+  3     3
+```
+
+  
+```java
+static TreeNode makeTree3(){
+
+	
+	TreeNode ch2 = new TreeNode(2);
+	
+	TreeNode n = new TreeNode(1);
+	n.right = ch2;
+	
+	return n;
+}
+
+```
+
+```
+   1
+  / \
+     2
+
+```
+
+
+```java
+static TreeNode makeTree4(){		
+	TreeNode ch3 = new TreeNode(4);
+	ch3.right = new TreeNode(5);
+	
+	TreeNode ch2 = new TreeNode(2);
+	ch2.left = new TreeNode(3);
+	ch2.right = ch3;
+	
+	TreeNode n = new TreeNode(1);
+	n.right = ch2;
+	
+	return n;
+}
+```
+
+```
+   1
+   / \
+ 2    2
+/      \
+3       4
+         \
+	  5
+```
+
+
+```java
+public static void main(String[] args) {
+	TreeNode n1 = makeTree1();
+	System.out.println(minDepth(n1));
+	TreeNode n2 = makeTree2();
+	System.out.println(minDepth(n2));
+	TreeNode n3 = makeTree3();
+	System.out.println(minDepth(n3));
+	TreeNode n4 = makeTree4();
+	System.out.println(minDepth(n4));
+	TreeNode n5 = new TreeNode(4);
+	System.out.println(minDepth(n5));
+}
 
 ```
 
 ### Level Order
 
 ```java
-// My 1st solution.. Poor...un neccessary complicated.. 
-    static List<List<Integer>> levelOrder(TreeNode root) {
-    	List<List<Integer>> lstList = new ArrayList<List<Integer>>();
+//1st solution.. Poor...un neccessary complicated.. 
+static List<List<Integer>> levelOrder(TreeNode root) {
+	List<List<Integer>> lstList = new ArrayList<List<Integer>>();
+	
+	Queue<TreeNode> queue = new LinkedList<TreeNode>();
+	Queue<TreeNode> tmp = new LinkedList<TreeNode>();
+	List<Integer> lst = new ArrayList<Integer>();
+
+	if(root==null) return lstList;
+
+	queue.add(root);
+	TreeNode vertex = root;
+	while(!queue.isEmpty()){ 
+		vertex = queue.poll();
+		lst.add(vertex.val);
+		// Didn't know how to use size() ..
 		
-		Queue<TreeNode> queue = new LinkedList<TreeNode>();
-		Queue<TreeNode> tmp = new LinkedList<TreeNode>();
-		List<Integer> lst = new ArrayList<Integer>();
-
-		if(root==null) return lstList;
-
-		queue.add(root);
-		TreeNode vertex = root;
-		while(!queue.isEmpty()){ 
-			vertex = queue.poll();
-			lst.add(vertex.val);
-			// Didn't know how to use size() ..
-			
-			if(vertex.left!=null) {
-				tmp.add(vertex.left);
-			}
-			if(vertex.right!=null){
-				tmp.add(vertex.right);
-			}
-			if(queue.isEmpty()){
-				lstList.add(lst);
-				lst = new ArrayList<Integer>(); // new object needs to be initialzed in line 17 before using
-				if(!tmp.isEmpty()){
-					queue.addAll(tmp);
-					tmp.clear();
-				}
-			}
-
+		if(vertex.left!=null) {
+			tmp.add(vertex.left);
 		}
-		return lstList;
-    }
-
-
-// Maybe it's the best solution..
-    static List<List<Integer>> levelOrder(TreeNode root) {
-    	List<List<Integer>> lstList = new ArrayList<List<Integer>>();
-		Queue<TreeNode> queue = new LinkedList<TreeNode>();
-
-		if(root==null) return lstList;
-
-		queue.add(root);
-		
-		while(!queue.isEmpty()){ 
-			int size = queue.size();
-			List<Integer> lst = new ArrayList<Integer>();
-			
-			for(int i=0;i<size;i++){
-				if(queue.peek().left!=null) queue.add(queue.peek().left);
-				if(queue.peek().right!=null) queue.add(queue.peek().right);
-				lst.add(queue.poll().val);
-			}
+		if(vertex.right!=null){
+			tmp.add(vertex.right);
+		}
+		if(queue.isEmpty()){
 			lstList.add(lst);
-
+			lst = new ArrayList<Integer>(); // new object needs to be initialzed in line 17 before using
+			if(!tmp.isEmpty()){
+				queue.addAll(tmp);
+				tmp.clear();
+			}
 		}
-		return lstList;
-    }
+
+	}
+	return lstList;
+}
+
+
+// 2nd solutoin Maybe it's the best solution..
+static List<List<Integer>> levelOrder(TreeNode root) {
+	List<List<Integer>> lstList = new ArrayList<List<Integer>>();
+	Queue<TreeNode> queue = new LinkedList<TreeNode>();
+
+	if(root==null) return lstList;
+
+	queue.add(root);
+	
+	while(!queue.isEmpty()){ 
+		int size = queue.size();
+		List<Integer> lst = new ArrayList<Integer>();
+		
+		for(int i=0;i<size;i++){
+			if(queue.peek().left!=null) queue.add(queue.peek().left);
+			if(queue.peek().right!=null) queue.add(queue.peek().right);
+			lst.add(queue.poll().val);
+		}
+		lstList.add(lst);
+
+	}
+	return lstList;
+}
 
 ```
 
+```
 
+ 3
+/ \
+9  20
+  /  \
+ 15   7
+
+```
+
+Template for levelOrder()
 ```java
 package nov;
 
@@ -235,38 +279,7 @@ public class B {
 	}
 
 	
-	// bfs()
     static List<List<Integer>> levelOrder(TreeNode root) {
-    	List<List<Integer>> lstList = new ArrayList<List<Integer>>();
-		
-		Queue<TreeNode> queue = new LinkedList<TreeNode>();
-		Queue<TreeNode> tmp = new LinkedList<TreeNode>();
-		List<Integer> lst = new ArrayList<Integer>();
-
-		if(root==null) return lstList;
-
-		queue.add(root);
-		TreeNode vertex = root;
-		while(!queue.isEmpty()){ 
-			vertex = queue.poll();
-			lst.add(vertex.val);
-			if(vertex.left!=null) {
-				tmp.add(vertex.left);
-			}
-			if(vertex.right!=null){
-				tmp.add(vertex.right);
-			}
-			if(queue.isEmpty()){
-				lstList.add(lst);
-				lst = new ArrayList<Integer>();
-				if(!tmp.isEmpty()){
-					queue.addAll(tmp);
-					tmp.clear();
-				}
-			}
-
-		}
-		return lstList;
     }
 
 	
