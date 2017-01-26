@@ -33,6 +33,33 @@ public class Solution {
 		return head;
 	}
 	
+	// Other's solution
+	static ListNode reverseBetween(ListNode head, int m, int n) {
+		ListNode dummyhead = new ListNode(0);
+		dummyhead.next = head;
+		ListNode sublisthead = new ListNode(0);
+		ListNode sublisttail = new ListNode(0);
+		int count = 1;
+		ListNode pre_cur = dummyhead, cur = head;
+		while(count <=n){
+			ListNode temp = cur.next;
+			if (count < m)
+				pre_cur = cur;
+			else if (count == m){
+				sublisttail = cur;
+				sublisthead.next = cur;
+			}else if (count > m){
+				cur.next = sublisthead.next;
+				sublisthead.next = cur;
+			}
+			cur = temp;
+			++count;
+		}
+		pre_cur.next = sublisthead.next;
+		sublisttail.next = cur;
+		return dummyhead.next;
+	}	
+	
     static ListNode reverseBetween(ListNode head, int m, int n) {
     	ListNode current = head;
     	ListNode next = null;
@@ -203,7 +230,16 @@ public class Solution {
 	    return p;		
 
 	}
+	// Recursive way
+	static ListNode reverseList(ListNode head) {
+		
+		if(head ==null || head.next==null) return head;
+	    ListNode p = reverseList(head.next);
+	    head.next.next = head;
+	    head.next = null;
+	    return p;		
 
+	}
 	static void deleteNode(ListNode node) {
 		ListNode current = head;
 		ListNode previous = head;
@@ -225,6 +261,56 @@ public class Solution {
 		System.out.println();
 	}
 
+	static ListNode mergeTwoLists2(ListNode l1, ListNode l2){
+		if(l1 == null) return l2;
+		if(l2 == null) return l1;
+		if(l1.val < l2.val){
+			l1.next = mergeTwoLists(l1.next, l2);
+			return l1;
+		} else{
+			l2.next = mergeTwoLists(l1, l2.next);
+			return l2;
+		}
+}
+	static ListNode mergeTwoLists(ListNode lst1, ListNode lst2) {
+        ListNode nHead = new ListNode(0);
+        ListNode n1 = nHead;
+        
+        if(lst1==null & lst2!=null)      	return lst2;
+        if(lst1!=null & lst2==null)        	return lst1;
+        if(lst1==null & lst2==null)        	return null;
+        
+        
+        while(lst1!=null || lst2!=null){
+        	ListNode tmp  = null;
+        	if(lst1==null){
+        		tmp = new ListNode(lst2.val);
+        		n1.next = tmp;
+        		n1 = n1.next;
+        		lst2 = lst2.next;
+        		
+        	} else if(lst2==null){
+        		tmp = new ListNode(lst1.val);
+        		n1.next = tmp;
+        		n1 = n1.next;
+        		lst1 = lst1.next;
+        		
+        	} else if(lst1.val<=lst2.val){
+        		tmp = new ListNode(lst1.val);
+        		n1.next = tmp;
+        		n1 = n1.next;
+        		lst1 = lst1.next;
+        	} else {
+        		tmp = new ListNode(lst2.val);
+        		n1.next = tmp;
+        		n1 = n1.next;
+        		lst2 = lst2.next;
+        	}
+        }
+
+    	return nHead.next;
+    }
+	
 	public static void main(String[] args) {
 		ListNode n = new ListNode(2);
 		printNode(n);
