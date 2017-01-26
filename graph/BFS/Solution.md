@@ -368,15 +368,15 @@ static boolean isSymmetric(TreeNode root) {
 
 static boolean doMirror(TreeNode node1, TreeNode node2){
 
-	if(node1==null && node2==null) return true;
-	if(node1==null || node2==null) return false;
-
-	boolean isSame = (node1.val == node2.val);
-	boolean mirror1 = doMirror(node1.left, node2.right) & isSame;
-	boolean mirror2 = doMirror(node1.right, node2.left) & isSame;
-	boolean isMirror = mirror1 && mirror2;
-
-	return isMirror;
+    	if(node1==null && node2==null) return true;
+    	if(node1==null || node2==null) return false;
+    	
+    	if(node1.val != node2.val) return false;
+    	boolean mirror1 = doMirror(node1.left, node2.right);
+    	boolean mirror2 = doMirror(node1.right, node2.left);
+    	boolean isMirror = mirror1 && mirror2;
+    	
+    	return isMirror;
 }
 ```
 
