@@ -307,7 +307,7 @@ public class B {
 
 ```
 ### Symmetric Tree
-```
+```java
 // 1st solution.. performance is very bad...
 public class Solution {
 	static boolean symetricList(List<Integer> lst){
