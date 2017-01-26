@@ -357,6 +357,42 @@ public class Solution {
 		return isSymmetric;        
     }
 }
+
+
+// 2nd solution
+static boolean isSymmetric(TreeNode root) {
+
+	if(root==null) return true;
+	return doMirror(root.left,root.right);
+}
+
+static boolean doMirror(TreeNode node1, TreeNode node2){
+
+	if(node1==null && node2==null) return true;
+	if(node1==null || node2==null) return false;
+
+	boolean isSame = (node1.val == node2.val);
+	boolean mirror1 = doMirror(node1.left, node2.right) & isSame;
+	boolean mirror2 = doMirror(node1.right, node2.left) & isSame;
+	boolean isMirror = mirror1 && mirror2;
+
+	return isMirror;
+}
+```
+
+```java
+public static void main(String[] args) {
+
+	TreeNode n1 = makeTree1();
+	boolean is = isSymmetric(n1);
+	System.out.println(is);
+	
+	System.out.println("--------------------");
+	TreeNode n2 = makeTree2();
+	is = isSymmetric(n2);
+	System.out.println(is);
+}
+
 ```
 
 ### Queue Sample
