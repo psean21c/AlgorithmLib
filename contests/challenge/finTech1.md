@@ -6,7 +6,7 @@
 
 Here are two exercises that will give us some insight into your coding and problem solving abilities. 
 
-## Challenge #1
+## Challenge 1
 
 Calculate the yield spread (return) between a corporate bond and its government bond benchmark. 
 
@@ -31,7 +31,7 @@ To explain, the best candidate for a benchmark for C1 (corporate bond) is the G1
 
 Given a list of corporate and government bonds, find a benchmark bond for each corporate bond and calculate the spread to benchmark.
 
-## Challenge #2
+## Challenge 2
 
 The next challenge is calculate the spread to the government bond curve.
 
