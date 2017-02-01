@@ -7,10 +7,13 @@ Don't just use the reverse function that is built into your environment.
 
 2. Write a quick and dirty program (not just a standalone function) to print a count of all the different 'words' in a text file. use any definition of word that makes logical sense or makes your job easy. the output might look like this:
 
+```
 17 a 
 14 the 
 9 of 
 9 in 
+...
+```
 
 For this input file, the word 'a' occured 17 times, 'the' 14 times. etc
 
@@ -29,9 +32,12 @@ For this input file, the word 'a' occured 17 times, 'the' 14 times. etc
 - Write a function to print out a graph.
 
 Here is a simple example graph without cycles.
+
+```
 1-> 2,3,4
 2->5
 3->6
 4->3,6
 5->6
 6-> No children
+```
