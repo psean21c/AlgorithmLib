@@ -48,10 +48,10 @@ https://leetcode.com/problems/third-maximum-number/
 		}
 		return ret;
     }
-    ```
-    
-    
-    ```java
+```
+
+Below is one of standard answers..
+```java
         public int thirdMax(int[] nums) {
         Integer max1 = null;
         Integer max2 = null;
@@ -71,4 +71,4 @@ https://leetcode.com/problems/third-maximum-number/
         }
         return max3 == null ? max1 : max3;
     }
-    ```
+```
