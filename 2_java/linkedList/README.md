@@ -1,10 +1,6 @@
 It is important that you should be able to implement basic methods regarding LinkedList.
 
 
-### Solution by others
-[Swap pair nodes](http://www.programcreek.com/2014/04/leetcode-swap-nodes-in-pairs-java/)
-
-[Reverse range](http://www.programcreek.com/2014/06/leetcode-reverse-linked-list-ii-java/)
 
 ### Template
 
@@ -267,4 +263,8 @@ boolean hasCycle(Node head) {
 ```
 
 
+### Solution by others
+[](http://www.programcreek.com/2014/04/leetcode-swap-nodes-in-pairs-java/)
+
+[](http://www.programcreek.com/2014/06/leetcode-reverse-linked-list-ii-java/)
 
