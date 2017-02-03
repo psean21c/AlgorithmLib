@@ -26,6 +26,10 @@ Jan-20(Fri) Amazon (On Call) . w/ Bryant, David <bryantdb@amazon.com>
 
 Jan-24(Tue) Pharmacy Access
 
+Jan-28(Sat) Earnup (Assignment)
+
+Jan-1(Sun) Overbone (Assignment)
+
 Feb-1(Wed) EarnUp (On Call).. w/ Norman Cheng (CTO)
 ```java
 // write a function that takes as input a string, and returns true if it's a palindrome
@@ -41,7 +45,7 @@ return true;
 }
 ```
 
-Feb-1nd(Wed) TD (On Call)
+Feb-1st(Wed) TD (On Call)
 ```
 Checked / Unchecked
 ```
