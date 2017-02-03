@@ -1,15 +1,31 @@
 
-Jan-
+Jan-5(Thu) Retalon (Onsite)
+```
+LinkedList
+A->B->C
+reverse() method to return C->B->A
+
+```
+Jan-6(Fri) Rubikloud (Onsite)
+```
+return int[] shuffle(int[] ar){
+
+}
+input ar[5] = {1,2,3,4,5}
+output ar[5] = {2,1,5,4,3}
+
+```
 
 Jan-19(Thu) Spokeo .. w/ Xilong Fan
-()[http://collabedit.com/2hjn5]
+(Questions)[http://collabedit.com/2hjn5]
 
 
 Jan-20(Fri) Amazon .. w/ Bryant, David <bryantdb@amazon.com>
 
 
-Feb-1(Wed) TD Bank
-Feb-1(Wed) EarnUp .. w/ Norman Cheng <>
+Jan-24(Tue) Pharmacy Access
+
+Feb-1(Wed) EarnUp (On Call).. w/ Norman Cheng (CTO)
 ```java
 // write a function that takes as input a string, and returns true if it's a palindrome
 //ex: racecar, madam, noon, mom
@@ -24,11 +40,11 @@ return true;
 }
 ```
 
-Feb-1nd(Wed) TD
+Feb-1nd(Wed) TD (On Call)
 
 Checked / Unchecked
 
-Feb-2nd(Thu) TD
+Feb-2nd(Thu) TD (Onsite)
 
 ```java
 String a = "test";
