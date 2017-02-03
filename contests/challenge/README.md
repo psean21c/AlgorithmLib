@@ -1,5 +1,6 @@
 
-### Jan-5(Thu) Retalon (Onsite)
+### Jan-5(Thu) 
+Retalon (Onsite)
 ```
 1) LinkedList
 A->B->C
@@ -8,7 +9,8 @@ reverse() method to return C->B->A
 2) Inner / Outer / Left & Right Join
 ```
 
-### Jan-6(Fri) Rubikloud (Onsite)
+### Jan-6(Fri)
+Rubikloud (Onsite)
 ```
 return int[] shuffle(int[] ar){
 
@@ -18,21 +20,27 @@ output ar[5] = {2,1,5,4,3}
 
 ```
 
-### Jan-19(Thu) Spokeo (On Call).. w/ Xilong Fan
+### Jan-19(Thu)
+Spokeo (On Call).. w/ Xilong Fan
 
 [Questions](http://collabedit.com/2hjn5)
 
 
-###  an-20(Fri) Amazon (On Call) . w/ Bryant, David <bryantdb@amazon.com>
+###  an-20(Fri) 
+Amazon (On Call) . w/ Bryant, David <bryantdb@amazon.com>
 
 
-### Jan-24(Tue) Pharmacy Access
+### Jan-24(Tue) 
+Pharmacy Access
 
-### Jan-28(Sat) Earnup (Assignment)
+### Jan-28(Sat) 
+Earnup (Assignment)
 
-### Jan-1(Sun) Overbone (Assignment)
+### Jan-1(Sun) 
+Overbone (Assignment)
 
-### Feb-1(Wed) EarnUp (On Call).. w/ Norman Cheng (CTO)
+### Feb-1(Wed) 
+EarnUp (On Call).. w/ Norman Cheng (CTO)
 ```java
 // write a function that takes as input a string, and returns true if it's a palindrome
 //ex: racecar, madam, noon, mom
@@ -47,12 +55,26 @@ return true;
 }
 ```
 
-### Feb-1st(Wed) TD (On Call)
+### Feb-1st(Wed) 
+TD (On Call) Rafale
 ```
 Checked / Unchecked
+
+equals() hashCode()
+
+try{
+
+} catch(){
+
+} finally {
+
+}
+
+exit() : System call -> doesn't apply for finally()
 ```
 
-### Feb-2nd(Thu) TD (Onsite)
+### Feb-2nd(Thu) 
+TD (Onsite) Sunny
 
 ```java
 String a = "test";
@@ -76,6 +98,7 @@ class Person(){
   }
 }
 
-// How to make the name immutable
+// How to make the variable 'name' immutable
+
 
 ```
