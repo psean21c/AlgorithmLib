@@ -1,12 +1,15 @@
 
 ### Jan-5(Thu) 
-Retalon (Onsite)
+Retalon (Onsite) : Paper Test(9 pages)
 ```
 1) LinkedList
 A->B->C
 reverse() method to return C->B->A
 
 2) Inner / Outer / Left & Right Join
+
+3) ~~ Logical questions
+
 ```
 
 ### Jan-6(Fri)
@@ -31,7 +34,7 @@ Amazon (On Call) . w/ Bryant, David <bryantdb@amazon.com>
 
 
 ### Jan-24(Tue) 
-Pharmacy Access
+Pharmacy Access : : Paper Test(5-6 pages) => Denied to take the test
 
 ### Jan-28(Sat) 
 Earnup (Assignment)
@@ -59,6 +62,8 @@ return true;
 TD (On Call) Rafale
 ```
 Checked / Unchecked
+
+DB Joins (Inner/Outer/Left&Right)
 
 equals() hashCode()
 
@@ -100,5 +105,10 @@ class Person(){
 
 // How to make the variable 'name' immutable
 
+Factory Pattern : Behavioral Pattern..
+
+Singleton
+
+Synchronzied
 
 ```
