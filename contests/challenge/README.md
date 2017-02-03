@@ -1,7 +1,9 @@
 
 Jan-
 
-Jan-19(Thu) Spokeo .. w/ 
+Jan-19(Thu) Spokeo .. w/ Xilong Fan
+()[http://collabedit.com/2hjn5]
+
 
 Jan-20(Fri) Amazon .. w/ Bryant, David <bryantdb@amazon.com>
 
@@ -22,4 +24,32 @@ return true;
 }
 ```
 
+Feb-1nd(Wed) TD
+
+Checked / Unchecked
+
 Feb-2nd(Thu) TD
+
+```java
+String a = "test";
+String b = "test";
+String c = "test";
+
+a==b
+a.equal(c)
+
+immutable
+
+class Person(){
+  final String name = null;
+  
+  Person(){}
+  String getName(){
+  
+  }
+  void setName(String n){
+  
+  }
+}
+
+```
