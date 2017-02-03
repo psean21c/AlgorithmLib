@@ -17,7 +17,7 @@ output ar[5] = {2,1,5,4,3}
 ```
 
 Jan-19(Thu) Spokeo .. w/ Xilong Fan
-(Questions)[http://collabedit.com/2hjn5]
+[Questions](http://collabedit.com/2hjn5)
 
 
 Jan-20(Fri) Amazon .. w/ Bryant, David <bryantdb@amazon.com>
