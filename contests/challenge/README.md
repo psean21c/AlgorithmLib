@@ -1,10 +1,11 @@
 
 Jan-5(Thu) Retalon (Onsite)
 ```
-LinkedList
+1) LinkedList
 A->B->C
 reverse() method to return C->B->A
 
+2) Inner / Outer / Left & Right Join
 ```
 Jan-6(Fri) Rubikloud (Onsite)
 ```
@@ -16,11 +17,11 @@ output ar[5] = {2,1,5,4,3}
 
 ```
 
-Jan-19(Thu) Spokeo .. w/ Xilong Fan
+Jan-19(Thu) Spokeo (On Call).. w/ Xilong Fan
 [Questions](http://collabedit.com/2hjn5)
 
 
-Jan-20(Fri) Amazon .. w/ Bryant, David <bryantdb@amazon.com>
+Jan-20(Fri) Amazon (On Call) . w/ Bryant, David <bryantdb@amazon.com>
 
 
 Jan-24(Tue) Pharmacy Access
@@ -41,8 +42,9 @@ return true;
 ```
 
 Feb-1nd(Wed) TD (On Call)
-
+```
 Checked / Unchecked
+```
 
 Feb-2nd(Thu) TD (Onsite)
 
@@ -67,5 +69,7 @@ class Person(){
   
   }
 }
+
+// How to make the name immutable
 
 ```
