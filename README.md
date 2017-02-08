@@ -18,6 +18,8 @@ It will be updated on a regular basis.
 
 [Python String](https://github.com/psean21c/Python/tree/gh-pages/hackerrank/String)
 
+[Visual Data Structure](https://visualgo.net/)
+
 ### Review the previous questions..(go to w24 folder)
 
 [Review week24](https://www.hackerrank.com/contests/w24/challenges/xor-matrix)
