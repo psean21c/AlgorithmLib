@@ -11,3 +11,5 @@ id[3]
 id[6]
 id[8]
 ```
+
+In weighted quick union(by size), we make the root of the smaller tree (in terms of the number of nodes) point to the root fo the larger tree. So in this example, the algorithm `sets id[8] = 0`
