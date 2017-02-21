@@ -54,7 +54,7 @@ public boolean detectCapitalUse(String word) {
     return detected;
 }
 ```
-### 525. Contiguous Array My SubmissionsBack To Contest
+### 525. Contiguous Array
 
 Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
 
@@ -73,5 +73,45 @@ Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal numb
 Note: The length of the given binary array will not exceed 50,000.
 
 ```java
+    public int findMaxLength(int[] nums) {
 
+        int[] sum = new int[nums.length + 1];
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0) {
+                sum[i + 1] = sum[i] - 1;
+            } else {
+                sum[i + 1] = sum[i] + 1;
+            }
+        }
+
+        
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        for (int i = 0; i <= nums.length; i++) {
+            if (!map.containsKey(sum[i])) {
+                map.put(sum[i], new ArrayList<>());
+            }
+            map.get(sum[i]).add(i);
+        }
+        
+        int answer = 0;
+
+        for (List<Integer> list : map.values()) {
+        	int size = list.size();
+        	int diff = list.get(size - 1) - list.get(0);
+            answer = Math.max(answer, diff);
+        }
+        return answer;
+    }
+```
+
+```
+0 1 1 0 1 1 1 0 
+0 -1 0 1 0 1 2 3 2 
+{0=[0, 2, 4], -1=[1], 1=[3, 5], 2=[6, 8], 3=[7]}
+answer: 4
+
+1 1 0 1 1 1 0 0 0 
+0 1 2 1 2 3 4 3 2 1 
+{0=[0], 1=[1, 3, 9], 2=[2, 4, 8], 3=[5, 7], 4=[6]}
+answer: 8
 ```
