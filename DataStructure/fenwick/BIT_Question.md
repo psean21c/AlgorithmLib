@@ -39,7 +39,10 @@ public class Solution {
     	System.out.println("add");
         while(idx<MAX){
             tree[idx] += val;
+            
+            System.out.print("tree[" + idx + "]=" + tree[idx] + " " + Integer.toBinaryString(idx) + " >> ");
             idx += (idx & (-idx));
+            System.out.println("tree[" + idx + "]");
         }
     }
     
@@ -48,10 +51,13 @@ public class Solution {
         int result = 0;
         while(idx>0){
             result += tree[idx];
+            System.out.print("tree[" + idx + "]=" + tree[idx] + "," +  Integer.toBinaryString(idx) + ",result=" + result + " ");
             idx &= (idx-1);
+            System.out.println("tree[" + idx + "]");
         }
         return result;
     }
+
 }
 
 	public static void main(String[] args) {
