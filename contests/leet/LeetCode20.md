@@ -1,5 +1,5 @@
 
-###520. Detect Capital My SubmissionsBack To Contest
+## 520. Detect Capital My SubmissionsBack To Contest
 
 Given a word, you need to judge whether the usage of capitals in it is right or not.
 
@@ -54,7 +54,7 @@ public boolean detectCapitalUse(String word) {
     return detected;
 }
 ```
-### 525. Contiguous Array
+## 525. Contiguous Array
 
 Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
 
@@ -71,6 +71,8 @@ Output: 2
 Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal number of 0 and 1.
 ```
 Note: The length of the given binary array will not exceed 50,000.
+
+### Solution -1
 
 ```java
     public int findMaxLength(int[] nums) {
@@ -128,3 +130,29 @@ Closely looking at the diagram, there is a pattern when we have the same number 
 
 ![leet2](https://cloud.githubusercontent.com/assets/5623445/23184911/83d25d1c-f84f-11e6-9763-522c472cd601.JPG)
 
+
+### Solution -2
+
+```java
+        if(nums.length==0)return 0;
+        int count=0;
+        int max=0;
+        HashMap<Integer,Integer> map=new HashMap<>();
+        map.put(0,-1);
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==0){
+                count--;
+            }
+            else {
+                count++;
+            }
+            if(!map.containsKey(count)){
+                map.put(count,i);
+            }
+            else{
+                int num=map.get(count);
+                if(i-num>max)max=i-num;
+            }
+        }
+        return max;
+ ```
