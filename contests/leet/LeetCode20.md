@@ -106,16 +106,17 @@ Note: The length of the given binary array will not exceed 50,000.
 
 ```
 # Test Case 1
+nums: 1 1 0 1 1 1 0 0 0 
+sum: 0 1 2 1 2 3 4 3 2 1 
+map: {0=[0], 1=[1, 3, 9], 2=[2, 4, 8], 3=[5, 7], 4=[6]}
+answer: 8
+
+# Test Case 2
 nums: 0 1 1 0 1 1 1 0 
 sum: 0 -1 0 1 0 1 2 3 2 
 map: {0=[0, 2, 4], -1=[1], 1=[3, 5], 2=[6, 8], 3=[7]}
 answer: 4
 
-# Test Case 2
-nums: 1 1 0 1 1 1 0 0 0 
-sum: 0 1 2 1 2 3 4 3 2 1 
-map: {0=[0], 1=[1, 3, 9], 2=[2, 4, 8], 3=[5, 7], 4=[6]}
-answer: 8
 ```
 
 ![leet0](https://cloud.githubusercontent.com/assets/5623445/23183601/996254a2-f84a-11e6-8407-4b092e3c4cd6.PNG)
