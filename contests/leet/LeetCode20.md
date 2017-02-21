@@ -156,3 +156,21 @@ Closely looking at the diagram, there is a pattern when we have the same number 
         }
         return max;
  ```
+
+The same idea, only different layout for getting the value
+
+```
+# Test Case 1
+nums: 1 1 0 1 1 1 0 0 0 
+answer: 8
+
+count=1 >>{0=-1, 1=0} key=1,val=0
+count=2 >>{0=-1, 1=0, 2=1} key=2,val=1
+count=1 >>{0=-1, 1=0, 2=1} [2-0]=2
+count=2 >>{0=-1, 1=0, 2=1} [3-1]=2
+count=3 >>{0=-1, 1=0, 2=1, 3=4} key=3,val=4
+count=4 >>{0=-1, 1=0, 2=1, 3=4, 4=5} key=4,val=5
+count=3 >>{0=-1, 1=0, 2=1, 3=4, 4=5} [6-4]=2
+count=2 >>{0=-1, 1=0, 2=1, 3=4, 4=5} [7-1]=6
+count=1 >>{0=-1, 1=0, 2=1, 3=4, 4=5} [8-0]=8
+```
