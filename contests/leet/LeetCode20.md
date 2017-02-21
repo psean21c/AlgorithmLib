@@ -120,3 +120,11 @@ answer: 4
 ```
 
 ![leet0](https://cloud.githubusercontent.com/assets/5623445/23183601/996254a2-f84a-11e6-8407-4b092e3c4cd6.PNG)
+
+
+Closely looking at the diagram, there is a pattern when we have the same number of 0's and 1's.
+
+![leet3](https://cloud.githubusercontent.com/assets/5623445/23184910/83d2630c-f84f-11e6-9d74-a33304a941c1.JPG)
+
+![leet2](https://cloud.githubusercontent.com/assets/5623445/23184911/83d25d1c-f84f-11e6-9763-522c472cd601.JPG)
+
