@@ -1,4 +1,4 @@
-### BIT (Binary Indexes Tree)
+### 315. Count of Smaller Numbers After Self (LeetCode)
 
 [Question](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
 
