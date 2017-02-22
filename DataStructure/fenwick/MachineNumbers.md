@@ -1,7 +1,6 @@
 
 
-
-[Original Question](https://www.acmicpc.net](https://www.acmicpc.net/problem/7578)
+[Original Question](https://www.acmicpc.net/problem/7578)
 
 input
 ```
