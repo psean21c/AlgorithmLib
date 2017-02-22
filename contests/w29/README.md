@@ -227,6 +227,45 @@ public class Solution {
 
 ```
 
+Solution-2
+```java
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        String[] unsorted = new String[n];
+
+        int[] arr = new int[n];
+        BigInteger[] bigArr = new BigInteger[n];
+
+        int a = 0;
+        int a2 = 0;
+        for(int i=0; i < n; i++){
+            unsorted[i] = in.next();
+            String tmp = unsorted[i];
+
+            if(tmp.length() >=10){
+                bigArr[a2++] = new BigInteger(tmp);
+            } else {
+                arr[a++] = Integer.valueOf(tmp);
+            }
+        }
+
+        if(a>0){
+            Arrays.sort(arr,0,a);
+            for(int i=0;i<a;i++){
+            	System.out.println(arr[i]);
+            }
+        }
+        if(a2>0){
+            BigInteger[] bigDest = new BigInteger[a2];
+            Arrays.sort(bigArr,0,a2);
+            for(int i=0;i<a2;i++){
+            	System.out.println(bigArr[i]);
+            }
+        }
+    }
+```
+
 ### candidates
 
 (single heart)
