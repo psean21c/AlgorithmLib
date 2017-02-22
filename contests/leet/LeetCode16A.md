@@ -27,10 +27,8 @@ Both are fine because it follows the instruction : DIDD
 5) However,
 2,1,5,4,3 is the smallest permutation
 ```
-One coder used Fenwick algorithm to solve this problem..
 
-
-
+### Solution -1
 ```cpp
 // Author: rrrl8523690
 class Solution {
@@ -72,6 +70,12 @@ public:
 
 ```
 
+
+### Solution -2
+
+One coder used Fenwick algorithm to solve this problem..
+
+[My GitHub](https://github.com/psean21c/Algorithm/blob/master/DataStructure/fenwick/FindPermutationLeet16A.md)
 
 
 
