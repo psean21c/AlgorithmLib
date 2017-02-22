@@ -236,3 +236,10 @@ http://singleheart.pe.kr/en/
 
 Challenge author (Russian mfv)
 http://codeforces.com/blog/entry/50523
+
+
+[Japanese Slide](http://hos.ac/slides/)
+
+[Japanese Slide - BIT Fenwick](http://hos.ac/slides/20140319_bit.pdf)
+
+
