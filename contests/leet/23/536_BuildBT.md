@@ -20,6 +20,11 @@ Output: return the tree root node representing the following tree:
 Note:
 There will only be '(', ')', '-' and '0' ~ '9' in the input string.
 
+output
+```
+[4,2,6,3,1,5]
+```
+
 ```java
 /**
  * Definition for a binary tree node.
