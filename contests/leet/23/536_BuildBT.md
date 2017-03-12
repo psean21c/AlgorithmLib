@@ -21,6 +21,16 @@ Note:
 There will only be '(', ')', '-' and '0' ~ '9' in the input string.
 
 ```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+ 
 //lerry.z
 public class Solution {
     public TreeNode str2tree(String s) {
