@@ -36,6 +36,9 @@ sample
 ```
 [Remote Debug sample](http://javapapers.com/core-java/java-remote-debug-with-eclipse/)
 
+[Oracle Official : Jar](http://docs.oracle.com/javase/tutorial/deployment/jar/downman.html)
+
+
 [IBM sample + theory](http://www.ibm.com/developerworks/library/os-eclipse-javadebug/index.html)
 
 
