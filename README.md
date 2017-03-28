@@ -7,18 +7,24 @@ It will be updated on a regular basis.
 
 
 # HomeWork
-1) Finish Algorithm 
+1) Algorithm : Finish review..
 ```
-  Coin Change with Memoization 
-  iteration of if's to recursive ()
+  - Coin Change with Memoization 
+  - iteration of if's to recursive ()
 ```
-2) Lambda function
+2) Java: Lambda function
 ```
 https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
 https://docs.oracle.com/javase/tutorial/
 
 ```
 [Stackoverflow: Lambda Summary](http://stackoverflow.com/questions/37695456/how-to-replace-anonymous-with-lambda-in-java)
+
+3) Spring JDBC
+```
+Create template for RowMapper()
+
+```
 
 # Questions to review
 
