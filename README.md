@@ -6,9 +6,21 @@ It will be updated on a regular basis.
 [Introduction To Algorithms](http://ce.bonabu.ac.ir/uploads/30/CMS/user/file/115/EBook/Introduction.to.Algorithms.3rd.Edition.Sep.2010.pdf)
 
 
+# HomeWork
+1) Finish Algorithm 
+```
+  Coin Change with Memoization 
+  iteration of if's to recursive ()
+```
+2) Lambda function
+```
+https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
+https://docs.oracle.com/javase/tutorial/
 
+```
+[Stackoverflow: Lambda Summary](http://stackoverflow.com/questions/37695456/how-to-replace-anonymous-with-lambda-in-java)
 
-## Questions to review
+# Questions to review
 
 ### 30 Days of Code
 [Cracking the Coding Interview Challenges](https://www.hackerrank.com/challenges/ctci-linked-list-cycle)
