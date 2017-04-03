@@ -1,0 +1,6 @@
+C1	corporate	10.3	5.30%
+G1	government	12	4.80%
+C2	corporate	15.2	8.30%
+G3	government	16.4	5.50%
+G2	government	9.4	3.70%
+G4	government	16.3	6.50%
