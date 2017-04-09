@@ -1,4 +1,6 @@
-# Simple but Deep..
+# List of Coding Algorithms
+
+Simple but Deep..
 
 ### reverseWordsString3.md
 ```
