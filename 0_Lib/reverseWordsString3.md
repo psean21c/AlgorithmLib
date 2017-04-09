@@ -21,8 +21,9 @@ Output: "s'teL ekat edoCteeL tsetnoc"
     	return builder.toString();
     }
 	
-	public String reverse(String s){
+    public String reverse(String s){
 		String ret = new StringBuilder(s).reverse().toString();
 		return ret;
-	}
+    }
+    
 ```
