@@ -2,6 +2,16 @@
 
 ### reverseWordsString3.md
 ```
-LeetCode-557: Reverse Words in a String
-reverse()
+Source: LeetCode week? - 557: 
+Title: Reverse Words in a String
+Library: reverse()
+  >> StringBuilder().reverse()
+```
+
+### contiguousArray.md
+```
+Source: LeetCode week20 - 525 
+Title: ContiguousArray
+Library: Array & HashMap
+
 ```
