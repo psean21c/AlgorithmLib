@@ -3,7 +3,7 @@
 [Hackerrank Question](https://www.hackerrank.com/contests/w31/challenges/accurate-sorting)
 
 
-
+### Solution
 ```java
 package hacker.com.week31;
 
@@ -52,6 +52,7 @@ public class B {
 
 ```
 
+### Unit Test
 
 ```java
 package hacker.com.week31;
@@ -69,6 +70,8 @@ public class BTest {
 	int [] a4 = {0,1,2,3,4,5,6,7};
 	int [] a5 = {0,1,2,5,3,4};
 	
+	final String  NO = "No";
+	final String  YES = "Yes";
 
 
 	@Before
@@ -76,16 +79,26 @@ public class BTest {
 		B b = new B();
 	}
 
+	String strArray(int[] a){
+		StringBuilder builder = new StringBuilder();
+		for(int i =0;i<a.length;i++) {
+			builder.append(a[i]);
+			if(i != (a.length-1)) builder.append(",");
+		}
+		return builder.toString();
+	}
+	
 
 	@Test
 	public void testAccurateSort() {
-		assertSame("{1,2,0,4,3}", B.accurateSort(a1),"No");
-		assertSame("{1,0,3,2}", B.accurateSort(a2),"Yes");
-		assertSame("{2,1,0}", B.accurateSort(a3),"No");
-		assertSame("{0,1,2,3,4,5,6,7}", B.accurateSort(a4),"Yes");
-		assertSame("{0,1,2,3,4,5,6,7}", B.accurateSort(a5),"Yes");
+		assertSame(strArray(a1), B.accurateSort(a1), NO);
+		assertSame(strArray(a2), B.accurateSort(a2),YES);
+		assertSame(strArray(a3), B.accurateSort(a3),NO);
+		assertSame(strArray(a4), B.accurateSort(a4),YES);
+		assertSame(strArray(a5), B.accurateSort(a5),YES);
 	}
 
 }
+
 
 ```
