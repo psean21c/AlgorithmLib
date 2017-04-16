@@ -23,3 +23,9 @@ Source: LeetCode week20 - 520
 Title: Detect Capital My SubmissionsBack To Contest
 Library: ascii code for alphabet
 ```
+
+### 3_DP_Memoization.md
+```
+Dynamic Programming with Memoization
+```
+
