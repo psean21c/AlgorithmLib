@@ -1,12 +1,16 @@
 
-Elapsed Time
 
 ```java
-		long startTime = System.currentTimeMillis();
+
+# Calendar array
+	static int[] calendar = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+# Elapsed Time measure
+	long startTime = System.currentTimeMillis();
 		
-		long endTime = System.currentTimeMillis();
-		double estimatedTime = ((endTime - startTime) / 1000); // milliseconds
-		System.out.println("Elapsed Time:" + estimatedTime + " seconds");
+	long endTime = System.currentTimeMillis();
+	double estimatedTime = ((endTime - startTime) / 1000); // milliseconds
+	System.out.println("Elapsed Time:" + estimatedTime + " seconds");
 
 ```
 
