@@ -22,5 +22,7 @@ In order to accept inputs below
 			String fname = in.next();
 			double cgpa = in.nextDouble();
 		}
+         ...		
+	}
 
 ```
