@@ -1,5 +1,7 @@
 
+### Number
 
+```
 range of INT : 
 minimum value of -2^31 ( = 2,147,483,648) 
 maximum value of 2^31 -1 ( = 2,147,483,647)
@@ -9,10 +11,10 @@ maximum value of 2^31 -1 ( = 2,147,483,647)
 range of LONG : 
 minimum value of -2^63 ( = 9.223372 x 10^18)
 maximum value of 2^63 - 1
-
+```
 
 ### Generic
-```
+```java
 class Printer{}
 
 
@@ -47,7 +49,7 @@ public class Person {
 ```
 
 Solution
-```
+```java
 1)
 class Printer <T> {
 
