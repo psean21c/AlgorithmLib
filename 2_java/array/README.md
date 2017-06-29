@@ -115,3 +115,8 @@ Second, continue doing it with its next element
 
 4
 ```
+
+
+### Good example
+
+https://www.hackerrank.com/challenges/java-arraylist
