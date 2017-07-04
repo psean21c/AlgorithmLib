@@ -112,3 +112,12 @@ Singleton
 Synchronzied
 
 ```
+
+
+### June-30(Fri) 
+Bank
+- difference between == and ===
+- 1 way binding and 2 way binding
+- var & let & const
+- which directive .. component w/o css? ng-class / ng-
+
