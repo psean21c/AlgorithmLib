@@ -8,7 +8,7 @@ It will be updated on a regular basis.
 
 # Start again
 
-
+Do not waste your time on.. bull shit
 
 ...
 
