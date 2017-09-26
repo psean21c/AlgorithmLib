@@ -166,6 +166,7 @@ static ListNode reverseList(ListNode head) {
 ```
 ![linked-list-reversal](https://cloud.githubusercontent.com/assets/5623445/21732597/3b1f80ae-d428-11e6-871b-b9c09ad27245.png)
 
+[Chinese solution](https://aaronice.gitbooks.io/lintcode/content/linked_list/add_two_numbers_ii.html)
 
 ### removde duplicate: removeDup()
 ```java
