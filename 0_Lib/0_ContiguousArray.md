@@ -51,6 +51,7 @@ Note: The length of the given binary array will not exceed 50,000.
     }
 ```
 
+
 ```
 # Test Case 1
 nums: 1 1 0 1 1 1 0 0 0 
