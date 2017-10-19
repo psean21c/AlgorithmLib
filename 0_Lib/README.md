@@ -3,7 +3,6 @@
 Simple but Deep..
 
 
-
 ### 1_reverseWordsString3.md
 ```
 Source: LeetCode week27 - 557
