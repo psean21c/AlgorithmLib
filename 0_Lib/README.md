@@ -3,10 +3,6 @@
 Simple but Deep..
 
 
-### 0_contiguousArray.md (*)
-```
-
-```
 
 ### 1_reverseWordsString3.md
 ```
