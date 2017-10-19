@@ -5,9 +5,7 @@ Simple but Deep..
 
 ### 0_contiguousArray.md (*)
 ```
-Source: LeetCode week20 - 525 
-Title: ContiguousArray
-Library: Array & HashMap()
+
 ```
 
 ### 1_reverseWordsString3.md
