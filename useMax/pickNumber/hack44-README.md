@@ -1,4 +1,4 @@
-#
+# Hack, week 44
 
 
 [Picking Numbers](https://www.hackerrank.com/contests/101hack44/challenges/picking-numbers)
