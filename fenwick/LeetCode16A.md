@@ -75,7 +75,7 @@ public:
 
 One coder used Fenwick algorithm to solve this problem..
 
-[My GitHub](https://github.com/psean21c/Algorithm/blob/master/DataStructure/fenwick/FindPermutationLeet16A.md)
+[My GitHub](https://github.com/psean21c/AlgorithmLib/blob/master/fenwick/FindPermutationLeet16A.md)
 
 
 
