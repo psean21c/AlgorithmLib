@@ -15,6 +15,12 @@ for(Integer value: set){
 }
 
 
+int[] array = { 1, 2, 3 };
+ArrayList<Integer> list = new ArrayList<Integer>(array.length);
+for (int i = 0; i < array.length; i++)
+	list.add(Integer.valueOf(array[i]));
+
+
 
 // assign the character variable ch to the lowercase version of itself, 
 // without having to write any additional methods
