@@ -1,4 +1,7 @@
 
+### March-08, 2019
+Another happy Friday !!
+
 ### Feb-15, 2019 (Before the long holiday)
 
 ![Alex and Subhash](https://github.com/psean21c/AlgorithmLib/blob/master/0_diary/2019/CoWorkers.JPG)
