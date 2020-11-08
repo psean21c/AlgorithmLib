@@ -1,5 +1,6 @@
 
-### Find Permutation
+### Find Permutation (leetcode 484)
+findPermutation
 
 Input
 ```
